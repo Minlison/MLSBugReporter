@@ -1,0 +1,6 @@
+framework module MLSBugReporter {
+  umbrella header "MLSBugReporter-umbrella.h"
+
+  export *
+  module * { export * }
+}

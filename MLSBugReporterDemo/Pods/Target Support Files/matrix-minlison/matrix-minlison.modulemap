@@ -1,0 +1,6 @@
+framework module Matrix {
+  umbrella header "matrix-minlison-umbrella.h"
+
+  export *
+  module * { export * }
+}

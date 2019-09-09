@@ -1,0 +1,117 @@
+{
+  "name": "MLSBugReporter",
+  "version": "1.0.0",
+  "summary": "禅道辅助插件",
+  "description": "禅道辅助插件，提交Bug至禅道",
+  "homepage": "https://github.com/Minlison/MLSBugReporter.git",
+  "license": "MIT",
+  "authors": {
+    "yuanhang": "yuanhang@minlison.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/Minlison/MLSBugReporter.git",
+    "tag": "v1.0.0"
+  },
+  "requires_arc": true,
+  "default_subspecs": "Core",
+  "static_framework": true,
+  "frameworks": "Foundation",
+  "libraries": [
+    "c++",
+    "z"
+  ],
+  "user_target_xcconfig": {
+    "GCC_PREPROCESSOR_DEFINITIONS": "MLS_USE_BUG_REPORTER=1"
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": [
+        "MLSBugReporter/*.{h,m}",
+        "MLSBugReporter/Classes/**/*.{h,m}",
+        "MLSBugReporter/Api/*.{h,m}"
+      ],
+      "public_header_files": [
+        "MLSBugReporter/MLSBugReporter.h",
+        "MLSBugReporter/MLSBugReporterManager.h"
+      ],
+      "dependencies": {
+        "MLSUICore/MLSPopup": [
+
+        ],
+        "MLSUICore/Core": [
+
+        ],
+        "QMUIKit/QMUIComponents/QMUIModalPresentationViewController": [
+
+        ],
+        "QMUIKit/QMUIComponents/QMUIPopupContainerView": [
+
+        ],
+        "QMUIKit/QMUIComponents/QMUIDialogViewController": [
+
+        ],
+        "QMUIKit/QMUIComponents/QMUIOrderedDictionary": [
+
+        ],
+        "MLSNetwork": [
+          ">= 1.0.0"
+        ],
+        "MLSModel": [
+          ">= 1.0.0"
+        ],
+        "hpple": [
+          ">= 0.2.0"
+        ],
+        "matrix-minlison": [
+          ">= 0.5.2"
+        ],
+        "SSZipArchive": [
+          ">= 2.1.5"
+        ],
+        "MLSBugReporter/Buglife": [
+
+        ],
+        "MLSBugReporter/Aspects": [
+
+        ],
+        "MLSBugReporter/NetworkTrack": [
+
+        ],
+        "MLSBugReporter/SystemLog": [
+
+        ]
+      },
+      "frameworks": "CoreTelephony"
+    },
+    {
+      "name": "NetworkTrack",
+      "source_files": "MLSBugReporter/NetworkTrack/**/*.{h,m}",
+      "dependencies": {
+        "CocoaLumberjack": [
+          ">= 3.5.2"
+        ]
+      }
+    },
+    {
+      "name": "SystemLog",
+      "source_files": "MLSBugReporter/SystemLog/**/*.{h,m}",
+      "dependencies": {
+        "CocoaLumberjack": [
+          ">= 3.5.2"
+        ]
+      }
+    },
+    {
+      "name": "Aspects",
+      "source_files": "MLSBugReporter/Aspects/*.{h,m}"
+    },
+    {
+      "name": "Buglife",
+      "source_files": "MLSBugReporter/Buglife/**/*.{h,m,mm,c,cpp}"
+    }
+  ]
+}

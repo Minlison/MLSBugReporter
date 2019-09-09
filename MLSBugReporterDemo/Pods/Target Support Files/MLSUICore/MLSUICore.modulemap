@@ -1,0 +1,6 @@
+framework module MLSUICore {
+  umbrella header "MLSUICore-umbrella.h"
+
+  export *
+  module * { export * }
+}

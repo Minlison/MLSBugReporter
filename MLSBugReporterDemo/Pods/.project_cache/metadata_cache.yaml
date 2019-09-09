@@ -1,0 +1,48 @@
+AFNetworking:
+  LABEL: AFNetworking
+  PROJECT_PATH: "/Users/yuanhang/Documents/Github/MLSBugReporter/MLSBugReporterDemo/Pods/AFNetworking.xcodeproj"
+  UUID: B561AD1B13C486A61C9BF66B4E6D8F89
+CocoaLumberjack:
+  LABEL: CocoaLumberjack
+  PROJECT_PATH: "/Users/yuanhang/Documents/Github/MLSBugReporter/MLSBugReporterDemo/Pods/CocoaLumberjack.xcodeproj"
+  UUID: 85392ABCB5967FC7F189FA544F4E883D
+hpple:
+  LABEL: hpple
+  PROJECT_PATH: "/Users/yuanhang/Documents/Github/MLSBugReporter/MLSBugReporterDemo/Pods/hpple.xcodeproj"
+  UUID: BC685DDE54D0B182F23A5D89E3FAFCA2
+Masonry:
+  LABEL: Masonry
+  PROJECT_PATH: "/Users/yuanhang/Documents/Github/MLSBugReporter/MLSBugReporterDemo/Pods/Masonry.xcodeproj"
+  UUID: C0965FF775F51458AD4A8E41ABAB7D1E
+matrix-minlison:
+  LABEL: matrix-minlison
+  PROJECT_PATH: "/Users/yuanhang/Documents/Github/MLSBugReporter/MLSBugReporterDemo/Pods/matrix-minlison.xcodeproj"
+  UUID: 84F49A32D62CEC736B913AB6ABAD6802
+MLSBugReporter:
+  LABEL: MLSBugReporter
+  PROJECT_PATH: "/Users/yuanhang/Documents/Github/MLSBugReporter/MLSBugReporterDemo/Pods/MLSBugReporter.xcodeproj"
+  UUID: 1A7C3C3F408C235F1C8A042DE109F0AD
+MLSModel:
+  LABEL: MLSModel
+  PROJECT_PATH: "/Users/yuanhang/Documents/Github/MLSBugReporter/MLSBugReporterDemo/Pods/MLSModel.xcodeproj"
+  UUID: D30A9A9F74156B8507F6191110393560
+MLSNetwork:
+  LABEL: MLSNetwork
+  PROJECT_PATH: "/Users/yuanhang/Documents/Github/MLSBugReporter/MLSBugReporterDemo/Pods/MLSNetwork.xcodeproj"
+  UUID: A5C02584396945E73AD9AAAD87F9719F
+MLSUICore:
+  LABEL: MLSUICore
+  PROJECT_PATH: "/Users/yuanhang/Documents/Github/MLSBugReporter/MLSBugReporterDemo/Pods/MLSUICore.xcodeproj"
+  UUID: 307F2E3C4EEF8811540E3E3A490969A6
+Pods-MLSBugReporterDemo:
+  LABEL: Pods-MLSBugReporterDemo
+  PROJECT_PATH: "/Users/yuanhang/Documents/Github/MLSBugReporter/MLSBugReporterDemo/Pods/Pods.xcodeproj"
+  UUID: 7755E84815497B977A5C194B5A263EFD
+QMUIKit:
+  LABEL: QMUIKit
+  PROJECT_PATH: "/Users/yuanhang/Documents/Github/MLSBugReporter/MLSBugReporterDemo/Pods/QMUIKit.xcodeproj"
+  UUID: CB3BDBE3FF3AAF85599007DFE93A63E2
+SSZipArchive:
+  LABEL: SSZipArchive
+  PROJECT_PATH: "/Users/yuanhang/Documents/Github/MLSBugReporter/MLSBugReporterDemo/Pods/SSZipArchive.xcodeproj"
+  UUID: 90CF86BC7D493DAE1C2622CE3BC678BB

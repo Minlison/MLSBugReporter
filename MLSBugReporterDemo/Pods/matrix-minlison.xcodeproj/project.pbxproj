@@ -1,0 +1,1848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		235A36000014E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235A36000014D0 /* Foundation.framework */; };
+		235A36000014F0 /* MatrixAppRebootAnalyzer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000100 /* MatrixAppRebootAnalyzer.mm */; };
+		235A3600001500 /* MatrixIssue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000140 /* MatrixIssue.mm */; };
+		235A3600001510 /* MatrixAdapter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000170 /* MatrixAdapter.mm */; };
+		235A3600001520 /* Matrix.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000001A0 /* Matrix.mm */; };
+		235A3600001530 /* MatrixPlugin.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000001E0 /* MatrixPlugin.mm */; };
+		235A3600001540 /* MatrixPluginConfig.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000200 /* MatrixPluginConfig.mm */; };
+		235A3600001550 /* MatrixTester.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000230 /* MatrixTester.mm */; };
+		235A3600001560 /* MatrixDeviceInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000260 /* MatrixDeviceInfo.mm */; };
+		235A3600001570 /* MatrixPathUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000280 /* MatrixPathUtil.mm */; };
+		235A3600001580 /* WCCPUHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000002F0 /* WCCPUHandler.mm */; };
+		235A3600001590 /* WCFilterStackHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000310 /* WCFilterStackHandler.mm */; };
+		235A36000015A0 /* WCGetMainThreadUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000330 /* WCGetMainThreadUtil.mm */; };
+		235A36000015B0 /* WCMainThreadHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000350 /* WCMainThreadHandler.mm */; };
+		235A36000015C0 /* WCPowerConsumeStackCollector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000370 /* WCPowerConsumeStackCollector.mm */; };
+		235A36000015D0 /* WCDumpInterface.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000003A0 /* WCDumpInterface.mm */; };
+		235A36000015E0 /* WCGetCallStackReportHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000003C0 /* WCGetCallStackReportHandler.mm */; };
+		235A36000015F0 /* NSApplicationEvent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000003F0 /* NSApplicationEvent.mm */; };
+		235A3600001600 /* WCBlockMonitorConfigHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000410 /* WCBlockMonitorConfigHandler.mm */; };
+		235A3600001610 /* WCBlockMonitorConfiguration.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000430 /* WCBlockMonitorConfiguration.mm */; };
+		235A3600001620 /* WCBlockMonitorMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000450 /* WCBlockMonitorMgr.mm */; };
+		235A3600001630 /* WCCrashBlockFileHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000490 /* WCCrashBlockFileHandler.mm */; };
+		235A3600001640 /* WCDumpReportDataProvider.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000004B0 /* WCDumpReportDataProvider.mm */; };
+		235A3600001650 /* WCDumpReportTaskData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000004D0 /* WCDumpReportTaskData.mm */; };
+		235A3600001660 /* WCCrashBlockJsonUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000500 /* WCCrashBlockJsonUtil.mm */; };
+		235A3600001670 /* WCCrashReportInfoUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000520 /* WCCrashReportInfoUtil.mm */; };
+		235A3600001680 /* WCCrashReportInterpreter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000540 /* WCCrashReportInterpreter.mm */; };
+		235A3600001690 /* WCCrashBlockMonitor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000560 /* WCCrashBlockMonitor.mm */; };
+		235A36000016A0 /* WCCrashBlockMonitorConfig.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000590 /* WCCrashBlockMonitorConfig.mm */; };
+		235A36000016B0 /* WCCrashBlockMonitorPlugin.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000005D0 /* WCCrashBlockMonitorPlugin.mm */; };
+		235A36000016C0 /* KSCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000006D0 /* KSCrash.m */; };
+		235A36000016D0 /* KSCrashC.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000006E0 /* KSCrashC.c */; };
+		235A36000016E0 /* KSCrashCachedData.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000700 /* KSCrashCachedData.c */; };
+		235A36000016F0 /* KSCrashDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000730 /* KSCrashDoctor.m */; };
+		235A3600001700 /* KSCrashReport.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000740 /* KSCrashReport.c */; };
+		235A3600001710 /* KSCrashReportFixer.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000770 /* KSCrashReportFixer.c */; };
+		235A3600001720 /* KSCrashReportStore.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000790 /* KSCrashReportStore.c */; };
+		235A3600001730 /* KSCrashMonitor.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000007F0 /* KSCrashMonitor.c */; };
+		235A3600001740 /* KSCrashMonitorType.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000820 /* KSCrashMonitorType.c */; };
+		235A3600001750 /* KSCrashMonitor_AppState.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000840 /* KSCrashMonitor_AppState.c */; };
+		235A3600001760 /* KSCrashMonitor_CPPException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000860 /* KSCrashMonitor_CPPException.cpp */; };
+		235A3600001770 /* KSCrashMonitor_Deadlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000890 /* KSCrashMonitor_Deadlock.m */; };
+		235A3600001780 /* KSCrashMonitor_MachException.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000008A0 /* KSCrashMonitor_MachException.c */; };
+		235A3600001790 /* KSCrashMonitor_NSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000008D0 /* KSCrashMonitor_NSException.m */; };
+		235A36000017A0 /* KSCrashMonitor_Signal.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000008E0 /* KSCrashMonitor_Signal.c */; };
+		235A36000017B0 /* KSCrashMonitor_System.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000910 /* KSCrashMonitor_System.m */; };
+		235A36000017C0 /* KSCrashMonitor_User.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000920 /* KSCrashMonitor_User.c */; };
+		235A36000017D0 /* KSCrashMonitor_Zombie.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000940 /* KSCrashMonitor_Zombie.c */; };
+		235A36000017E0 /* KSCrash_fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000960 /* KSCrash_fishhook.c */; };
+		235A36000017F0 /* KSCPU.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000990 /* KSCPU.c */; };
+		235A3600001800 /* KSCPU_arm.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000009C0 /* KSCPU_arm.c */; };
+		235A3600001810 /* KSCPU_arm64.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000009D0 /* KSCPU_arm64.c */; };
+		235A3600001820 /* KSCPU_x86_32.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000009E0 /* KSCPU_x86_32.c */; };
+		235A3600001830 /* KSCPU_x86_64.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000009F0 /* KSCPU_x86_64.c */; };
+		235A3600001840 /* KSDate.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000A00 /* KSDate.c */; };
+		235A3600001850 /* KSDebug.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000A20 /* KSDebug.c */; };
+		235A3600001860 /* KSDemangle_CPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000A40 /* KSDemangle_CPP.cpp */; };
+		235A3600001870 /* KSDemangle_Swift.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000A60 /* KSDemangle_Swift.cpp */; };
+		235A3600001880 /* KSDynamicLinker.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000A80 /* KSDynamicLinker.c */; };
+		235A3600001890 /* KSFileUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000AA0 /* KSFileUtils.c */; };
+		235A36000018A0 /* KSID.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000AC0 /* KSID.c */; };
+		235A36000018B0 /* KSJSONCodec.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000AE0 /* KSJSONCodec.c */; };
+		235A36000018C0 /* KSJSONCodecObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000B10 /* KSJSONCodecObjC.m */; };
+		235A36000018D0 /* KSLogger.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000B20 /* KSLogger.c */; };
+		235A36000018E0 /* KSMach.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000B40 /* KSMach.c */; };
+		235A36000018F0 /* KSMachineContext.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000B60 /* KSMachineContext.c */; };
+		235A3600001900 /* KSMemory.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000B90 /* KSMemory.c */; };
+		235A3600001910 /* KSObjC.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000BB0 /* KSObjC.c */; };
+		235A3600001920 /* KSSignalInfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000BE0 /* KSSignalInfo.c */; };
+		235A3600001930 /* KSStackCursor.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000C00 /* KSStackCursor.c */; };
+		235A3600001940 /* KSStackCursor_Backtrace.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000C20 /* KSStackCursor_Backtrace.c */; };
+		235A3600001950 /* KSStackCursor_MachineContext.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000C40 /* KSStackCursor_MachineContext.c */; };
+		235A3600001960 /* KSStackCursor_SelfThread.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000C60 /* KSStackCursor_SelfThread.c */; };
+		235A3600001970 /* KSString.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000C80 /* KSString.c */; };
+		235A3600001980 /* KSSymbolicator.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000CA0 /* KSSymbolicator.c */; };
+		235A3600001990 /* KSSysCtl.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000CC0 /* KSSysCtl.c */; };
+		235A36000019A0 /* KSThread.c in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000CE0 /* KSThread.c */; };
+		235A36000019B0 /* NSError+SimpleConstructor.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000D10 /* NSError+SimpleConstructor.m */; };
+		235A36000019C0 /* KSCrashReportFilterBasic.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000D60 /* KSCrashReportFilterBasic.m */; };
+		235A36000019D0 /* KSCrashReportFilterGZip.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000D80 /* KSCrashReportFilterGZip.m */; };
+		235A36000019E0 /* KSCrashReportFilterJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000DA0 /* KSCrashReportFilterJSON.m */; };
+		235A36000019F0 /* Container+DeepSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000DD0 /* Container+DeepSearch.m */; };
+		235A3600001A00 /* NSData+KarlGZip.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000E00 /* NSData+KarlGZip.m */; };
+		235A3600001A10 /* Demangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000E30 /* Demangle.cpp */; };
+		235A3600001A20 /* Punycode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000E90 /* Punycode.cpp */; };
+		235A3600001A30 /* logger_internal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000EE0 /* logger_internal.cpp */; };
+		235A3600001A40 /* memory_logging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000F00 /* memory_logging.cpp */; };
+		235A3600001A50 /* memory_logging_adapter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000F30 /* memory_logging_adapter.mm */; };
+		235A3600001A60 /* memory_report_generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000F40 /* memory_report_generator.cpp */; };
+		235A3600001A70 /* allocation_event_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000F80 /* allocation_event_buffer.cpp */; };
+		235A3600001A80 /* allocation_event_db.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000FA0 /* allocation_event_db.cpp */; };
+		235A3600001A90 /* nsobject_hook_method.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000FD0 /* nsobject_hook_method.mm */; };
+		235A3600001AA0 /* object_event_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600000FE0 /* object_event_handler.cpp */; };
+		235A3600001AB0 /* bundle_name_helper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600001260 /* bundle_name_helper.mm */; };
+		235A3600001AC0 /* dyld_image_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600001270 /* dyld_image_info.cpp */; };
+		235A3600001AD0 /* stack_frames_db.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600001290 /* stack_frames_db.cpp */; };
+		235A3600001AE0 /* WCMemoryRecordManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600001310 /* WCMemoryRecordManager.mm */; };
+		235A3600001AF0 /* WCMemoryStatModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600001330 /* WCMemoryStatModel.mm */; };
+		235A3600001B00 /* WCMemoryStatConfig.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600001350 /* WCMemoryStatConfig.mm */; };
+		235A3600001B10 /* WCMemoryStatPlugin.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A3600001380 /* WCMemoryStatPlugin.mm */; };
+		235A3600001B20 /* MatrixAppRebootAnalyzer.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000000F0 /* MatrixAppRebootAnalyzer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001B30 /* MatrixAppRebootType.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000110 /* MatrixAppRebootType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600001B40 /* MatrixIssue.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000130 /* MatrixIssue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600001B50 /* MatrixAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000160 /* MatrixAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600001B60 /* MatrixLogDef.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000180 /* MatrixLogDef.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001B70 /* Matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000190 /* Matrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600001B80 /* MatrixFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000001B0 /* MatrixFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600001B90 /* MatrixPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000001D0 /* MatrixPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600001BA0 /* MatrixPluginConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000001F0 /* MatrixPluginConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600001BB0 /* MatrixTester.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000220 /* MatrixTester.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600001BC0 /* MatrixDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000250 /* MatrixDeviceInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001BD0 /* MatrixPathUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000270 /* MatrixPathUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001BE0 /* WCCPUHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000002E0 /* WCCPUHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001BF0 /* WCFilterStackHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000300 /* WCFilterStackHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001C00 /* WCGetMainThreadUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000320 /* WCGetMainThreadUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001C10 /* WCMainThreadHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000340 /* WCMainThreadHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001C20 /* WCPowerConsumeStackCollector.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000360 /* WCPowerConsumeStackCollector.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001C30 /* WCDumpInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000390 /* WCDumpInterface.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001C40 /* WCGetCallStackReportHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000003B0 /* WCGetCallStackReportHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001C50 /* NSApplicationEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000003E0 /* NSApplicationEvent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001C60 /* WCBlockMonitorConfigHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000400 /* WCBlockMonitorConfigHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001C70 /* WCBlockMonitorConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000420 /* WCBlockMonitorConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600001C80 /* WCBlockMonitorMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000440 /* WCBlockMonitorMgr.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001C90 /* WCBlockTypeDef.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000460 /* WCBlockTypeDef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600001CA0 /* WCCrashBlockFileHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000480 /* WCCrashBlockFileHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600001CB0 /* WCDumpReportDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000004A0 /* WCDumpReportDataProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001CC0 /* WCDumpReportTaskData.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000004C0 /* WCDumpReportTaskData.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001CD0 /* WCCrashBlockJsonUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000004F0 /* WCCrashBlockJsonUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001CE0 /* WCCrashReportInfoUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000510 /* WCCrashReportInfoUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600001CF0 /* WCCrashReportInterpreter.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000530 /* WCCrashReportInterpreter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600001D00 /* WCCrashBlockMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000550 /* WCCrashBlockMonitor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001D10 /* WCCrashBlockMonitorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000570 /* WCCrashBlockMonitorDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600001D20 /* WCCrashBlockMonitorConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000580 /* WCCrashBlockMonitorConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600001D30 /* WCCrashBlockMonitorPlugin+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000005A0 /* WCCrashBlockMonitorPlugin+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001D40 /* WCCrashBlockMonitorPlugin+Upload.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000005B0 /* WCCrashBlockMonitorPlugin+Upload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600001D50 /* WCCrashBlockMonitorPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000005C0 /* WCCrashBlockMonitorPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600001D60 /* None.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000610 /* None.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001D70 /* Optional.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000620 /* Optional.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001D80 /* StringRef.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000630 /* StringRef.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001D90 /* llvm-config.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000650 /* llvm-config.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001DA0 /* AlignOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000670 /* AlignOf.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001DB0 /* Casting.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000680 /* Casting.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001DC0 /* Compiler.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000690 /* Compiler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001DD0 /* type_traits.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000006A0 /* type_traits.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001DE0 /* KSCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000006C0 /* KSCrash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001DF0 /* KSCrashC.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000006F0 /* KSCrashC.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001E00 /* KSCrashCachedData.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000710 /* KSCrashCachedData.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001E10 /* KSCrashDoctor.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000720 /* KSCrashDoctor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001E20 /* KSCrashReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000750 /* KSCrashReport.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001E30 /* KSCrashReportFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000760 /* KSCrashReportFields.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001E40 /* KSCrashReportFixer.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000780 /* KSCrashReportFixer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001E50 /* KSCrashReportStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000007A0 /* KSCrashReportStore.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001E60 /* KSCrashReportVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000007B0 /* KSCrashReportVersion.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001E70 /* KSCrashReportWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000007C0 /* KSCrashReportWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600001E80 /* KSSystemCapabilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000007D0 /* KSSystemCapabilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001E90 /* KSCrashMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000800 /* KSCrashMonitor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001EA0 /* KSCrashMonitorContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000810 /* KSCrashMonitorContext.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001EB0 /* KSCrashMonitorType.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000830 /* KSCrashMonitorType.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001EC0 /* KSCrashMonitor_AppState.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000850 /* KSCrashMonitor_AppState.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001ED0 /* KSCrashMonitor_CPPException.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000870 /* KSCrashMonitor_CPPException.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001EE0 /* KSCrashMonitor_Deadlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000880 /* KSCrashMonitor_Deadlock.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001EF0 /* KSCrashMonitor_MachException.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000008B0 /* KSCrashMonitor_MachException.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001F00 /* KSCrashMonitor_NSException.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000008C0 /* KSCrashMonitor_NSException.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001F10 /* KSCrashMonitor_Signal.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000008F0 /* KSCrashMonitor_Signal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001F20 /* KSCrashMonitor_System.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000900 /* KSCrashMonitor_System.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001F30 /* KSCrashMonitor_User.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000930 /* KSCrashMonitor_User.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001F40 /* KSCrashMonitor_Zombie.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000950 /* KSCrashMonitor_Zombie.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001F50 /* KSCrash_fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000970 /* KSCrash_fishhook.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001F60 /* KSCPU.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000009A0 /* KSCPU.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001F70 /* KSCPU_Apple.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000009B0 /* KSCPU_Apple.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001F80 /* KSDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000A10 /* KSDate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001F90 /* KSDebug.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000A30 /* KSDebug.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001FA0 /* KSDemangle_CPP.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000A50 /* KSDemangle_CPP.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001FB0 /* KSDemangle_Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000A70 /* KSDemangle_Swift.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001FC0 /* KSDynamicLinker.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000A90 /* KSDynamicLinker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001FD0 /* KSFileUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000AB0 /* KSFileUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001FE0 /* KSID.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000AD0 /* KSID.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600001FF0 /* KSJSONCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000AF0 /* KSJSONCodec.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002000 /* KSJSONCodecObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000B00 /* KSJSONCodecObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600002010 /* KSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000B30 /* KSLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002020 /* KSMach.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000B50 /* KSMach.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002030 /* KSMachineContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000B70 /* KSMachineContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600002040 /* KSMachineContext_Apple.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000B80 /* KSMachineContext_Apple.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002050 /* KSMemory.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000BA0 /* KSMemory.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002060 /* KSObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000BC0 /* KSObjC.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002070 /* KSObjCApple.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000BD0 /* KSObjCApple.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002080 /* KSSignalInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000BF0 /* KSSignalInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002090 /* KSStackCursor.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000C10 /* KSStackCursor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A36000020A0 /* KSStackCursor_Backtrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000C30 /* KSStackCursor_Backtrace.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000020B0 /* KSStackCursor_MachineContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000C50 /* KSStackCursor_MachineContext.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000020C0 /* KSStackCursor_SelfThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000C70 /* KSStackCursor_SelfThread.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000020D0 /* KSString.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000C90 /* KSString.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000020E0 /* KSSymbolicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000CB0 /* KSSymbolicator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000020F0 /* KSSysCtl.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000CD0 /* KSSysCtl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002100 /* KSThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000CF0 /* KSThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600002110 /* NSError+SimpleConstructor.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000D00 /* NSError+SimpleConstructor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002120 /* KSCrashReportFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000D40 /* KSCrashReportFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600002130 /* KSCrashReportFilterBasic.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000D50 /* KSCrashReportFilterBasic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600002140 /* KSCrashReportFilterGZip.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000D70 /* KSCrashReportFilterGZip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600002150 /* KSCrashReportFilterJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000D90 /* KSCrashReportFilterJSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600002160 /* Container+DeepSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000DC0 /* Container+DeepSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600002170 /* KSVarArgs.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000DE0 /* KSVarArgs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600002180 /* NSData+KarlGZip.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000DF0 /* NSData+KarlGZip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600002190 /* Demangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000E40 /* Demangle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000021A0 /* DemangleNodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000E50 /* DemangleNodes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000021B0 /* Fallthrough.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000E60 /* Fallthrough.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000021C0 /* LLVM.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000E70 /* LLVM.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000021D0 /* Malloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000E80 /* Malloc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000021E0 /* Punycode.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000EA0 /* Punycode.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000021F0 /* SwiftStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000EB0 /* SwiftStrings.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002200 /* logger_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000EF0 /* logger_internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002210 /* memory_logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000F10 /* memory_logging.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002220 /* memory_logging_adapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000F20 /* memory_logging_adapter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002230 /* memory_report_generator.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000F50 /* memory_report_generator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002240 /* memory_stat_err_code.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000F60 /* memory_stat_err_code.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600002250 /* allocation_event_buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000F90 /* allocation_event_buffer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002260 /* allocation_event_db.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000FB0 /* allocation_event_db.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002270 /* nsobject_hook_method.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000FC0 /* nsobject_hook_method.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002280 /* object_event_handler.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600000FF0 /* object_event_handler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002290 /* allocators.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001010 /* allocators.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000022A0 /* document.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001020 /* document.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000022B0 /* encodedstream.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001030 /* encodedstream.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000022C0 /* encodings.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001040 /* encodings.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000022D0 /* en.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001060 /* en.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000022E0 /* error.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001070 /* error.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000022F0 /* filereadstream.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001080 /* filereadstream.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002300 /* filewritestream.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001090 /* filewritestream.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002310 /* fwd.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000010A0 /* fwd.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002320 /* biginteger.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000010C0 /* biginteger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002330 /* diyfp.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000010D0 /* diyfp.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002340 /* dtoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000010E0 /* dtoa.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002350 /* ieee754.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000010F0 /* ieee754.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002360 /* itoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001100 /* itoa.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002370 /* meta.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001110 /* meta.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002380 /* pow10.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001120 /* pow10.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002390 /* regex.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001130 /* regex.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000023A0 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001140 /* stack.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000023B0 /* strfunc.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001150 /* strfunc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000023C0 /* strtod.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001160 /* strtod.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000023D0 /* swap.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001170 /* swap.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000023E0 /* istreamwrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001180 /* istreamwrapper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000023F0 /* memorybuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001190 /* memorybuffer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002400 /* memorystream.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000011A0 /* memorystream.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002410 /* ostreamwrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000011B0 /* ostreamwrapper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002420 /* pointer.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000011C0 /* pointer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002430 /* prettywriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000011D0 /* prettywriter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002440 /* rapidjson.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000011E0 /* rapidjson.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002450 /* reader.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000011F0 /* reader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002460 /* schema.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001200 /* schema.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002470 /* stream.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001210 /* stream.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002480 /* stringbuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001220 /* stringbuffer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002490 /* writer.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001230 /* writer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000024A0 /* bundle_name_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001250 /* bundle_name_helper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000024B0 /* dyld_image_info.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001280 /* dyld_image_info.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000024C0 /* stack_frames_db.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000012A0 /* stack_frames_db.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000024D0 /* sb_tree.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000012C0 /* sb_tree.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000024E0 /* splay_tree.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000012D0 /* splay_tree.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A36000024F0 /* WCMemoryRecordManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001300 /* WCMemoryRecordManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002500 /* WCMemoryStatModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001320 /* WCMemoryStatModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600002510 /* WCMemoryStatConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001340 /* WCMemoryStatConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600002520 /* WCMemoryStatPlugin+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001360 /* WCMemoryStatPlugin+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		235A3600002530 /* WCMemoryStatPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A3600001370 /* WCMemoryStatPlugin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600002540 /* MatrixBaseModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000013B0 /* MatrixBaseModel.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		235A3600002550 /* MatrixBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000013A0 /* MatrixBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600002560 /* nsobject_hook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000013E0 /* nsobject_hook.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		235A3600002570 /* nsobject_hook.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000013D0 /* nsobject_hook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A36000025C0 /* matrix-minlison-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 235A36000025B0 /* matrix-minlison-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		235A3600002600 /* matrix-minlison-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A36000025F0 /* matrix-minlison-dummy.m */; };
+		235A3600002620 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235A3600002610 /* CoreFoundation.framework */; };
+		235A3600002640 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235A3600002630 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		235A36000000F0 /* MatrixAppRebootAnalyzer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MatrixAppRebootAnalyzer.h; sourceTree = "<group>"; };
+		235A3600000100 /* MatrixAppRebootAnalyzer.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = MatrixAppRebootAnalyzer.mm; sourceTree = "<group>"; };
+		235A3600000110 /* MatrixAppRebootType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MatrixAppRebootType.h; sourceTree = "<group>"; };
+		235A3600000130 /* MatrixIssue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MatrixIssue.h; sourceTree = "<group>"; };
+		235A3600000140 /* MatrixIssue.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = MatrixIssue.mm; sourceTree = "<group>"; };
+		235A3600000160 /* MatrixAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MatrixAdapter.h; sourceTree = "<group>"; };
+		235A3600000170 /* MatrixAdapter.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = MatrixAdapter.mm; sourceTree = "<group>"; };
+		235A3600000180 /* MatrixLogDef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MatrixLogDef.h; sourceTree = "<group>"; };
+		235A3600000190 /* Matrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Matrix.h; sourceTree = "<group>"; };
+		235A36000001A0 /* Matrix.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = Matrix.mm; sourceTree = "<group>"; };
+		235A36000001B0 /* MatrixFramework.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MatrixFramework.h; sourceTree = "<group>"; };
+		235A36000001D0 /* MatrixPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MatrixPlugin.h; sourceTree = "<group>"; };
+		235A36000001E0 /* MatrixPlugin.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = MatrixPlugin.mm; sourceTree = "<group>"; };
+		235A36000001F0 /* MatrixPluginConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MatrixPluginConfig.h; sourceTree = "<group>"; };
+		235A3600000200 /* MatrixPluginConfig.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = MatrixPluginConfig.mm; sourceTree = "<group>"; };
+		235A3600000220 /* MatrixTester.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MatrixTester.h; sourceTree = "<group>"; };
+		235A3600000230 /* MatrixTester.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = MatrixTester.mm; sourceTree = "<group>"; };
+		235A3600000250 /* MatrixDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MatrixDeviceInfo.h; sourceTree = "<group>"; };
+		235A3600000260 /* MatrixDeviceInfo.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = MatrixDeviceInfo.mm; sourceTree = "<group>"; };
+		235A3600000270 /* MatrixPathUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MatrixPathUtil.h; sourceTree = "<group>"; };
+		235A3600000280 /* MatrixPathUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = MatrixPathUtil.mm; sourceTree = "<group>"; };
+		235A36000002E0 /* WCCPUHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCCPUHandler.h; sourceTree = "<group>"; };
+		235A36000002F0 /* WCCPUHandler.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCCPUHandler.mm; sourceTree = "<group>"; };
+		235A3600000300 /* WCFilterStackHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCFilterStackHandler.h; sourceTree = "<group>"; };
+		235A3600000310 /* WCFilterStackHandler.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCFilterStackHandler.mm; sourceTree = "<group>"; };
+		235A3600000320 /* WCGetMainThreadUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCGetMainThreadUtil.h; sourceTree = "<group>"; };
+		235A3600000330 /* WCGetMainThreadUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCGetMainThreadUtil.mm; sourceTree = "<group>"; };
+		235A3600000340 /* WCMainThreadHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCMainThreadHandler.h; sourceTree = "<group>"; };
+		235A3600000350 /* WCMainThreadHandler.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCMainThreadHandler.mm; sourceTree = "<group>"; };
+		235A3600000360 /* WCPowerConsumeStackCollector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCPowerConsumeStackCollector.h; sourceTree = "<group>"; };
+		235A3600000370 /* WCPowerConsumeStackCollector.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCPowerConsumeStackCollector.mm; sourceTree = "<group>"; };
+		235A3600000390 /* WCDumpInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCDumpInterface.h; sourceTree = "<group>"; };
+		235A36000003A0 /* WCDumpInterface.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCDumpInterface.mm; sourceTree = "<group>"; };
+		235A36000003B0 /* WCGetCallStackReportHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCGetCallStackReportHandler.h; sourceTree = "<group>"; };
+		235A36000003C0 /* WCGetCallStackReportHandler.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCGetCallStackReportHandler.mm; sourceTree = "<group>"; };
+		235A36000003E0 /* NSApplicationEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NSApplicationEvent.h; sourceTree = "<group>"; };
+		235A36000003F0 /* NSApplicationEvent.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = NSApplicationEvent.mm; sourceTree = "<group>"; };
+		235A3600000400 /* WCBlockMonitorConfigHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCBlockMonitorConfigHandler.h; sourceTree = "<group>"; };
+		235A3600000410 /* WCBlockMonitorConfigHandler.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCBlockMonitorConfigHandler.mm; sourceTree = "<group>"; };
+		235A3600000420 /* WCBlockMonitorConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCBlockMonitorConfiguration.h; sourceTree = "<group>"; };
+		235A3600000430 /* WCBlockMonitorConfiguration.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCBlockMonitorConfiguration.mm; sourceTree = "<group>"; };
+		235A3600000440 /* WCBlockMonitorMgr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCBlockMonitorMgr.h; sourceTree = "<group>"; };
+		235A3600000450 /* WCBlockMonitorMgr.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCBlockMonitorMgr.mm; sourceTree = "<group>"; };
+		235A3600000460 /* WCBlockTypeDef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCBlockTypeDef.h; sourceTree = "<group>"; };
+		235A3600000480 /* WCCrashBlockFileHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCCrashBlockFileHandler.h; sourceTree = "<group>"; };
+		235A3600000490 /* WCCrashBlockFileHandler.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCCrashBlockFileHandler.mm; sourceTree = "<group>"; };
+		235A36000004A0 /* WCDumpReportDataProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCDumpReportDataProvider.h; sourceTree = "<group>"; };
+		235A36000004B0 /* WCDumpReportDataProvider.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCDumpReportDataProvider.mm; sourceTree = "<group>"; };
+		235A36000004C0 /* WCDumpReportTaskData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCDumpReportTaskData.h; sourceTree = "<group>"; };
+		235A36000004D0 /* WCDumpReportTaskData.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCDumpReportTaskData.mm; sourceTree = "<group>"; };
+		235A36000004F0 /* WCCrashBlockJsonUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCCrashBlockJsonUtil.h; sourceTree = "<group>"; };
+		235A3600000500 /* WCCrashBlockJsonUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCCrashBlockJsonUtil.mm; sourceTree = "<group>"; };
+		235A3600000510 /* WCCrashReportInfoUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCCrashReportInfoUtil.h; sourceTree = "<group>"; };
+		235A3600000520 /* WCCrashReportInfoUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCCrashReportInfoUtil.mm; sourceTree = "<group>"; };
+		235A3600000530 /* WCCrashReportInterpreter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCCrashReportInterpreter.h; sourceTree = "<group>"; };
+		235A3600000540 /* WCCrashReportInterpreter.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCCrashReportInterpreter.mm; sourceTree = "<group>"; };
+		235A3600000550 /* WCCrashBlockMonitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCCrashBlockMonitor.h; sourceTree = "<group>"; };
+		235A3600000560 /* WCCrashBlockMonitor.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCCrashBlockMonitor.mm; sourceTree = "<group>"; };
+		235A3600000570 /* WCCrashBlockMonitorDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCCrashBlockMonitorDelegate.h; sourceTree = "<group>"; };
+		235A3600000580 /* WCCrashBlockMonitorConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCCrashBlockMonitorConfig.h; sourceTree = "<group>"; };
+		235A3600000590 /* WCCrashBlockMonitorConfig.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCCrashBlockMonitorConfig.mm; sourceTree = "<group>"; };
+		235A36000005A0 /* WCCrashBlockMonitorPlugin+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCCrashBlockMonitorPlugin+Private.h"; sourceTree = "<group>"; };
+		235A36000005B0 /* WCCrashBlockMonitorPlugin+Upload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCCrashBlockMonitorPlugin+Upload.h"; sourceTree = "<group>"; };
+		235A36000005C0 /* WCCrashBlockMonitorPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCCrashBlockMonitorPlugin.h; sourceTree = "<group>"; };
+		235A36000005D0 /* WCCrashBlockMonitorPlugin.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCCrashBlockMonitorPlugin.mm; sourceTree = "<group>"; };
+		235A3600000610 /* None.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = None.h; sourceTree = "<group>"; };
+		235A3600000620 /* Optional.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Optional.h; sourceTree = "<group>"; };
+		235A3600000630 /* StringRef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = StringRef.h; sourceTree = "<group>"; };
+		235A3600000650 /* llvm-config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "llvm-config.h"; sourceTree = "<group>"; };
+		235A3600000670 /* AlignOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AlignOf.h; sourceTree = "<group>"; };
+		235A3600000680 /* Casting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Casting.h; sourceTree = "<group>"; };
+		235A3600000690 /* Compiler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Compiler.h; sourceTree = "<group>"; };
+		235A36000006A0 /* type_traits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = type_traits.h; sourceTree = "<group>"; };
+		235A36000006C0 /* KSCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrash.h; sourceTree = "<group>"; };
+		235A36000006D0 /* KSCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KSCrash.m; sourceTree = "<group>"; };
+		235A36000006E0 /* KSCrashC.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCrashC.c; sourceTree = "<group>"; };
+		235A36000006F0 /* KSCrashC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashC.h; sourceTree = "<group>"; };
+		235A3600000700 /* KSCrashCachedData.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCrashCachedData.c; sourceTree = "<group>"; };
+		235A3600000710 /* KSCrashCachedData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashCachedData.h; sourceTree = "<group>"; };
+		235A3600000720 /* KSCrashDoctor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashDoctor.h; sourceTree = "<group>"; };
+		235A3600000730 /* KSCrashDoctor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KSCrashDoctor.m; sourceTree = "<group>"; };
+		235A3600000740 /* KSCrashReport.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCrashReport.c; sourceTree = "<group>"; };
+		235A3600000750 /* KSCrashReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashReport.h; sourceTree = "<group>"; };
+		235A3600000760 /* KSCrashReportFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashReportFields.h; sourceTree = "<group>"; };
+		235A3600000770 /* KSCrashReportFixer.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCrashReportFixer.c; sourceTree = "<group>"; };
+		235A3600000780 /* KSCrashReportFixer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashReportFixer.h; sourceTree = "<group>"; };
+		235A3600000790 /* KSCrashReportStore.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCrashReportStore.c; sourceTree = "<group>"; };
+		235A36000007A0 /* KSCrashReportStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashReportStore.h; sourceTree = "<group>"; };
+		235A36000007B0 /* KSCrashReportVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashReportVersion.h; sourceTree = "<group>"; };
+		235A36000007C0 /* KSCrashReportWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashReportWriter.h; sourceTree = "<group>"; };
+		235A36000007D0 /* KSSystemCapabilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSSystemCapabilities.h; sourceTree = "<group>"; };
+		235A36000007F0 /* KSCrashMonitor.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCrashMonitor.c; sourceTree = "<group>"; };
+		235A3600000800 /* KSCrashMonitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashMonitor.h; sourceTree = "<group>"; };
+		235A3600000810 /* KSCrashMonitorContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashMonitorContext.h; sourceTree = "<group>"; };
+		235A3600000820 /* KSCrashMonitorType.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCrashMonitorType.c; sourceTree = "<group>"; };
+		235A3600000830 /* KSCrashMonitorType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashMonitorType.h; sourceTree = "<group>"; };
+		235A3600000840 /* KSCrashMonitor_AppState.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCrashMonitor_AppState.c; sourceTree = "<group>"; };
+		235A3600000850 /* KSCrashMonitor_AppState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashMonitor_AppState.h; sourceTree = "<group>"; };
+		235A3600000860 /* KSCrashMonitor_CPPException.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCrashMonitor_CPPException.cpp; sourceTree = "<group>"; };
+		235A3600000870 /* KSCrashMonitor_CPPException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashMonitor_CPPException.h; sourceTree = "<group>"; };
+		235A3600000880 /* KSCrashMonitor_Deadlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashMonitor_Deadlock.h; sourceTree = "<group>"; };
+		235A3600000890 /* KSCrashMonitor_Deadlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KSCrashMonitor_Deadlock.m; sourceTree = "<group>"; };
+		235A36000008A0 /* KSCrashMonitor_MachException.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCrashMonitor_MachException.c; sourceTree = "<group>"; };
+		235A36000008B0 /* KSCrashMonitor_MachException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashMonitor_MachException.h; sourceTree = "<group>"; };
+		235A36000008C0 /* KSCrashMonitor_NSException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashMonitor_NSException.h; sourceTree = "<group>"; };
+		235A36000008D0 /* KSCrashMonitor_NSException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KSCrashMonitor_NSException.m; sourceTree = "<group>"; };
+		235A36000008E0 /* KSCrashMonitor_Signal.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCrashMonitor_Signal.c; sourceTree = "<group>"; };
+		235A36000008F0 /* KSCrashMonitor_Signal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashMonitor_Signal.h; sourceTree = "<group>"; };
+		235A3600000900 /* KSCrashMonitor_System.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashMonitor_System.h; sourceTree = "<group>"; };
+		235A3600000910 /* KSCrashMonitor_System.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KSCrashMonitor_System.m; sourceTree = "<group>"; };
+		235A3600000920 /* KSCrashMonitor_User.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCrashMonitor_User.c; sourceTree = "<group>"; };
+		235A3600000930 /* KSCrashMonitor_User.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashMonitor_User.h; sourceTree = "<group>"; };
+		235A3600000940 /* KSCrashMonitor_Zombie.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCrashMonitor_Zombie.c; sourceTree = "<group>"; };
+		235A3600000950 /* KSCrashMonitor_Zombie.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashMonitor_Zombie.h; sourceTree = "<group>"; };
+		235A3600000960 /* KSCrash_fishhook.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCrash_fishhook.c; sourceTree = "<group>"; };
+		235A3600000970 /* KSCrash_fishhook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrash_fishhook.h; sourceTree = "<group>"; };
+		235A3600000990 /* KSCPU.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCPU.c; sourceTree = "<group>"; };
+		235A36000009A0 /* KSCPU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCPU.h; sourceTree = "<group>"; };
+		235A36000009B0 /* KSCPU_Apple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCPU_Apple.h; sourceTree = "<group>"; };
+		235A36000009C0 /* KSCPU_arm.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCPU_arm.c; sourceTree = "<group>"; };
+		235A36000009D0 /* KSCPU_arm64.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCPU_arm64.c; sourceTree = "<group>"; };
+		235A36000009E0 /* KSCPU_x86_32.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCPU_x86_32.c; sourceTree = "<group>"; };
+		235A36000009F0 /* KSCPU_x86_64.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSCPU_x86_64.c; sourceTree = "<group>"; };
+		235A3600000A00 /* KSDate.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSDate.c; sourceTree = "<group>"; };
+		235A3600000A10 /* KSDate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSDate.h; sourceTree = "<group>"; };
+		235A3600000A20 /* KSDebug.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSDebug.c; sourceTree = "<group>"; };
+		235A3600000A30 /* KSDebug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSDebug.h; sourceTree = "<group>"; };
+		235A3600000A40 /* KSDemangle_CPP.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = KSDemangle_CPP.cpp; sourceTree = "<group>"; };
+		235A3600000A50 /* KSDemangle_CPP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSDemangle_CPP.h; sourceTree = "<group>"; };
+		235A3600000A60 /* KSDemangle_Swift.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = KSDemangle_Swift.cpp; sourceTree = "<group>"; };
+		235A3600000A70 /* KSDemangle_Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSDemangle_Swift.h; sourceTree = "<group>"; };
+		235A3600000A80 /* KSDynamicLinker.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSDynamicLinker.c; sourceTree = "<group>"; };
+		235A3600000A90 /* KSDynamicLinker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSDynamicLinker.h; sourceTree = "<group>"; };
+		235A3600000AA0 /* KSFileUtils.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSFileUtils.c; sourceTree = "<group>"; };
+		235A3600000AB0 /* KSFileUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSFileUtils.h; sourceTree = "<group>"; };
+		235A3600000AC0 /* KSID.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSID.c; sourceTree = "<group>"; };
+		235A3600000AD0 /* KSID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSID.h; sourceTree = "<group>"; };
+		235A3600000AE0 /* KSJSONCodec.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSJSONCodec.c; sourceTree = "<group>"; };
+		235A3600000AF0 /* KSJSONCodec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSJSONCodec.h; sourceTree = "<group>"; };
+		235A3600000B00 /* KSJSONCodecObjC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSJSONCodecObjC.h; sourceTree = "<group>"; };
+		235A3600000B10 /* KSJSONCodecObjC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KSJSONCodecObjC.m; sourceTree = "<group>"; };
+		235A3600000B20 /* KSLogger.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSLogger.c; sourceTree = "<group>"; };
+		235A3600000B30 /* KSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSLogger.h; sourceTree = "<group>"; };
+		235A3600000B40 /* KSMach.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSMach.c; sourceTree = "<group>"; };
+		235A3600000B50 /* KSMach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSMach.h; sourceTree = "<group>"; };
+		235A3600000B60 /* KSMachineContext.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSMachineContext.c; sourceTree = "<group>"; };
+		235A3600000B70 /* KSMachineContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSMachineContext.h; sourceTree = "<group>"; };
+		235A3600000B80 /* KSMachineContext_Apple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSMachineContext_Apple.h; sourceTree = "<group>"; };
+		235A3600000B90 /* KSMemory.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSMemory.c; sourceTree = "<group>"; };
+		235A3600000BA0 /* KSMemory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSMemory.h; sourceTree = "<group>"; };
+		235A3600000BB0 /* KSObjC.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSObjC.c; sourceTree = "<group>"; };
+		235A3600000BC0 /* KSObjC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSObjC.h; sourceTree = "<group>"; };
+		235A3600000BD0 /* KSObjCApple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSObjCApple.h; sourceTree = "<group>"; };
+		235A3600000BE0 /* KSSignalInfo.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSSignalInfo.c; sourceTree = "<group>"; };
+		235A3600000BF0 /* KSSignalInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSSignalInfo.h; sourceTree = "<group>"; };
+		235A3600000C00 /* KSStackCursor.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSStackCursor.c; sourceTree = "<group>"; };
+		235A3600000C10 /* KSStackCursor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSStackCursor.h; sourceTree = "<group>"; };
+		235A3600000C20 /* KSStackCursor_Backtrace.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSStackCursor_Backtrace.c; sourceTree = "<group>"; };
+		235A3600000C30 /* KSStackCursor_Backtrace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSStackCursor_Backtrace.h; sourceTree = "<group>"; };
+		235A3600000C40 /* KSStackCursor_MachineContext.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSStackCursor_MachineContext.c; sourceTree = "<group>"; };
+		235A3600000C50 /* KSStackCursor_MachineContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSStackCursor_MachineContext.h; sourceTree = "<group>"; };
+		235A3600000C60 /* KSStackCursor_SelfThread.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSStackCursor_SelfThread.c; sourceTree = "<group>"; };
+		235A3600000C70 /* KSStackCursor_SelfThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSStackCursor_SelfThread.h; sourceTree = "<group>"; };
+		235A3600000C80 /* KSString.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSString.c; sourceTree = "<group>"; };
+		235A3600000C90 /* KSString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSString.h; sourceTree = "<group>"; };
+		235A3600000CA0 /* KSSymbolicator.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSSymbolicator.c; sourceTree = "<group>"; };
+		235A3600000CB0 /* KSSymbolicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSSymbolicator.h; sourceTree = "<group>"; };
+		235A3600000CC0 /* KSSysCtl.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSSysCtl.c; sourceTree = "<group>"; };
+		235A3600000CD0 /* KSSysCtl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSSysCtl.h; sourceTree = "<group>"; };
+		235A3600000CE0 /* KSThread.c */ = {isa = PBXFileReference; includeInIndex = 1; path = KSThread.c; sourceTree = "<group>"; };
+		235A3600000CF0 /* KSThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSThread.h; sourceTree = "<group>"; };
+		235A3600000D00 /* NSError+SimpleConstructor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSError+SimpleConstructor.h"; sourceTree = "<group>"; };
+		235A3600000D10 /* NSError+SimpleConstructor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSError+SimpleConstructor.m"; sourceTree = "<group>"; };
+		235A3600000D40 /* KSCrashReportFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashReportFilter.h; sourceTree = "<group>"; };
+		235A3600000D50 /* KSCrashReportFilterBasic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashReportFilterBasic.h; sourceTree = "<group>"; };
+		235A3600000D60 /* KSCrashReportFilterBasic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KSCrashReportFilterBasic.m; sourceTree = "<group>"; };
+		235A3600000D70 /* KSCrashReportFilterGZip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashReportFilterGZip.h; sourceTree = "<group>"; };
+		235A3600000D80 /* KSCrashReportFilterGZip.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KSCrashReportFilterGZip.m; sourceTree = "<group>"; };
+		235A3600000D90 /* KSCrashReportFilterJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashReportFilterJSON.h; sourceTree = "<group>"; };
+		235A3600000DA0 /* KSCrashReportFilterJSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KSCrashReportFilterJSON.m; sourceTree = "<group>"; };
+		235A3600000DC0 /* Container+DeepSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Container+DeepSearch.h"; sourceTree = "<group>"; };
+		235A3600000DD0 /* Container+DeepSearch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Container+DeepSearch.m"; sourceTree = "<group>"; };
+		235A3600000DE0 /* KSVarArgs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSVarArgs.h; sourceTree = "<group>"; };
+		235A3600000DF0 /* NSData+KarlGZip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+KarlGZip.h"; sourceTree = "<group>"; };
+		235A3600000E00 /* NSData+KarlGZip.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+KarlGZip.m"; sourceTree = "<group>"; };
+		235A3600000E30 /* Demangle.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = Demangle.cpp; sourceTree = "<group>"; };
+		235A3600000E40 /* Demangle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Demangle.h; sourceTree = "<group>"; };
+		235A3600000E50 /* DemangleNodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DemangleNodes.h; sourceTree = "<group>"; };
+		235A3600000E60 /* Fallthrough.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Fallthrough.h; sourceTree = "<group>"; };
+		235A3600000E70 /* LLVM.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LLVM.h; sourceTree = "<group>"; };
+		235A3600000E80 /* Malloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Malloc.h; sourceTree = "<group>"; };
+		235A3600000E90 /* Punycode.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = Punycode.cpp; sourceTree = "<group>"; };
+		235A3600000EA0 /* Punycode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Punycode.h; sourceTree = "<group>"; };
+		235A3600000EB0 /* SwiftStrings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwiftStrings.h; sourceTree = "<group>"; };
+		235A3600000EE0 /* logger_internal.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = logger_internal.cpp; sourceTree = "<group>"; };
+		235A3600000EF0 /* logger_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = logger_internal.h; sourceTree = "<group>"; };
+		235A3600000F00 /* memory_logging.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = memory_logging.cpp; sourceTree = "<group>"; };
+		235A3600000F10 /* memory_logging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = memory_logging.h; sourceTree = "<group>"; };
+		235A3600000F20 /* memory_logging_adapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = memory_logging_adapter.h; sourceTree = "<group>"; };
+		235A3600000F30 /* memory_logging_adapter.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = memory_logging_adapter.mm; sourceTree = "<group>"; };
+		235A3600000F40 /* memory_report_generator.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = memory_report_generator.cpp; sourceTree = "<group>"; };
+		235A3600000F50 /* memory_report_generator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = memory_report_generator.h; sourceTree = "<group>"; };
+		235A3600000F60 /* memory_stat_err_code.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = memory_stat_err_code.h; sourceTree = "<group>"; };
+		235A3600000F80 /* allocation_event_buffer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = allocation_event_buffer.cpp; sourceTree = "<group>"; };
+		235A3600000F90 /* allocation_event_buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = allocation_event_buffer.h; sourceTree = "<group>"; };
+		235A3600000FA0 /* allocation_event_db.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = allocation_event_db.cpp; sourceTree = "<group>"; };
+		235A3600000FB0 /* allocation_event_db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = allocation_event_db.h; sourceTree = "<group>"; };
+		235A3600000FC0 /* nsobject_hook_method.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = nsobject_hook_method.h; sourceTree = "<group>"; };
+		235A3600000FD0 /* nsobject_hook_method.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = nsobject_hook_method.mm; sourceTree = "<group>"; };
+		235A3600000FE0 /* object_event_handler.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = object_event_handler.cpp; sourceTree = "<group>"; };
+		235A3600000FF0 /* object_event_handler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = object_event_handler.h; sourceTree = "<group>"; };
+		235A3600001010 /* allocators.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = allocators.h; sourceTree = "<group>"; };
+		235A3600001020 /* document.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = document.h; sourceTree = "<group>"; };
+		235A3600001030 /* encodedstream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = encodedstream.h; sourceTree = "<group>"; };
+		235A3600001040 /* encodings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = encodings.h; sourceTree = "<group>"; };
+		235A3600001060 /* en.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = en.h; sourceTree = "<group>"; };
+		235A3600001070 /* error.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
+		235A3600001080 /* filereadstream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = filereadstream.h; sourceTree = "<group>"; };
+		235A3600001090 /* filewritestream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = filewritestream.h; sourceTree = "<group>"; };
+		235A36000010A0 /* fwd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = fwd.h; sourceTree = "<group>"; };
+		235A36000010C0 /* biginteger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = biginteger.h; sourceTree = "<group>"; };
+		235A36000010D0 /* diyfp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = diyfp.h; sourceTree = "<group>"; };
+		235A36000010E0 /* dtoa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dtoa.h; sourceTree = "<group>"; };
+		235A36000010F0 /* ieee754.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ieee754.h; sourceTree = "<group>"; };
+		235A3600001100 /* itoa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = itoa.h; sourceTree = "<group>"; };
+		235A3600001110 /* meta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = meta.h; sourceTree = "<group>"; };
+		235A3600001120 /* pow10.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pow10.h; sourceTree = "<group>"; };
+		235A3600001130 /* regex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = regex.h; sourceTree = "<group>"; };
+		235A3600001140 /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		235A3600001150 /* strfunc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = strfunc.h; sourceTree = "<group>"; };
+		235A3600001160 /* strtod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = strtod.h; sourceTree = "<group>"; };
+		235A3600001170 /* swap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = swap.h; sourceTree = "<group>"; };
+		235A3600001180 /* istreamwrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = istreamwrapper.h; sourceTree = "<group>"; };
+		235A3600001190 /* memorybuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = memorybuffer.h; sourceTree = "<group>"; };
+		235A36000011A0 /* memorystream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = memorystream.h; sourceTree = "<group>"; };
+		235A36000011B0 /* ostreamwrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ostreamwrapper.h; sourceTree = "<group>"; };
+		235A36000011C0 /* pointer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pointer.h; sourceTree = "<group>"; };
+		235A36000011D0 /* prettywriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = prettywriter.h; sourceTree = "<group>"; };
+		235A36000011E0 /* rapidjson.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = rapidjson.h; sourceTree = "<group>"; };
+		235A36000011F0 /* reader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		235A3600001200 /* schema.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = schema.h; sourceTree = "<group>"; };
+		235A3600001210 /* stream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = stream.h; sourceTree = "<group>"; };
+		235A3600001220 /* stringbuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = stringbuffer.h; sourceTree = "<group>"; };
+		235A3600001230 /* writer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		235A3600001250 /* bundle_name_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = bundle_name_helper.h; sourceTree = "<group>"; };
+		235A3600001260 /* bundle_name_helper.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = bundle_name_helper.mm; sourceTree = "<group>"; };
+		235A3600001270 /* dyld_image_info.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = dyld_image_info.cpp; sourceTree = "<group>"; };
+		235A3600001280 /* dyld_image_info.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dyld_image_info.h; sourceTree = "<group>"; };
+		235A3600001290 /* stack_frames_db.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = stack_frames_db.cpp; sourceTree = "<group>"; };
+		235A36000012A0 /* stack_frames_db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = stack_frames_db.h; sourceTree = "<group>"; };
+		235A36000012C0 /* sb_tree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sb_tree.h; sourceTree = "<group>"; };
+		235A36000012D0 /* splay_tree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = splay_tree.h; sourceTree = "<group>"; };
+		235A3600001300 /* WCMemoryRecordManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCMemoryRecordManager.h; sourceTree = "<group>"; };
+		235A3600001310 /* WCMemoryRecordManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCMemoryRecordManager.mm; sourceTree = "<group>"; };
+		235A3600001320 /* WCMemoryStatModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCMemoryStatModel.h; sourceTree = "<group>"; };
+		235A3600001330 /* WCMemoryStatModel.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCMemoryStatModel.mm; sourceTree = "<group>"; };
+		235A3600001340 /* WCMemoryStatConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCMemoryStatConfig.h; sourceTree = "<group>"; };
+		235A3600001350 /* WCMemoryStatConfig.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCMemoryStatConfig.mm; sourceTree = "<group>"; };
+		235A3600001360 /* WCMemoryStatPlugin+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCMemoryStatPlugin+Private.h"; sourceTree = "<group>"; };
+		235A3600001370 /* WCMemoryStatPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCMemoryStatPlugin.h; sourceTree = "<group>"; };
+		235A3600001380 /* WCMemoryStatPlugin.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = WCMemoryStatPlugin.mm; sourceTree = "<group>"; };
+		235A36000013A0 /* MatrixBaseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MatrixBaseModel.h; path = "matrix/matrix-apple/Matrix/Matrix/Util/MatrixBaseModel.h"; sourceTree = "<group>"; };
+		235A36000013B0 /* MatrixBaseModel.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = MatrixBaseModel.mm; path = "matrix/matrix-apple/Matrix/Matrix/Util/MatrixBaseModel.mm"; sourceTree = "<group>"; };
+		235A36000013D0 /* nsobject_hook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = nsobject_hook.h; path = "matrix/matrix-apple/Matrix/WCMemoryStat/MemoryLogger/ObjectEvent/nsobject_hook.h"; sourceTree = "<group>"; };
+		235A36000013E0 /* nsobject_hook.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = nsobject_hook.mm; path = "matrix/matrix-apple/Matrix/WCMemoryStat/MemoryLogger/ObjectEvent/nsobject_hook.mm"; sourceTree = "<group>"; };
+		235A3600001400 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		235A3600001410 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		235A3600001420 /* matrix-minlison.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "matrix-minlison.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		235A36000014D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		235A3600002590 /* matrix-minlison.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "matrix-minlison.xcconfig"; sourceTree = "<group>"; };
+		235A36000025A0 /* matrix-minlison.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "matrix-minlison.modulemap"; sourceTree = "<group>"; };
+		235A36000025B0 /* matrix-minlison-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "matrix-minlison-umbrella.h"; sourceTree = "<group>"; };
+		235A36000025D0 /* matrix-minlison-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "matrix-minlison-Info.plist"; sourceTree = "<group>"; };
+		235A36000025E0 /* matrix-minlison-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "matrix-minlison-prefix.pch"; sourceTree = "<group>"; };
+		235A36000025F0 /* matrix-minlison-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "matrix-minlison-dummy.m"; sourceTree = "<group>"; };
+		235A3600002610 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		235A3600002630 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E1D125772164B279FCDBC0980D4E2684 /* Matrix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Matrix.framework; path = "matrix-minlison.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		235A36000014A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235A3600002620 /* CoreFoundation.framework in Frameworks */,
+				235A36000014E0 /* Foundation.framework in Frameworks */,
+				235A3600002640 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		235A3600000010 = {
+			isa = PBXGroup;
+			children = (
+				235A3600000060 /* Frameworks */,
+				235A36000000B0 /* matrix-minlison */,
+				235A3600000020 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		235A3600000020 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1D125772164B279FCDBC0980D4E2684 /* Matrix.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		235A3600000060 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				235A36000014C0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		235A36000000B0 /* matrix-minlison */ = {
+			isa = PBXGroup;
+			children = (
+				235A36000000C0 /* matrixARC */,
+				235A3600001390 /* matrixNonARC1 */,
+				235A36000013C0 /* matrixNonARC2 */,
+				235A36000013F0 /* Pod */,
+				235A3600002580 /* Support Files */,
+			);
+			name = "matrix-minlison";
+			path = "../../../matrix-minlison";
+			sourceTree = "<group>";
+		};
+		235A36000000C0 /* matrixARC */ = {
+			isa = PBXGroup;
+			children = (
+				235A36000000D0 /* Matrix */,
+				235A3600000290 /* WCCrashBlockMonitor */,
+				235A3600000EC0 /* WCMemoryStat */,
+			);
+			name = matrixARC;
+			sourceTree = "<group>";
+		};
+		235A36000000D0 /* Matrix */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000190 /* Matrix.h */,
+				235A36000001A0 /* Matrix.mm */,
+				235A36000001B0 /* MatrixFramework.h */,
+				235A36000000E0 /* AppReboot */,
+				235A3600000120 /* Issue */,
+				235A3600000150 /* Log */,
+				235A36000001C0 /* Plugin */,
+				235A3600000210 /* Test */,
+				235A3600000240 /* Util */,
+			);
+			name = Matrix;
+			path = "matrix/matrix-apple/Matrix/Matrix";
+			sourceTree = "<group>";
+		};
+		235A36000000E0 /* AppReboot */ = {
+			isa = PBXGroup;
+			children = (
+				235A36000000F0 /* MatrixAppRebootAnalyzer.h */,
+				235A3600000100 /* MatrixAppRebootAnalyzer.mm */,
+				235A3600000110 /* MatrixAppRebootType.h */,
+			);
+			name = AppReboot;
+			path = AppReboot;
+			sourceTree = "<group>";
+		};
+		235A3600000120 /* Issue */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000130 /* MatrixIssue.h */,
+				235A3600000140 /* MatrixIssue.mm */,
+			);
+			name = Issue;
+			path = Issue;
+			sourceTree = "<group>";
+		};
+		235A3600000150 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000160 /* MatrixAdapter.h */,
+				235A3600000170 /* MatrixAdapter.mm */,
+				235A3600000180 /* MatrixLogDef.h */,
+			);
+			name = Log;
+			path = Log;
+			sourceTree = "<group>";
+		};
+		235A36000001C0 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				235A36000001D0 /* MatrixPlugin.h */,
+				235A36000001E0 /* MatrixPlugin.mm */,
+				235A36000001F0 /* MatrixPluginConfig.h */,
+				235A3600000200 /* MatrixPluginConfig.mm */,
+			);
+			name = Plugin;
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		235A3600000210 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000220 /* MatrixTester.h */,
+				235A3600000230 /* MatrixTester.mm */,
+			);
+			name = Test;
+			path = Test;
+			sourceTree = "<group>";
+		};
+		235A3600000240 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000250 /* MatrixDeviceInfo.h */,
+				235A3600000260 /* MatrixDeviceInfo.mm */,
+				235A3600000270 /* MatrixPathUtil.h */,
+				235A3600000280 /* MatrixPathUtil.mm */,
+			);
+			name = Util;
+			path = Util;
+			sourceTree = "<group>";
+		};
+		235A3600000290 /* WCCrashBlockMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				235A36000002A0 /* CrashBlockPlugin */,
+				235A36000005E0 /* KSCrash */,
+			);
+			name = WCCrashBlockMonitor;
+			path = "matrix/matrix-apple/Matrix/WCCrashBlockMonitor";
+			sourceTree = "<group>";
+		};
+		235A36000002A0 /* CrashBlockPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000580 /* WCCrashBlockMonitorConfig.h */,
+				235A3600000590 /* WCCrashBlockMonitorConfig.mm */,
+				235A36000005C0 /* WCCrashBlockMonitorPlugin.h */,
+				235A36000005D0 /* WCCrashBlockMonitorPlugin.mm */,
+				235A36000005A0 /* WCCrashBlockMonitorPlugin+Private.h */,
+				235A36000005B0 /* WCCrashBlockMonitorPlugin+Upload.h */,
+				235A36000002B0 /* Main */,
+			);
+			name = CrashBlockPlugin;
+			path = CrashBlockPlugin;
+			sourceTree = "<group>";
+		};
+		235A36000002B0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000550 /* WCCrashBlockMonitor.h */,
+				235A3600000560 /* WCCrashBlockMonitor.mm */,
+				235A3600000570 /* WCCrashBlockMonitorDelegate.h */,
+				235A36000002C0 /* BlockMonitor */,
+				235A3600000470 /* File */,
+				235A36000004E0 /* Utility */,
+			);
+			name = Main;
+			path = Main;
+			sourceTree = "<group>";
+		};
+		235A36000002C0 /* BlockMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000400 /* WCBlockMonitorConfigHandler.h */,
+				235A3600000410 /* WCBlockMonitorConfigHandler.mm */,
+				235A3600000420 /* WCBlockMonitorConfiguration.h */,
+				235A3600000430 /* WCBlockMonitorConfiguration.mm */,
+				235A3600000440 /* WCBlockMonitorMgr.h */,
+				235A3600000450 /* WCBlockMonitorMgr.mm */,
+				235A3600000460 /* WCBlockTypeDef.h */,
+				235A36000002D0 /* Handler */,
+				235A3600000380 /* Report */,
+				235A36000003D0 /* SendEvent */,
+			);
+			name = BlockMonitor;
+			path = BlockMonitor;
+			sourceTree = "<group>";
+		};
+		235A36000002D0 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				235A36000002E0 /* WCCPUHandler.h */,
+				235A36000002F0 /* WCCPUHandler.mm */,
+				235A3600000300 /* WCFilterStackHandler.h */,
+				235A3600000310 /* WCFilterStackHandler.mm */,
+				235A3600000320 /* WCGetMainThreadUtil.h */,
+				235A3600000330 /* WCGetMainThreadUtil.mm */,
+				235A3600000340 /* WCMainThreadHandler.h */,
+				235A3600000350 /* WCMainThreadHandler.mm */,
+				235A3600000360 /* WCPowerConsumeStackCollector.h */,
+				235A3600000370 /* WCPowerConsumeStackCollector.mm */,
+			);
+			name = Handler;
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		235A3600000380 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000390 /* WCDumpInterface.h */,
+				235A36000003A0 /* WCDumpInterface.mm */,
+				235A36000003B0 /* WCGetCallStackReportHandler.h */,
+				235A36000003C0 /* WCGetCallStackReportHandler.mm */,
+			);
+			name = Report;
+			path = Report;
+			sourceTree = "<group>";
+		};
+		235A36000003D0 /* SendEvent */ = {
+			isa = PBXGroup;
+			children = (
+				235A36000003E0 /* NSApplicationEvent.h */,
+				235A36000003F0 /* NSApplicationEvent.mm */,
+			);
+			name = SendEvent;
+			path = SendEvent;
+			sourceTree = "<group>";
+		};
+		235A3600000470 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000480 /* WCCrashBlockFileHandler.h */,
+				235A3600000490 /* WCCrashBlockFileHandler.mm */,
+				235A36000004A0 /* WCDumpReportDataProvider.h */,
+				235A36000004B0 /* WCDumpReportDataProvider.mm */,
+				235A36000004C0 /* WCDumpReportTaskData.h */,
+				235A36000004D0 /* WCDumpReportTaskData.mm */,
+			);
+			name = File;
+			path = File;
+			sourceTree = "<group>";
+		};
+		235A36000004E0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				235A36000004F0 /* WCCrashBlockJsonUtil.h */,
+				235A3600000500 /* WCCrashBlockJsonUtil.mm */,
+				235A3600000510 /* WCCrashReportInfoUtil.h */,
+				235A3600000520 /* WCCrashReportInfoUtil.mm */,
+				235A3600000530 /* WCCrashReportInterpreter.h */,
+				235A3600000540 /* WCCrashReportInterpreter.mm */,
+			);
+			name = Utility;
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		235A36000005E0 /* KSCrash */ = {
+			isa = PBXGroup;
+			children = (
+				235A36000005F0 /* llvm */,
+				235A36000006B0 /* Recording */,
+				235A3600000D20 /* Reporting */,
+				235A3600000E10 /* swift */,
+			);
+			name = KSCrash;
+			path = KSCrash;
+			sourceTree = "<group>";
+		};
+		235A36000005F0 /* llvm */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000600 /* ADT */,
+				235A3600000640 /* Config */,
+				235A3600000660 /* Support */,
+			);
+			name = llvm;
+			path = llvm;
+			sourceTree = "<group>";
+		};
+		235A3600000600 /* ADT */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000610 /* None.h */,
+				235A3600000620 /* Optional.h */,
+				235A3600000630 /* StringRef.h */,
+			);
+			name = ADT;
+			path = ADT;
+			sourceTree = "<group>";
+		};
+		235A3600000640 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000650 /* llvm-config.h */,
+			);
+			name = Config;
+			path = Config;
+			sourceTree = "<group>";
+		};
+		235A3600000660 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000670 /* AlignOf.h */,
+				235A3600000680 /* Casting.h */,
+				235A3600000690 /* Compiler.h */,
+				235A36000006A0 /* type_traits.h */,
+			);
+			name = Support;
+			path = Support;
+			sourceTree = "<group>";
+		};
+		235A36000006B0 /* Recording */ = {
+			isa = PBXGroup;
+			children = (
+				235A36000006C0 /* KSCrash.h */,
+				235A36000006D0 /* KSCrash.m */,
+				235A36000006E0 /* KSCrashC.c */,
+				235A36000006F0 /* KSCrashC.h */,
+				235A3600000700 /* KSCrashCachedData.c */,
+				235A3600000710 /* KSCrashCachedData.h */,
+				235A3600000720 /* KSCrashDoctor.h */,
+				235A3600000730 /* KSCrashDoctor.m */,
+				235A3600000740 /* KSCrashReport.c */,
+				235A3600000750 /* KSCrashReport.h */,
+				235A3600000760 /* KSCrashReportFields.h */,
+				235A3600000770 /* KSCrashReportFixer.c */,
+				235A3600000780 /* KSCrashReportFixer.h */,
+				235A3600000790 /* KSCrashReportStore.c */,
+				235A36000007A0 /* KSCrashReportStore.h */,
+				235A36000007B0 /* KSCrashReportVersion.h */,
+				235A36000007C0 /* KSCrashReportWriter.h */,
+				235A36000007D0 /* KSSystemCapabilities.h */,
+				235A36000007E0 /* Monitors */,
+				235A3600000980 /* Tools */,
+			);
+			name = Recording;
+			path = Recording;
+			sourceTree = "<group>";
+		};
+		235A36000007E0 /* Monitors */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000960 /* KSCrash_fishhook.c */,
+				235A3600000970 /* KSCrash_fishhook.h */,
+				235A36000007F0 /* KSCrashMonitor.c */,
+				235A3600000800 /* KSCrashMonitor.h */,
+				235A3600000840 /* KSCrashMonitor_AppState.c */,
+				235A3600000850 /* KSCrashMonitor_AppState.h */,
+				235A3600000860 /* KSCrashMonitor_CPPException.cpp */,
+				235A3600000870 /* KSCrashMonitor_CPPException.h */,
+				235A3600000880 /* KSCrashMonitor_Deadlock.h */,
+				235A3600000890 /* KSCrashMonitor_Deadlock.m */,
+				235A36000008A0 /* KSCrashMonitor_MachException.c */,
+				235A36000008B0 /* KSCrashMonitor_MachException.h */,
+				235A36000008C0 /* KSCrashMonitor_NSException.h */,
+				235A36000008D0 /* KSCrashMonitor_NSException.m */,
+				235A36000008E0 /* KSCrashMonitor_Signal.c */,
+				235A36000008F0 /* KSCrashMonitor_Signal.h */,
+				235A3600000900 /* KSCrashMonitor_System.h */,
+				235A3600000910 /* KSCrashMonitor_System.m */,
+				235A3600000920 /* KSCrashMonitor_User.c */,
+				235A3600000930 /* KSCrashMonitor_User.h */,
+				235A3600000940 /* KSCrashMonitor_Zombie.c */,
+				235A3600000950 /* KSCrashMonitor_Zombie.h */,
+				235A3600000810 /* KSCrashMonitorContext.h */,
+				235A3600000820 /* KSCrashMonitorType.c */,
+				235A3600000830 /* KSCrashMonitorType.h */,
+			);
+			name = Monitors;
+			path = Monitors;
+			sourceTree = "<group>";
+		};
+		235A3600000980 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000990 /* KSCPU.c */,
+				235A36000009A0 /* KSCPU.h */,
+				235A36000009B0 /* KSCPU_Apple.h */,
+				235A36000009C0 /* KSCPU_arm.c */,
+				235A36000009D0 /* KSCPU_arm64.c */,
+				235A36000009E0 /* KSCPU_x86_32.c */,
+				235A36000009F0 /* KSCPU_x86_64.c */,
+				235A3600000A00 /* KSDate.c */,
+				235A3600000A10 /* KSDate.h */,
+				235A3600000A20 /* KSDebug.c */,
+				235A3600000A30 /* KSDebug.h */,
+				235A3600000A40 /* KSDemangle_CPP.cpp */,
+				235A3600000A50 /* KSDemangle_CPP.h */,
+				235A3600000A60 /* KSDemangle_Swift.cpp */,
+				235A3600000A70 /* KSDemangle_Swift.h */,
+				235A3600000A80 /* KSDynamicLinker.c */,
+				235A3600000A90 /* KSDynamicLinker.h */,
+				235A3600000AA0 /* KSFileUtils.c */,
+				235A3600000AB0 /* KSFileUtils.h */,
+				235A3600000AC0 /* KSID.c */,
+				235A3600000AD0 /* KSID.h */,
+				235A3600000AE0 /* KSJSONCodec.c */,
+				235A3600000AF0 /* KSJSONCodec.h */,
+				235A3600000B00 /* KSJSONCodecObjC.h */,
+				235A3600000B10 /* KSJSONCodecObjC.m */,
+				235A3600000B20 /* KSLogger.c */,
+				235A3600000B30 /* KSLogger.h */,
+				235A3600000B40 /* KSMach.c */,
+				235A3600000B50 /* KSMach.h */,
+				235A3600000B60 /* KSMachineContext.c */,
+				235A3600000B70 /* KSMachineContext.h */,
+				235A3600000B80 /* KSMachineContext_Apple.h */,
+				235A3600000B90 /* KSMemory.c */,
+				235A3600000BA0 /* KSMemory.h */,
+				235A3600000BB0 /* KSObjC.c */,
+				235A3600000BC0 /* KSObjC.h */,
+				235A3600000BD0 /* KSObjCApple.h */,
+				235A3600000BE0 /* KSSignalInfo.c */,
+				235A3600000BF0 /* KSSignalInfo.h */,
+				235A3600000C00 /* KSStackCursor.c */,
+				235A3600000C10 /* KSStackCursor.h */,
+				235A3600000C20 /* KSStackCursor_Backtrace.c */,
+				235A3600000C30 /* KSStackCursor_Backtrace.h */,
+				235A3600000C40 /* KSStackCursor_MachineContext.c */,
+				235A3600000C50 /* KSStackCursor_MachineContext.h */,
+				235A3600000C60 /* KSStackCursor_SelfThread.c */,
+				235A3600000C70 /* KSStackCursor_SelfThread.h */,
+				235A3600000C80 /* KSString.c */,
+				235A3600000C90 /* KSString.h */,
+				235A3600000CA0 /* KSSymbolicator.c */,
+				235A3600000CB0 /* KSSymbolicator.h */,
+				235A3600000CC0 /* KSSysCtl.c */,
+				235A3600000CD0 /* KSSysCtl.h */,
+				235A3600000CE0 /* KSThread.c */,
+				235A3600000CF0 /* KSThread.h */,
+				235A3600000D00 /* NSError+SimpleConstructor.h */,
+				235A3600000D10 /* NSError+SimpleConstructor.m */,
+			);
+			name = Tools;
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		235A3600000D20 /* Reporting */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000D30 /* Filters */,
+			);
+			name = Reporting;
+			path = Reporting;
+			sourceTree = "<group>";
+		};
+		235A3600000D30 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000D40 /* KSCrashReportFilter.h */,
+				235A3600000D50 /* KSCrashReportFilterBasic.h */,
+				235A3600000D60 /* KSCrashReportFilterBasic.m */,
+				235A3600000D70 /* KSCrashReportFilterGZip.h */,
+				235A3600000D80 /* KSCrashReportFilterGZip.m */,
+				235A3600000D90 /* KSCrashReportFilterJSON.h */,
+				235A3600000DA0 /* KSCrashReportFilterJSON.m */,
+				235A3600000DB0 /* Tools */,
+			);
+			name = Filters;
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		235A3600000DB0 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000DC0 /* Container+DeepSearch.h */,
+				235A3600000DD0 /* Container+DeepSearch.m */,
+				235A3600000DE0 /* KSVarArgs.h */,
+				235A3600000DF0 /* NSData+KarlGZip.h */,
+				235A3600000E00 /* NSData+KarlGZip.m */,
+			);
+			name = Tools;
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		235A3600000E10 /* swift */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000EB0 /* SwiftStrings.h */,
+				235A3600000E20 /* Basic */,
+			);
+			name = swift;
+			path = swift;
+			sourceTree = "<group>";
+		};
+		235A3600000E20 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000E30 /* Demangle.cpp */,
+				235A3600000E40 /* Demangle.h */,
+				235A3600000E50 /* DemangleNodes.h */,
+				235A3600000E60 /* Fallthrough.h */,
+				235A3600000E70 /* LLVM.h */,
+				235A3600000E80 /* Malloc.h */,
+				235A3600000E90 /* Punycode.cpp */,
+				235A3600000EA0 /* Punycode.h */,
+			);
+			name = Basic;
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		235A3600000EC0 /* WCMemoryStat */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000ED0 /* MemoryLogger */,
+				235A36000012E0 /* MemoryStatPlugin */,
+			);
+			name = WCMemoryStat;
+			path = "matrix/matrix-apple/Matrix/WCMemoryStat";
+			sourceTree = "<group>";
+		};
+		235A3600000ED0 /* MemoryLogger */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000EE0 /* logger_internal.cpp */,
+				235A3600000EF0 /* logger_internal.h */,
+				235A3600000F00 /* memory_logging.cpp */,
+				235A3600000F10 /* memory_logging.h */,
+				235A3600000F20 /* memory_logging_adapter.h */,
+				235A3600000F30 /* memory_logging_adapter.mm */,
+				235A3600000F40 /* memory_report_generator.cpp */,
+				235A3600000F50 /* memory_report_generator.h */,
+				235A3600000F60 /* memory_stat_err_code.h */,
+				235A3600000F70 /* ObjectEvent */,
+				235A3600001000 /* RapidJson */,
+				235A3600001240 /* StackFrames */,
+				235A36000012B0 /* Tree */,
+			);
+			name = MemoryLogger;
+			path = MemoryLogger;
+			sourceTree = "<group>";
+		};
+		235A3600000F70 /* ObjectEvent */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600000F80 /* allocation_event_buffer.cpp */,
+				235A3600000F90 /* allocation_event_buffer.h */,
+				235A3600000FA0 /* allocation_event_db.cpp */,
+				235A3600000FB0 /* allocation_event_db.h */,
+				235A3600000FC0 /* nsobject_hook_method.h */,
+				235A3600000FD0 /* nsobject_hook_method.mm */,
+				235A3600000FE0 /* object_event_handler.cpp */,
+				235A3600000FF0 /* object_event_handler.h */,
+			);
+			name = ObjectEvent;
+			path = ObjectEvent;
+			sourceTree = "<group>";
+		};
+		235A3600001000 /* RapidJson */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600001010 /* allocators.h */,
+				235A3600001020 /* document.h */,
+				235A3600001030 /* encodedstream.h */,
+				235A3600001040 /* encodings.h */,
+				235A3600001080 /* filereadstream.h */,
+				235A3600001090 /* filewritestream.h */,
+				235A36000010A0 /* fwd.h */,
+				235A3600001180 /* istreamwrapper.h */,
+				235A3600001190 /* memorybuffer.h */,
+				235A36000011A0 /* memorystream.h */,
+				235A36000011B0 /* ostreamwrapper.h */,
+				235A36000011C0 /* pointer.h */,
+				235A36000011D0 /* prettywriter.h */,
+				235A36000011E0 /* rapidjson.h */,
+				235A36000011F0 /* reader.h */,
+				235A3600001200 /* schema.h */,
+				235A3600001210 /* stream.h */,
+				235A3600001220 /* stringbuffer.h */,
+				235A3600001230 /* writer.h */,
+				235A3600001050 /* error */,
+				235A36000010B0 /* internal */,
+			);
+			name = RapidJson;
+			path = RapidJson;
+			sourceTree = "<group>";
+		};
+		235A3600001050 /* error */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600001060 /* en.h */,
+				235A3600001070 /* error.h */,
+			);
+			name = error;
+			path = error;
+			sourceTree = "<group>";
+		};
+		235A36000010B0 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				235A36000010C0 /* biginteger.h */,
+				235A36000010D0 /* diyfp.h */,
+				235A36000010E0 /* dtoa.h */,
+				235A36000010F0 /* ieee754.h */,
+				235A3600001100 /* itoa.h */,
+				235A3600001110 /* meta.h */,
+				235A3600001120 /* pow10.h */,
+				235A3600001130 /* regex.h */,
+				235A3600001140 /* stack.h */,
+				235A3600001150 /* strfunc.h */,
+				235A3600001160 /* strtod.h */,
+				235A3600001170 /* swap.h */,
+			);
+			name = internal;
+			path = internal;
+			sourceTree = "<group>";
+		};
+		235A3600001240 /* StackFrames */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600001250 /* bundle_name_helper.h */,
+				235A3600001260 /* bundle_name_helper.mm */,
+				235A3600001270 /* dyld_image_info.cpp */,
+				235A3600001280 /* dyld_image_info.h */,
+				235A3600001290 /* stack_frames_db.cpp */,
+				235A36000012A0 /* stack_frames_db.h */,
+			);
+			name = StackFrames;
+			path = StackFrames;
+			sourceTree = "<group>";
+		};
+		235A36000012B0 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				235A36000012C0 /* sb_tree.h */,
+				235A36000012D0 /* splay_tree.h */,
+			);
+			name = Tree;
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		235A36000012E0 /* MemoryStatPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600001340 /* WCMemoryStatConfig.h */,
+				235A3600001350 /* WCMemoryStatConfig.mm */,
+				235A3600001370 /* WCMemoryStatPlugin.h */,
+				235A3600001380 /* WCMemoryStatPlugin.mm */,
+				235A3600001360 /* WCMemoryStatPlugin+Private.h */,
+				235A36000012F0 /* Record */,
+			);
+			name = MemoryStatPlugin;
+			path = MemoryStatPlugin;
+			sourceTree = "<group>";
+		};
+		235A36000012F0 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600001300 /* WCMemoryRecordManager.h */,
+				235A3600001310 /* WCMemoryRecordManager.mm */,
+				235A3600001320 /* WCMemoryStatModel.h */,
+				235A3600001330 /* WCMemoryStatModel.mm */,
+			);
+			name = Record;
+			path = Record;
+			sourceTree = "<group>";
+		};
+		235A3600001390 /* matrixNonARC1 */ = {
+			isa = PBXGroup;
+			children = (
+				235A36000013A0 /* MatrixBaseModel.h */,
+				235A36000013B0 /* MatrixBaseModel.mm */,
+			);
+			name = matrixNonARC1;
+			sourceTree = "<group>";
+		};
+		235A36000013C0 /* matrixNonARC2 */ = {
+			isa = PBXGroup;
+			children = (
+				235A36000013D0 /* nsobject_hook.h */,
+				235A36000013E0 /* nsobject_hook.mm */,
+			);
+			name = matrixNonARC2;
+			sourceTree = "<group>";
+		};
+		235A36000013F0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600001400 /* LICENSE */,
+				235A3600001420 /* matrix-minlison.podspec */,
+				235A3600001410 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		235A36000014C0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				235A3600002610 /* CoreFoundation.framework */,
+				235A36000014D0 /* Foundation.framework */,
+				235A3600002630 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		235A3600002580 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				235A36000025A0 /* matrix-minlison.modulemap */,
+				235A3600002590 /* matrix-minlison.xcconfig */,
+				235A36000025F0 /* matrix-minlison-dummy.m */,
+				235A36000025D0 /* matrix-minlison-Info.plist */,
+				235A36000025E0 /* matrix-minlison-prefix.pch */,
+				235A36000025B0 /* matrix-minlison-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../MLSBugReporter/MLSBugReporterDemo/Pods/Target Support Files/matrix-minlison";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		235A3600001480 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235A3600001DA0 /* AlignOf.h in Headers */,
+				235A3600002250 /* allocation_event_buffer.h in Headers */,
+				235A3600002260 /* allocation_event_db.h in Headers */,
+				235A3600002290 /* allocators.h in Headers */,
+				235A3600002320 /* biginteger.h in Headers */,
+				235A36000024A0 /* bundle_name_helper.h in Headers */,
+				235A3600001DB0 /* Casting.h in Headers */,
+				235A3600001DC0 /* Compiler.h in Headers */,
+				235A3600002160 /* Container+DeepSearch.h in Headers */,
+				235A3600002190 /* Demangle.h in Headers */,
+				235A36000021A0 /* DemangleNodes.h in Headers */,
+				235A3600002330 /* diyfp.h in Headers */,
+				235A36000022A0 /* document.h in Headers */,
+				235A3600002340 /* dtoa.h in Headers */,
+				235A36000024B0 /* dyld_image_info.h in Headers */,
+				235A36000022D0 /* en.h in Headers */,
+				235A36000022B0 /* encodedstream.h in Headers */,
+				235A36000022C0 /* encodings.h in Headers */,
+				235A36000022E0 /* error.h in Headers */,
+				235A36000021B0 /* Fallthrough.h in Headers */,
+				235A36000022F0 /* filereadstream.h in Headers */,
+				235A3600002300 /* filewritestream.h in Headers */,
+				235A3600002310 /* fwd.h in Headers */,
+				235A3600002350 /* ieee754.h in Headers */,
+				235A36000023E0 /* istreamwrapper.h in Headers */,
+				235A3600002360 /* itoa.h in Headers */,
+				235A3600001F60 /* KSCPU.h in Headers */,
+				235A3600001F70 /* KSCPU_Apple.h in Headers */,
+				235A3600001DE0 /* KSCrash.h in Headers */,
+				235A3600001F50 /* KSCrash_fishhook.h in Headers */,
+				235A3600001DF0 /* KSCrashC.h in Headers */,
+				235A3600001E00 /* KSCrashCachedData.h in Headers */,
+				235A3600001E10 /* KSCrashDoctor.h in Headers */,
+				235A3600001E90 /* KSCrashMonitor.h in Headers */,
+				235A3600001EC0 /* KSCrashMonitor_AppState.h in Headers */,
+				235A3600001ED0 /* KSCrashMonitor_CPPException.h in Headers */,
+				235A3600001EE0 /* KSCrashMonitor_Deadlock.h in Headers */,
+				235A3600001EF0 /* KSCrashMonitor_MachException.h in Headers */,
+				235A3600001F00 /* KSCrashMonitor_NSException.h in Headers */,
+				235A3600001F10 /* KSCrashMonitor_Signal.h in Headers */,
+				235A3600001F20 /* KSCrashMonitor_System.h in Headers */,
+				235A3600001F30 /* KSCrashMonitor_User.h in Headers */,
+				235A3600001F40 /* KSCrashMonitor_Zombie.h in Headers */,
+				235A3600001EA0 /* KSCrashMonitorContext.h in Headers */,
+				235A3600001EB0 /* KSCrashMonitorType.h in Headers */,
+				235A3600001E20 /* KSCrashReport.h in Headers */,
+				235A3600001E30 /* KSCrashReportFields.h in Headers */,
+				235A3600002120 /* KSCrashReportFilter.h in Headers */,
+				235A3600002130 /* KSCrashReportFilterBasic.h in Headers */,
+				235A3600002140 /* KSCrashReportFilterGZip.h in Headers */,
+				235A3600002150 /* KSCrashReportFilterJSON.h in Headers */,
+				235A3600001E40 /* KSCrashReportFixer.h in Headers */,
+				235A3600001E50 /* KSCrashReportStore.h in Headers */,
+				235A3600001E60 /* KSCrashReportVersion.h in Headers */,
+				235A3600001E70 /* KSCrashReportWriter.h in Headers */,
+				235A3600001F80 /* KSDate.h in Headers */,
+				235A3600001F90 /* KSDebug.h in Headers */,
+				235A3600001FA0 /* KSDemangle_CPP.h in Headers */,
+				235A3600001FB0 /* KSDemangle_Swift.h in Headers */,
+				235A3600001FC0 /* KSDynamicLinker.h in Headers */,
+				235A3600001FD0 /* KSFileUtils.h in Headers */,
+				235A3600001FE0 /* KSID.h in Headers */,
+				235A3600001FF0 /* KSJSONCodec.h in Headers */,
+				235A3600002000 /* KSJSONCodecObjC.h in Headers */,
+				235A3600002010 /* KSLogger.h in Headers */,
+				235A3600002020 /* KSMach.h in Headers */,
+				235A3600002030 /* KSMachineContext.h in Headers */,
+				235A3600002040 /* KSMachineContext_Apple.h in Headers */,
+				235A3600002050 /* KSMemory.h in Headers */,
+				235A3600002060 /* KSObjC.h in Headers */,
+				235A3600002070 /* KSObjCApple.h in Headers */,
+				235A3600002080 /* KSSignalInfo.h in Headers */,
+				235A3600002090 /* KSStackCursor.h in Headers */,
+				235A36000020A0 /* KSStackCursor_Backtrace.h in Headers */,
+				235A36000020B0 /* KSStackCursor_MachineContext.h in Headers */,
+				235A36000020C0 /* KSStackCursor_SelfThread.h in Headers */,
+				235A36000020D0 /* KSString.h in Headers */,
+				235A36000020E0 /* KSSymbolicator.h in Headers */,
+				235A36000020F0 /* KSSysCtl.h in Headers */,
+				235A3600001E80 /* KSSystemCapabilities.h in Headers */,
+				235A3600002100 /* KSThread.h in Headers */,
+				235A3600002170 /* KSVarArgs.h in Headers */,
+				235A3600001D90 /* llvm-config.h in Headers */,
+				235A36000021C0 /* LLVM.h in Headers */,
+				235A3600002200 /* logger_internal.h in Headers */,
+				235A36000021D0 /* Malloc.h in Headers */,
+				235A36000025C0 /* matrix-minlison-umbrella.h in Headers */,
+				235A3600001B70 /* Matrix.h in Headers */,
+				235A3600001B50 /* MatrixAdapter.h in Headers */,
+				235A3600001B20 /* MatrixAppRebootAnalyzer.h in Headers */,
+				235A3600001B30 /* MatrixAppRebootType.h in Headers */,
+				235A3600002550 /* MatrixBaseModel.h in Headers */,
+				235A3600001BC0 /* MatrixDeviceInfo.h in Headers */,
+				235A3600001B80 /* MatrixFramework.h in Headers */,
+				235A3600001B40 /* MatrixIssue.h in Headers */,
+				235A3600001B60 /* MatrixLogDef.h in Headers */,
+				235A3600001BD0 /* MatrixPathUtil.h in Headers */,
+				235A3600001B90 /* MatrixPlugin.h in Headers */,
+				235A3600001BA0 /* MatrixPluginConfig.h in Headers */,
+				235A3600001BB0 /* MatrixTester.h in Headers */,
+				235A3600002210 /* memory_logging.h in Headers */,
+				235A3600002220 /* memory_logging_adapter.h in Headers */,
+				235A3600002230 /* memory_report_generator.h in Headers */,
+				235A3600002240 /* memory_stat_err_code.h in Headers */,
+				235A36000023F0 /* memorybuffer.h in Headers */,
+				235A3600002400 /* memorystream.h in Headers */,
+				235A3600002370 /* meta.h in Headers */,
+				235A3600001D60 /* None.h in Headers */,
+				235A3600001C50 /* NSApplicationEvent.h in Headers */,
+				235A3600002180 /* NSData+KarlGZip.h in Headers */,
+				235A3600002110 /* NSError+SimpleConstructor.h in Headers */,
+				235A3600002570 /* nsobject_hook.h in Headers */,
+				235A3600002270 /* nsobject_hook_method.h in Headers */,
+				235A3600002280 /* object_event_handler.h in Headers */,
+				235A3600001D70 /* Optional.h in Headers */,
+				235A3600002410 /* ostreamwrapper.h in Headers */,
+				235A3600002420 /* pointer.h in Headers */,
+				235A3600002380 /* pow10.h in Headers */,
+				235A3600002430 /* prettywriter.h in Headers */,
+				235A36000021E0 /* Punycode.h in Headers */,
+				235A3600002440 /* rapidjson.h in Headers */,
+				235A3600002450 /* reader.h in Headers */,
+				235A3600002390 /* regex.h in Headers */,
+				235A36000024D0 /* sb_tree.h in Headers */,
+				235A3600002460 /* schema.h in Headers */,
+				235A36000024E0 /* splay_tree.h in Headers */,
+				235A36000023A0 /* stack.h in Headers */,
+				235A36000024C0 /* stack_frames_db.h in Headers */,
+				235A3600002470 /* stream.h in Headers */,
+				235A36000023B0 /* strfunc.h in Headers */,
+				235A3600002480 /* stringbuffer.h in Headers */,
+				235A3600001D80 /* StringRef.h in Headers */,
+				235A36000023C0 /* strtod.h in Headers */,
+				235A36000023D0 /* swap.h in Headers */,
+				235A36000021F0 /* SwiftStrings.h in Headers */,
+				235A3600001DD0 /* type_traits.h in Headers */,
+				235A3600001C60 /* WCBlockMonitorConfigHandler.h in Headers */,
+				235A3600001C70 /* WCBlockMonitorConfiguration.h in Headers */,
+				235A3600001C80 /* WCBlockMonitorMgr.h in Headers */,
+				235A3600001C90 /* WCBlockTypeDef.h in Headers */,
+				235A3600001BE0 /* WCCPUHandler.h in Headers */,
+				235A3600001CA0 /* WCCrashBlockFileHandler.h in Headers */,
+				235A3600001CD0 /* WCCrashBlockJsonUtil.h in Headers */,
+				235A3600001D00 /* WCCrashBlockMonitor.h in Headers */,
+				235A3600001D20 /* WCCrashBlockMonitorConfig.h in Headers */,
+				235A3600001D10 /* WCCrashBlockMonitorDelegate.h in Headers */,
+				235A3600001D30 /* WCCrashBlockMonitorPlugin+Private.h in Headers */,
+				235A3600001D40 /* WCCrashBlockMonitorPlugin+Upload.h in Headers */,
+				235A3600001D50 /* WCCrashBlockMonitorPlugin.h in Headers */,
+				235A3600001CE0 /* WCCrashReportInfoUtil.h in Headers */,
+				235A3600001CF0 /* WCCrashReportInterpreter.h in Headers */,
+				235A3600001C30 /* WCDumpInterface.h in Headers */,
+				235A3600001CB0 /* WCDumpReportDataProvider.h in Headers */,
+				235A3600001CC0 /* WCDumpReportTaskData.h in Headers */,
+				235A3600001BF0 /* WCFilterStackHandler.h in Headers */,
+				235A3600001C40 /* WCGetCallStackReportHandler.h in Headers */,
+				235A3600001C00 /* WCGetMainThreadUtil.h in Headers */,
+				235A3600001C10 /* WCMainThreadHandler.h in Headers */,
+				235A36000024F0 /* WCMemoryRecordManager.h in Headers */,
+				235A3600002510 /* WCMemoryStatConfig.h in Headers */,
+				235A3600002500 /* WCMemoryStatModel.h in Headers */,
+				235A3600002520 /* WCMemoryStatPlugin+Private.h in Headers */,
+				235A3600002530 /* WCMemoryStatPlugin.h in Headers */,
+				235A3600001C20 /* WCPowerConsumeStackCollector.h in Headers */,
+				235A3600002490 /* writer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		84F49A32D62CEC736B913AB6ABAD6802 /* matrix-minlison */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 235A3600001440 /* Build configuration list for PBXNativeTarget "matrix-minlison" */;
+			buildPhases = (
+				235A3600001480 /* Headers */,
+				235A3600001490 /* Sources */,
+				235A36000014A0 /* Frameworks */,
+				235A36000014B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "matrix-minlison";
+			productName = "matrix-minlison";
+			productReference = E1D125772164B279FCDBC0980D4E2684 /* Matrix.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		235A3600000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 235A3600000030 /* Build configuration list for PBXProject "matrix-minlison" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 235A3600000010;
+			productRefGroup = 235A3600000020 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F49A32D62CEC736B913AB6ABAD6802 /* matrix-minlison */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		235A36000014B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		235A3600001490 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235A3600001A70 /* allocation_event_buffer.cpp in Sources */,
+				235A3600001A80 /* allocation_event_db.cpp in Sources */,
+				235A3600001AB0 /* bundle_name_helper.mm in Sources */,
+				235A36000019F0 /* Container+DeepSearch.m in Sources */,
+				235A3600001A10 /* Demangle.cpp in Sources */,
+				235A3600001AC0 /* dyld_image_info.cpp in Sources */,
+				235A36000017F0 /* KSCPU.c in Sources */,
+				235A3600001800 /* KSCPU_arm.c in Sources */,
+				235A3600001810 /* KSCPU_arm64.c in Sources */,
+				235A3600001820 /* KSCPU_x86_32.c in Sources */,
+				235A3600001830 /* KSCPU_x86_64.c in Sources */,
+				235A36000016C0 /* KSCrash.m in Sources */,
+				235A36000017E0 /* KSCrash_fishhook.c in Sources */,
+				235A36000016D0 /* KSCrashC.c in Sources */,
+				235A36000016E0 /* KSCrashCachedData.c in Sources */,
+				235A36000016F0 /* KSCrashDoctor.m in Sources */,
+				235A3600001730 /* KSCrashMonitor.c in Sources */,
+				235A3600001750 /* KSCrashMonitor_AppState.c in Sources */,
+				235A3600001760 /* KSCrashMonitor_CPPException.cpp in Sources */,
+				235A3600001770 /* KSCrashMonitor_Deadlock.m in Sources */,
+				235A3600001780 /* KSCrashMonitor_MachException.c in Sources */,
+				235A3600001790 /* KSCrashMonitor_NSException.m in Sources */,
+				235A36000017A0 /* KSCrashMonitor_Signal.c in Sources */,
+				235A36000017B0 /* KSCrashMonitor_System.m in Sources */,
+				235A36000017C0 /* KSCrashMonitor_User.c in Sources */,
+				235A36000017D0 /* KSCrashMonitor_Zombie.c in Sources */,
+				235A3600001740 /* KSCrashMonitorType.c in Sources */,
+				235A3600001700 /* KSCrashReport.c in Sources */,
+				235A36000019C0 /* KSCrashReportFilterBasic.m in Sources */,
+				235A36000019D0 /* KSCrashReportFilterGZip.m in Sources */,
+				235A36000019E0 /* KSCrashReportFilterJSON.m in Sources */,
+				235A3600001710 /* KSCrashReportFixer.c in Sources */,
+				235A3600001720 /* KSCrashReportStore.c in Sources */,
+				235A3600001840 /* KSDate.c in Sources */,
+				235A3600001850 /* KSDebug.c in Sources */,
+				235A3600001860 /* KSDemangle_CPP.cpp in Sources */,
+				235A3600001870 /* KSDemangle_Swift.cpp in Sources */,
+				235A3600001880 /* KSDynamicLinker.c in Sources */,
+				235A3600001890 /* KSFileUtils.c in Sources */,
+				235A36000018A0 /* KSID.c in Sources */,
+				235A36000018B0 /* KSJSONCodec.c in Sources */,
+				235A36000018C0 /* KSJSONCodecObjC.m in Sources */,
+				235A36000018D0 /* KSLogger.c in Sources */,
+				235A36000018E0 /* KSMach.c in Sources */,
+				235A36000018F0 /* KSMachineContext.c in Sources */,
+				235A3600001900 /* KSMemory.c in Sources */,
+				235A3600001910 /* KSObjC.c in Sources */,
+				235A3600001920 /* KSSignalInfo.c in Sources */,
+				235A3600001930 /* KSStackCursor.c in Sources */,
+				235A3600001940 /* KSStackCursor_Backtrace.c in Sources */,
+				235A3600001950 /* KSStackCursor_MachineContext.c in Sources */,
+				235A3600001960 /* KSStackCursor_SelfThread.c in Sources */,
+				235A3600001970 /* KSString.c in Sources */,
+				235A3600001980 /* KSSymbolicator.c in Sources */,
+				235A3600001990 /* KSSysCtl.c in Sources */,
+				235A36000019A0 /* KSThread.c in Sources */,
+				235A3600001A30 /* logger_internal.cpp in Sources */,
+				235A3600002600 /* matrix-minlison-dummy.m in Sources */,
+				235A3600001520 /* Matrix.mm in Sources */,
+				235A3600001510 /* MatrixAdapter.mm in Sources */,
+				235A36000014F0 /* MatrixAppRebootAnalyzer.mm in Sources */,
+				235A3600002540 /* MatrixBaseModel.mm in Sources */,
+				235A3600001560 /* MatrixDeviceInfo.mm in Sources */,
+				235A3600001500 /* MatrixIssue.mm in Sources */,
+				235A3600001570 /* MatrixPathUtil.mm in Sources */,
+				235A3600001530 /* MatrixPlugin.mm in Sources */,
+				235A3600001540 /* MatrixPluginConfig.mm in Sources */,
+				235A3600001550 /* MatrixTester.mm in Sources */,
+				235A3600001A40 /* memory_logging.cpp in Sources */,
+				235A3600001A50 /* memory_logging_adapter.mm in Sources */,
+				235A3600001A60 /* memory_report_generator.cpp in Sources */,
+				235A36000015F0 /* NSApplicationEvent.mm in Sources */,
+				235A3600001A00 /* NSData+KarlGZip.m in Sources */,
+				235A36000019B0 /* NSError+SimpleConstructor.m in Sources */,
+				235A3600002560 /* nsobject_hook.mm in Sources */,
+				235A3600001A90 /* nsobject_hook_method.mm in Sources */,
+				235A3600001AA0 /* object_event_handler.cpp in Sources */,
+				235A3600001A20 /* Punycode.cpp in Sources */,
+				235A3600001AD0 /* stack_frames_db.cpp in Sources */,
+				235A3600001600 /* WCBlockMonitorConfigHandler.mm in Sources */,
+				235A3600001610 /* WCBlockMonitorConfiguration.mm in Sources */,
+				235A3600001620 /* WCBlockMonitorMgr.mm in Sources */,
+				235A3600001580 /* WCCPUHandler.mm in Sources */,
+				235A3600001630 /* WCCrashBlockFileHandler.mm in Sources */,
+				235A3600001660 /* WCCrashBlockJsonUtil.mm in Sources */,
+				235A3600001690 /* WCCrashBlockMonitor.mm in Sources */,
+				235A36000016A0 /* WCCrashBlockMonitorConfig.mm in Sources */,
+				235A36000016B0 /* WCCrashBlockMonitorPlugin.mm in Sources */,
+				235A3600001670 /* WCCrashReportInfoUtil.mm in Sources */,
+				235A3600001680 /* WCCrashReportInterpreter.mm in Sources */,
+				235A36000015D0 /* WCDumpInterface.mm in Sources */,
+				235A3600001640 /* WCDumpReportDataProvider.mm in Sources */,
+				235A3600001650 /* WCDumpReportTaskData.mm in Sources */,
+				235A3600001590 /* WCFilterStackHandler.mm in Sources */,
+				235A36000015E0 /* WCGetCallStackReportHandler.mm in Sources */,
+				235A36000015A0 /* WCGetMainThreadUtil.mm in Sources */,
+				235A36000015B0 /* WCMainThreadHandler.mm in Sources */,
+				235A3600001AE0 /* WCMemoryRecordManager.mm in Sources */,
+				235A3600001B00 /* WCMemoryStatConfig.mm in Sources */,
+				235A3600001AF0 /* WCMemoryStatModel.mm in Sources */,
+				235A3600001B10 /* WCMemoryStatPlugin.mm in Sources */,
+				235A36000015C0 /* WCPowerConsumeStackCollector.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		235A3600000040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		235A3600000050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		235A3600001450 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 235A3600002590 /* matrix-minlison.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/matrix-minlison/matrix-minlison-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/matrix-minlison/matrix-minlison-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/matrix-minlison/matrix-minlison.modulemap";
+				PRODUCT_MODULE_NAME = Matrix;
+				PRODUCT_NAME = Matrix;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		235A3600001460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 235A3600002590 /* matrix-minlison.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/matrix-minlison/matrix-minlison-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/matrix-minlison/matrix-minlison-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/matrix-minlison/matrix-minlison.modulemap";
+				PRODUCT_MODULE_NAME = Matrix;
+				PRODUCT_NAME = Matrix;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		235A3600000030 /* Build configuration list for PBXProject "matrix-minlison" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				235A3600000040 /* Debug */,
+				235A3600000050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		235A3600001440 /* Build configuration list for PBXNativeTarget "matrix-minlison" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				235A3600001460 /* Debug */,
+				235A3600001450 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 235A3600000000 /* Project object */;
+}

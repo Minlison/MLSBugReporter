@@ -1,0 +1,2155 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FCE99000017C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCE99000017B0 /* Foundation.framework */; };
+		2FCE99000017D0 /* MLSBugReportAspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000000E0 /* MLSBugReportAspects.m */; };
+		2FCE99000017E0 /* MLSBugReportAspects.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000000D0 /* MLSBugReportAspects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000017F0 /* Buglife+UIStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000120 /* Buglife+UIStuff.m */; };
+		2FCE9900001800 /* LIFECategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000140 /* LIFECategories.m */; };
+		2FCE9900001810 /* LIFECompatibilityUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000160 /* LIFECompatibilityUtils.m */; };
+		2FCE9900001820 /* LIFEGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000180 /* LIFEGeometry.m */; };
+		2FCE9900001830 /* NSArray+LIFEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000001B0 /* NSArray+LIFEAdditions.m */; };
+		2FCE9900001840 /* NSError+LIFEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000001D0 /* NSError+LIFEAdditions.m */; };
+		2FCE9900001850 /* NSLayoutConstraint+LIFEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000001F0 /* NSLayoutConstraint+LIFEAdditions.m */; };
+		2FCE9900001860 /* NSMutableDictionary+LIFEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000210 /* NSMutableDictionary+LIFEAdditions.m */; };
+		2FCE9900001870 /* NSString+LIFEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000230 /* NSString+LIFEAdditions.m */; };
+		2FCE9900001880 /* UIApplication+LIFEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000250 /* UIApplication+LIFEAdditions.m */; };
+		2FCE9900001890 /* UIBezierPath+LIFEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000270 /* UIBezierPath+LIFEAdditions.m */; };
+		2FCE99000018A0 /* UIColor+LIFEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000290 /* UIColor+LIFEAdditions.m */; };
+		2FCE99000018B0 /* UIControl+LIFEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000002B0 /* UIControl+LIFEAdditions.m */; };
+		2FCE99000018C0 /* UIDevice+LIFEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000002D0 /* UIDevice+LIFEAdditions.m */; };
+		2FCE99000018D0 /* UIImage+LIFEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000002F0 /* UIImage+LIFEAdditions.m */; };
+		2FCE99000018E0 /* UITableView+LIFEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000310 /* UITableView+LIFEAdditions.m */; };
+		2FCE99000018F0 /* UITextView+LIFEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000330 /* UITextView+LIFEAdditions.m */; };
+		2FCE9900001900 /* UIView+LIFEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000350 /* UIView+LIFEAdditions.m */; };
+		2FCE9900001910 /* UIViewController+LIFEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000370 /* UIViewController+LIFEAdditions.m */; };
+		2FCE9900001920 /* UIWindow+LIFEAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000390 /* UIWindow+LIFEAdditions.m */; };
+		2FCE9900001930 /* Buglife+LocalizedStrings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000003B0 /* Buglife+LocalizedStrings.m */; };
+		2FCE9900001940 /* Buglife.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000003D0 /* Buglife.m */; };
+		2FCE9900001950 /* LIFEAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000410 /* LIFEAlertAction.m */; };
+		2FCE9900001960 /* LIFEAlertActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000430 /* LIFEAlertActionView.m */; };
+		2FCE9900001970 /* LIFEAlertAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000450 /* LIFEAlertAnimator.m */; };
+		2FCE9900001980 /* LIFEAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000470 /* LIFEAlertController.m */; };
+		2FCE9900001990 /* LIFEAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000490 /* LIFEAlertView.m */; };
+		2FCE99000019A0 /* LIFEImageEditorSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000004C0 /* LIFEImageEditorSegmentedControl.m */; };
+		2FCE99000019B0 /* LIFEImageEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000004E0 /* LIFEImageEditorView.m */; };
+		2FCE99000019C0 /* LIFEImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000500 /* LIFEImageEditorViewController.m */; };
+		2FCE99000019D0 /* LIFEToolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000520 /* LIFEToolButton.m */; };
+		2FCE99000019E0 /* LIFEAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000540 /* LIFEAVPlayerViewController.m */; };
+		2FCE99000019F0 /* LIFEComponentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000560 /* LIFEComponentPickerViewController.m */; };
+		2FCE9900001A00 /* LIFELogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000580 /* LIFELogViewController.m */; };
+		2FCE9900001A10 /* LIFENavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000005A0 /* LIFENavigationController.m */; };
+		2FCE9900001A20 /* LIFEPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000005C0 /* LIFEPickerViewController.m */; };
+		2FCE9900001A30 /* LIFEReportTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000005E0 /* LIFEReportTableViewController.m */; };
+		2FCE9900001A40 /* LIFEScreenshotAnnotatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000610 /* LIFEScreenshotAnnotatorViewController.m */; };
+		2FCE9900001A50 /* LIFEStepsToReproTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000630 /* LIFEStepsToReproTableViewController.m */; };
+		2FCE9900001A60 /* LIFETextInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000650 /* LIFETextInputViewController.m */; };
+		2FCE9900001A70 /* LIFEAwesomeLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000680 /* LIFEAwesomeLogger.m */; };
+		2FCE9900001A80 /* LIFEInputField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000006A0 /* LIFEInputField.m */; };
+		2FCE9900001A90 /* LIFEPickerInputField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000006C0 /* LIFEPickerInputField.m */; };
+		2FCE9900001AA0 /* LIFETextInputField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000006E0 /* LIFETextInputField.m */; };
+		2FCE9900001AB0 /* LIFEAnnotatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000710 /* LIFEAnnotatedImage.m */; };
+		2FCE9900001AC0 /* LIFEAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000730 /* LIFEAnnotation.m */; };
+		2FCE9900001AD0 /* LIFEAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000750 /* LIFEAppInfo.m */; };
+		2FCE9900001AE0 /* LIFEAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000770 /* LIFEAttribute.m */; };
+		2FCE9900001AF0 /* LIFEDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000007A0 /* LIFEDeviceInfo.m */; };
+		2FCE9900001B00 /* LIFEImageFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000007C0 /* LIFEImageFormat.m */; };
+		2FCE9900001B10 /* LIFEReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000007E0 /* LIFEReport.m */; };
+		2FCE9900001B20 /* LIFEReportAttachmentImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000800 /* LIFEReportAttachmentImpl.m */; };
+		2FCE9900001B30 /* LIFEReportOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000820 /* LIFEReportOwner.m */; };
+		2FCE9900001B40 /* LIFEReproStep.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000840 /* LIFEReproStep.m */; };
+		2FCE9900001B50 /* LIFEScreenshotContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000860 /* LIFEScreenshotContext.m */; };
+		2FCE9900001B60 /* LIFEVideoAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000890 /* LIFEVideoAttachment.m */; };
+		2FCE9900001B70 /* LIFEAppInfoProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000910 /* LIFEAppInfoProvider.m */; };
+		2FCE9900001B80 /* LIFEAttachmentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000930 /* LIFEAttachmentManager.m */; };
+		2FCE9900001B90 /* LIFEAVFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000950 /* LIFEAVFoundation.m */; };
+		2FCE9900001BA0 /* LIFEDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000970 /* LIFEDataProvider.m */; };
+		2FCE9900001BB0 /* LIFEDependencyLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000990 /* LIFEDependencyLoader.m */; };
+		2FCE9900001BC0 /* LIFEDeviceInfoProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000009B0 /* LIFEDeviceInfoProvider.m */; };
+		2FCE9900001BD0 /* LIFEImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000009D0 /* LIFEImagePickerController.m */; };
+		2FCE9900001BE0 /* LIFEImageProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000009F0 /* LIFEImageProcessor.m */; };
+		2FCE9900001BF0 /* LIFELogFacility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000A10 /* LIFELogFacility.m */; };
+		2FCE9900001C00 /* LIFENetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000A30 /* LIFENetworkManager.m */; };
+		2FCE9900001C10 /* LIFEReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000A50 /* LIFEReachability.m */; };
+		2FCE9900001C20 /* LIFERecordingShrinker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000A70 /* LIFERecordingShrinker.m */; };
+		2FCE9900001C30 /* LIFEReportBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000A90 /* LIFEReportBuilder.m */; };
+		2FCE9900001C40 /* LIFESwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000AB0 /* LIFESwizzler.m */; };
+		2FCE9900001C50 /* LIFETelephonyNetworkInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000AD0 /* LIFETelephonyNetworkInfo.m */; };
+		2FCE9900001C60 /* LIFEUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000AF0 /* LIFEUserDefaults.m */; };
+		2FCE9900001C70 /* LIFEASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000B20 /* LIFEASLLogger.m */; };
+		2FCE9900001C80 /* LIFEContextAwareLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000B40 /* LIFEContextAwareLogFormatter.m */; };
+		2FCE9900001C90 /* LIFEFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000B60 /* LIFEFileLogger.m */; };
+		2FCE9900001CA0 /* LIFEJSONLogFileFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000B80 /* LIFEJSONLogFileFormatter.m */; };
+		2FCE9900001CB0 /* LIFELog.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000BA0 /* LIFELog.m */; };
+		2FCE9900001CC0 /* LIFELogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000BC0 /* LIFELogger.m */; };
+		2FCE9900001CD0 /* LIFENotificationLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000BF0 /* LIFENotificationLogger.m */; };
+		2FCE9900001CE0 /* LIFETTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000C10 /* LIFETTYLogger.m */; };
+		2FCE9900001CF0 /* LIFEAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000C50 /* LIFEAnnotationView.m */; };
+		2FCE9900001D00 /* LIFEArrowAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000C70 /* LIFEArrowAnnotationView.m */; };
+		2FCE9900001D10 /* LIFEBlurAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000C90 /* LIFEBlurAnnotationView.m */; };
+		2FCE9900001D20 /* LIFEFreeformAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000CB0 /* LIFEFreeformAnnotationView.m */; };
+		2FCE9900001D30 /* LIFELoupeAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000CD0 /* LIFELoupeAnnotationView.m */; };
+		2FCE9900001D40 /* LIFEContainerAlertToImageEditorAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000D00 /* LIFEContainerAlertToImageEditorAnimator.m */; };
+		2FCE9900001D50 /* LIFEContainerModalDismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000D20 /* LIFEContainerModalDismissAnimator.m */; };
+		2FCE9900001D60 /* LIFEContainerModalPresentAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000D40 /* LIFEContainerModalPresentAnimator.m */; };
+		2FCE9900001D70 /* LIFEContainerTransitionContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000D60 /* LIFEContainerTransitionContext.m */; };
+		2FCE9900001D80 /* LIFEContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000D80 /* LIFEContainerViewController.m */; };
+		2FCE9900001D90 /* LIFEContainerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000DA0 /* LIFEContainerWindow.m */; };
+		2FCE9900001DA0 /* LIFEWindowBlindsAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000DC0 /* LIFEWindowBlindsAnimator.m */; };
+		2FCE9900001DB0 /* LIFEContinuousForceTouchGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000DF0 /* LIFEContinuousForceTouchGestureRecognizer.m */; };
+		2FCE9900001DC0 /* LIFEFreeformGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000E10 /* LIFEFreeformGestureRecognizer.m */; };
+		2FCE9900001DD0 /* LIFEPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000E30 /* LIFEPanGestureRecognizer.m */; };
+		2FCE9900001DE0 /* LIFEJelloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000E60 /* LIFEJelloLayer.m */; };
+		2FCE9900001DF0 /* LIFEJelloView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000E80 /* LIFEJelloView.m */; };
+		2FCE9900001E00 /* LIFEAnnotatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000EA0 /* LIFEAnnotatedImageView.m */; };
+		2FCE9900001E10 /* LIFEAppearanceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000EC0 /* LIFEAppearanceImpl.m */; };
+		2FCE9900001E20 /* LIFEAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000EE0 /* LIFEAttachmentView.m */; };
+		2FCE9900001E30 /* LIFEBugButtonWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000F00 /* LIFEBugButtonWindow.m */; };
+		2FCE9900001E40 /* LIFEComponentPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000F20 /* LIFEComponentPickerCell.m */; };
+		2FCE9900001E50 /* LIFEFloatingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000F40 /* LIFEFloatingButton.m */; };
+		2FCE9900001E60 /* LIFELocalizedStringProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000F60 /* LIFELocalizedStringProvider.m */; };
+		2FCE9900001E70 /* LIFEMenuPopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000F80 /* LIFEMenuPopoverView.m */; };
+		2FCE9900001E80 /* LIFEOverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000FA0 /* LIFEOverlayWindow.m */; };
+		2FCE9900001E90 /* LIFEPoweredByBuglifeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000FC0 /* LIFEPoweredByBuglifeView.m */; };
+		2FCE9900001EA0 /* LIFEReportView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900000FE0 /* LIFEReportView.m */; };
+		2FCE9900001EB0 /* LIFEReportWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001000 /* LIFEReportWindow.m */; };
+		2FCE9900001EC0 /* LIFEScreenshotAnnotatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001020 /* LIFEScreenshotAnnotatorView.m */; };
+		2FCE9900001ED0 /* LIFEStepsToReproduceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001040 /* LIFEStepsToReproduceCell.m */; };
+		2FCE9900001EE0 /* LIFETextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001060 /* LIFETextFieldCell.m */; };
+		2FCE9900001EF0 /* LIFETitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001080 /* LIFETitleCell.m */; };
+		2FCE9900001F00 /* LIFEWhatHappenedTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000010A0 /* LIFEWhatHappenedTextView.m */; };
+		2FCE9900001F10 /* LIFEToastController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000010D0 /* LIFEToastController.m */; };
+		2FCE9900001F20 /* LIFEToastControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000010F0 /* LIFEToastControllerView.m */; };
+		2FCE9900001F30 /* LIFEToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001110 /* LIFEToastView.m */; };
+		2FCE9900001F40 /* Buglife+UIStuff.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000110 /* Buglife+UIStuff.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900001F50 /* LIFECategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000130 /* LIFECategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900001F60 /* LIFECompatibilityUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000150 /* LIFECompatibilityUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900001F70 /* LIFEGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000170 /* LIFEGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900001F80 /* LIFEMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000190 /* LIFEMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900001F90 /* NSArray+LIFEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000001A0 /* NSArray+LIFEAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900001FA0 /* NSError+LIFEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000001C0 /* NSError+LIFEAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900001FB0 /* NSLayoutConstraint+LIFEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000001E0 /* NSLayoutConstraint+LIFEAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900001FC0 /* NSMutableDictionary+LIFEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000200 /* NSMutableDictionary+LIFEAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900001FD0 /* NSString+LIFEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000220 /* NSString+LIFEAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900001FE0 /* UIApplication+LIFEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000240 /* UIApplication+LIFEAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900001FF0 /* UIBezierPath+LIFEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000260 /* UIBezierPath+LIFEAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002000 /* UIColor+LIFEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000280 /* UIColor+LIFEAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002010 /* UIControl+LIFEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000002A0 /* UIControl+LIFEAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002020 /* UIDevice+LIFEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000002C0 /* UIDevice+LIFEAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002030 /* UIImage+LIFEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000002E0 /* UIImage+LIFEAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002040 /* UITableView+LIFEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000300 /* UITableView+LIFEAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002050 /* UITextView+LIFEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000320 /* UITextView+LIFEAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002060 /* UIView+LIFEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000340 /* UIView+LIFEAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002070 /* UIViewController+LIFEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000360 /* UIViewController+LIFEAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002080 /* UIWindow+LIFEAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000380 /* UIWindow+LIFEAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002090 /* Buglife+LocalizedStrings.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000003A0 /* Buglife+LocalizedStrings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000020A0 /* Buglife.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000003C0 /* Buglife.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000020B0 /* LIFEAlertAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000400 /* LIFEAlertAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000020C0 /* LIFEAlertActionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000420 /* LIFEAlertActionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000020D0 /* LIFEAlertAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000440 /* LIFEAlertAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000020E0 /* LIFEAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000460 /* LIFEAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000020F0 /* LIFEAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000480 /* LIFEAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002100 /* LIFEImageEditorSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000004B0 /* LIFEImageEditorSegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002110 /* LIFEImageEditorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000004D0 /* LIFEImageEditorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002120 /* LIFEImageEditorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000004F0 /* LIFEImageEditorViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002130 /* LIFEToolButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000510 /* LIFEToolButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002140 /* LIFEAVPlayerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000530 /* LIFEAVPlayerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002150 /* LIFEComponentPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000550 /* LIFEComponentPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002160 /* LIFELogViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000570 /* LIFELogViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002170 /* LIFENavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000590 /* LIFENavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002180 /* LIFEPickerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000005B0 /* LIFEPickerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002190 /* LIFEReportTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000005D0 /* LIFEReportTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000021A0 /* LIFEReportViewControllerDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000005F0 /* LIFEReportViewControllerDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000021B0 /* LIFEScreenshotAnnotatorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000600 /* LIFEScreenshotAnnotatorViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000021C0 /* LIFEStepsToReproTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000620 /* LIFEStepsToReproTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000021D0 /* LIFETextInputViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000640 /* LIFETextInputViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000021E0 /* LIFEAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000660 /* LIFEAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000021F0 /* LIFEAwesomeLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000670 /* LIFEAwesomeLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002200 /* LIFEInputField.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000690 /* LIFEInputField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002210 /* LIFEPickerInputField.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000006B0 /* LIFEPickerInputField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002220 /* LIFETextInputField.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000006D0 /* LIFETextInputField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002230 /* LIFEAnnotatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000700 /* LIFEAnnotatedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002240 /* LIFEAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000720 /* LIFEAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002250 /* LIFEAppInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000740 /* LIFEAppInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002260 /* LIFEAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000760 /* LIFEAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002270 /* LIFEDeviceBatteryState.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000780 /* LIFEDeviceBatteryState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002280 /* LIFEDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000790 /* LIFEDeviceInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002290 /* LIFEImageFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000007B0 /* LIFEImageFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000022A0 /* LIFEReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000007D0 /* LIFEReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000022B0 /* LIFEReportAttachmentImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000007F0 /* LIFEReportAttachmentImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000022C0 /* LIFEReportOwner.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000810 /* LIFEReportOwner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000022D0 /* LIFEReproStep.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000830 /* LIFEReproStep.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000022E0 /* LIFEScreenshotContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000850 /* LIFEScreenshotContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000022F0 /* LIFEUserFacingAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000870 /* LIFEUserFacingAttachment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002300 /* LIFEVideoAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000880 /* LIFEVideoAttachment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002310 /* Buglife+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000008B0 /* Buglife+Protected.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002320 /* LIFEAwesomeLogger+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000008C0 /* LIFEAwesomeLogger+Protected.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002330 /* LIFEInputField+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000008D0 /* LIFEInputField+Protected.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002340 /* LIFEPickerInputField+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000008E0 /* LIFEPickerInputField+Protected.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002350 /* LIFEAppInfoProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000900 /* LIFEAppInfoProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002360 /* LIFEAttachmentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000920 /* LIFEAttachmentManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002370 /* LIFEAVFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000940 /* LIFEAVFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002380 /* LIFEDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000960 /* LIFEDataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002390 /* LIFEDependencyLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000980 /* LIFEDependencyLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000023A0 /* LIFEDeviceInfoProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000009A0 /* LIFEDeviceInfoProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000023B0 /* LIFEImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000009C0 /* LIFEImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000023C0 /* LIFEImageProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000009E0 /* LIFEImageProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000023D0 /* LIFELogFacility.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000A00 /* LIFELogFacility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000023E0 /* LIFENetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000A20 /* LIFENetworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000023F0 /* LIFEReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000A40 /* LIFEReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002400 /* LIFERecordingShrinker.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000A60 /* LIFERecordingShrinker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002410 /* LIFEReportBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000A80 /* LIFEReportBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002420 /* LIFESwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000AA0 /* LIFESwizzler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002430 /* LIFETelephonyNetworkInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000AC0 /* LIFETelephonyNetworkInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002440 /* LIFEUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000AE0 /* LIFEUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002450 /* LIFEASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000B10 /* LIFEASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002460 /* LIFEContextAwareLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000B30 /* LIFEContextAwareLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002470 /* LIFEFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000B50 /* LIFEFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002480 /* LIFEJSONLogFileFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000B70 /* LIFEJSONLogFileFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002490 /* LIFELog.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000B90 /* LIFELog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000024A0 /* LIFELogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000BB0 /* LIFELogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000024B0 /* LIFELogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000BD0 /* LIFELogMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000024C0 /* LIFENotificationLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000BE0 /* LIFENotificationLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000024D0 /* LIFETTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000C00 /* LIFETTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000024E0 /* LIFEAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000C40 /* LIFEAnnotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000024F0 /* LIFEArrowAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000C60 /* LIFEArrowAnnotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002500 /* LIFEBlurAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000C80 /* LIFEBlurAnnotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002510 /* LIFEFreeformAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000CA0 /* LIFEFreeformAnnotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002520 /* LIFELoupeAnnotationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000CC0 /* LIFELoupeAnnotationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002530 /* LIFEContainerAlertToImageEditorAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000CF0 /* LIFEContainerAlertToImageEditorAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002540 /* LIFEContainerModalDismissAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000D10 /* LIFEContainerModalDismissAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002550 /* LIFEContainerModalPresentAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000D30 /* LIFEContainerModalPresentAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002560 /* LIFEContainerTransitionContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000D50 /* LIFEContainerTransitionContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002570 /* LIFEContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000D70 /* LIFEContainerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002580 /* LIFEContainerWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000D90 /* LIFEContainerWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002590 /* LIFEWindowBlindsAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000DB0 /* LIFEWindowBlindsAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000025A0 /* LIFEContinuousForceTouchGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000DE0 /* LIFEContinuousForceTouchGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000025B0 /* LIFEFreeformGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000E00 /* LIFEFreeformGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000025C0 /* LIFEPanGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000E20 /* LIFEPanGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000025D0 /* LIFEJelloLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000E50 /* LIFEJelloLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000025E0 /* LIFEJelloView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000E70 /* LIFEJelloView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000025F0 /* LIFEAnnotatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000E90 /* LIFEAnnotatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002600 /* LIFEAppearanceImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000EB0 /* LIFEAppearanceImpl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002610 /* LIFEAttachmentView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000ED0 /* LIFEAttachmentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002620 /* LIFEBugButtonWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000EF0 /* LIFEBugButtonWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002630 /* LIFEComponentPickerCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000F10 /* LIFEComponentPickerCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002640 /* LIFEFloatingButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000F30 /* LIFEFloatingButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002650 /* LIFELocalizedStringProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000F50 /* LIFELocalizedStringProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002660 /* LIFEMenuPopoverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000F70 /* LIFEMenuPopoverView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002670 /* LIFEOverlayWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000F90 /* LIFEOverlayWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002680 /* LIFEPoweredByBuglifeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000FB0 /* LIFEPoweredByBuglifeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002690 /* LIFEReportView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000FD0 /* LIFEReportView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000026A0 /* LIFEReportWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900000FF0 /* LIFEReportWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000026B0 /* LIFEScreenshotAnnotatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001010 /* LIFEScreenshotAnnotatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000026C0 /* LIFEStepsToReproduceCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001030 /* LIFEStepsToReproduceCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000026D0 /* LIFETextFieldCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001050 /* LIFETextFieldCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000026E0 /* LIFETitleCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001070 /* LIFETitleCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE99000026F0 /* LIFEWhatHappenedTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001090 /* LIFEWhatHappenedTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002700 /* LIFEToastController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000010C0 /* LIFEToastController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002710 /* LIFEToastControllerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000010E0 /* LIFEToastControllerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002720 /* LIFEToastView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001100 /* LIFEToastView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002730 /* MLSBugReporterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001150 /* MLSBugReporterManager.m */; };
+		2FCE9900002740 /* MLSBugReportNetworkModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000011A0 /* MLSBugReportNetworkModelManager.m */; };
+		2FCE9900002750 /* MLSBugReporterBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000011D0 /* MLSBugReporterBaseModel.m */; };
+		2FCE9900002760 /* MLSBugRepotRootModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000011F0 /* MLSBugRepotRootModel.m */; };
+		2FCE9900002770 /* MLSZenTaoBugModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001210 /* MLSZenTaoBugModel.m */; };
+		2FCE9900002780 /* MLSZentaoConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001230 /* MLSZentaoConfigModel.m */; };
+		2FCE9900002790 /* MLSZenTaoFieldListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001250 /* MLSZenTaoFieldListModel.m */; };
+		2FCE99000027A0 /* MLSZenTaoUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001270 /* MLSZenTaoUserModel.m */; };
+		2FCE99000027B0 /* MLSBugReportCreateBugReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000012A0 /* MLSBugReportCreateBugReq.m */; };
+		2FCE99000027C0 /* MLSBugReportReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000012C0 /* MLSBugReportReq.m */; };
+		2FCE99000027D0 /* MLSZenTaoConfigReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000012E0 /* MLSZenTaoConfigReq.m */; };
+		2FCE99000027E0 /* MLSZenTaoGetAllBuildsReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001300 /* MLSZenTaoGetAllBuildsReq.m */; };
+		2FCE99000027F0 /* MLSZenTaoGetAllUsersReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001320 /* MLSZenTaoGetAllUsersReq.m */; };
+		2FCE9900002800 /* MLSZenTaoLoginReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001340 /* MLSZenTaoLoginReq.m */; };
+		2FCE9900002810 /* MLSZentaoPingReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001360 /* MLSZentaoPingReq.m */; };
+		2FCE9900002820 /* MLSZenTaoUploadFileReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001380 /* MLSZenTaoUploadFileReq.m */; };
+		2FCE9900002830 /* MLSBuglifeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000013C0 /* MLSBuglifeManager.m */; };
+		2FCE9900002840 /* MLSBugReporterManager+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000013E0 /* MLSBugReporterManager+Private.m */; };
+		2FCE9900002850 /* MLSDeviceInfoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001400 /* MLSDeviceInfoTool.m */; };
+		2FCE9900002860 /* MLSZenTaoBugFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001420 /* MLSZenTaoBugFiled.m */; };
+		2FCE9900002870 /* MLSZentaoDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001440 /* MLSZentaoDataProvider.m */; };
+		2FCE9900002880 /* UIDevice+MLSBugReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001460 /* UIDevice+MLSBugReporter.m */; };
+		2FCE9900002890 /* MLSBugConsoleTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001490 /* MLSBugConsoleTracker.m */; };
+		2FCE99000028A0 /* KSCrashReportFilterAppleFmt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000014D0 /* KSCrashReportFilterAppleFmt.m */; };
+		2FCE99000028B0 /* KSReachabilityKSCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000014F0 /* KSReachabilityKSCrash.m */; };
+		2FCE99000028C0 /* MLSCrashTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001510 /* MLSCrashTracker.m */; };
+		2FCE99000028D0 /* MLSBugLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001540 /* MLSBugLogger.m */; };
+		2FCE99000028E0 /* MLSNetworkTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001570 /* MLSNetworkTracker.m */; };
+		2FCE99000028F0 /* MLSBugReporterOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000015A0 /* MLSBugReporterOptions.m */; };
+		2FCE9900002900 /* MLSBugReporterLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000015D0 /* MLSBugReporterLoginViewController.m */; };
+		2FCE9900002910 /* MLSUserStepTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001600 /* MLSUserStepTracker.m */; };
+		2FCE9900002920 /* MLSBugReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001130 /* MLSBugReporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002930 /* MLSBugReporterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001140 /* MLSBugReporterManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002940 /* MLSBugReportNetworkModelManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001190 /* MLSBugReportNetworkModelManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002950 /* MLSBugReporterBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000011C0 /* MLSBugReporterBaseModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002960 /* MLSBugRepotRootModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000011E0 /* MLSBugRepotRootModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002970 /* MLSZenTaoBugModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001200 /* MLSZenTaoBugModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002980 /* MLSZentaoConfigModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001220 /* MLSZentaoConfigModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002990 /* MLSZenTaoFieldListModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001240 /* MLSZenTaoFieldListModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE99000029A0 /* MLSZenTaoUserModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001260 /* MLSZenTaoUserModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE99000029B0 /* MLSBugReportCreateBugReq.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001290 /* MLSBugReportCreateBugReq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE99000029C0 /* MLSBugReportReq.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000012B0 /* MLSBugReportReq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE99000029D0 /* MLSZenTaoConfigReq.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000012D0 /* MLSZenTaoConfigReq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE99000029E0 /* MLSZenTaoGetAllBuildsReq.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000012F0 /* MLSZenTaoGetAllBuildsReq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE99000029F0 /* MLSZenTaoGetAllUsersReq.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001310 /* MLSZenTaoGetAllUsersReq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002A00 /* MLSZenTaoLoginReq.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001330 /* MLSZenTaoLoginReq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002A10 /* MLSZentaoPingReq.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001350 /* MLSZentaoPingReq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002A20 /* MLSZenTaoUploadFileReq.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001370 /* MLSZenTaoUploadFileReq.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002A30 /* MLSBuglifeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000013B0 /* MLSBuglifeManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002A40 /* MLSBugReporterManager+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000013D0 /* MLSBugReporterManager+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002A50 /* MLSDeviceInfoTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000013F0 /* MLSDeviceInfoTool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002A60 /* MLSZenTaoBugFiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001410 /* MLSZenTaoBugFiled.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002A70 /* MLSZentaoDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001430 /* MLSZentaoDataProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002A80 /* UIDevice+MLSBugReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001450 /* UIDevice+MLSBugReporter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002A90 /* MLSBugConsoleTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001480 /* MLSBugConsoleTracker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002AA0 /* KSCrashReportFilterAppleFmt.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000014C0 /* KSCrashReportFilterAppleFmt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002AB0 /* KSReachabilityKSCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000014E0 /* KSReachabilityKSCrash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002AC0 /* MLSCrashTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001500 /* MLSCrashTracker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002AD0 /* MLSBugLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001530 /* MLSBugLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002AE0 /* MLSNetworkTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001560 /* MLSNetworkTracker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002AF0 /* MLSBugReporterOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001590 /* MLSBugReporterOptions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002B00 /* MLSBugReporterLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000015C0 /* MLSBugReporterLoginViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002B10 /* MLSUserStepTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000015F0 /* MLSUserStepTracker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FCE9900002B20 /* MLSFLEXNetworkRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001640 /* MLSFLEXNetworkRecorder.m */; };
+		2FCE9900002B30 /* MLSFLEXNetworkTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001660 /* MLSFLEXNetworkTransaction.m */; };
+		2FCE9900002B40 /* MLSFLEXNetworkObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900001690 /* MLSFLEXNetworkObserver.m */; };
+		2FCE9900002B50 /* MLSFLEXUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE99000016C0 /* MLSFLEXUtility.m */; };
+		2FCE9900002B60 /* MLSFLEXNetworkRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001630 /* MLSFLEXNetworkRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002B70 /* MLSFLEXNetworkTransaction.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001650 /* MLSFLEXNetworkTransaction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002B80 /* MLSFLEXNetworkObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900001680 /* MLSFLEXNetworkObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002B90 /* MLSFLEXUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE99000016B0 /* MLSFLEXUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002BE0 /* MLSBugReporter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FCE9900002BD0 /* MLSBugReporter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FCE9900002C20 /* MLSBugReporter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCE9900002C10 /* MLSBugReporter-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2FCE9900002C40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FCE9900002C30 /* MLSUICore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 307F2E3C4EEF8811540E3E3A490969A6;
+			remoteInfo = MLSUICore;
+		};
+		2FCE9900002C70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FCE9900002C60 /* QMUIKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CB3BDBE3FF3AAF85599007DFE93A63E2;
+			remoteInfo = QMUIKit;
+		};
+		2FCE9900002CA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FCE9900002C90 /* MLSNetwork.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A5C02584396945E73AD9AAAD87F9719F;
+			remoteInfo = MLSNetwork;
+		};
+		2FCE9900002CD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FCE9900002CC0 /* MLSModel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D30A9A9F74156B8507F6191110393560;
+			remoteInfo = MLSModel;
+		};
+		2FCE9900002D00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FCE9900002CF0 /* hpple.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC685DDE54D0B182F23A5D89E3FAFCA2;
+			remoteInfo = hpple;
+		};
+		2FCE9900002D30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FCE9900002D20 /* matrix-minlison.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F49A32D62CEC736B913AB6ABAD6802;
+			remoteInfo = "matrix-minlison";
+		};
+		2FCE9900002D60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FCE9900002D50 /* SSZipArchive.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 90CF86BC7D493DAE1C2622CE3BC678BB;
+			remoteInfo = SSZipArchive;
+		};
+		2FCE9900002D90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FCE9900002D80 /* CocoaLumberjack.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 85392ABCB5967FC7F189FA544F4E883D;
+			remoteInfo = CocoaLumberjack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2FCE99000000D0 /* MLSBugReportAspects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSBugReportAspects.h; path = MLSBugReporter/Aspects/MLSBugReportAspects.h; sourceTree = "<group>"; };
+		2FCE99000000E0 /* MLSBugReportAspects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLSBugReportAspects.m; path = MLSBugReporter/Aspects/MLSBugReportAspects.m; sourceTree = "<group>"; };
+		2FCE9900000110 /* Buglife+UIStuff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Buglife+UIStuff.h"; sourceTree = "<group>"; };
+		2FCE9900000120 /* Buglife+UIStuff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Buglife+UIStuff.m"; sourceTree = "<group>"; };
+		2FCE9900000130 /* LIFECategories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFECategories.h; sourceTree = "<group>"; };
+		2FCE9900000140 /* LIFECategories.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFECategories.m; sourceTree = "<group>"; };
+		2FCE9900000150 /* LIFECompatibilityUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFECompatibilityUtils.h; sourceTree = "<group>"; };
+		2FCE9900000160 /* LIFECompatibilityUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFECompatibilityUtils.m; sourceTree = "<group>"; };
+		2FCE9900000170 /* LIFEGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEGeometry.h; sourceTree = "<group>"; };
+		2FCE9900000180 /* LIFEGeometry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEGeometry.m; sourceTree = "<group>"; };
+		2FCE9900000190 /* LIFEMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEMacros.h; sourceTree = "<group>"; };
+		2FCE99000001A0 /* NSArray+LIFEAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+LIFEAdditions.h"; sourceTree = "<group>"; };
+		2FCE99000001B0 /* NSArray+LIFEAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LIFEAdditions.m"; sourceTree = "<group>"; };
+		2FCE99000001C0 /* NSError+LIFEAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSError+LIFEAdditions.h"; sourceTree = "<group>"; };
+		2FCE99000001D0 /* NSError+LIFEAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSError+LIFEAdditions.m"; sourceTree = "<group>"; };
+		2FCE99000001E0 /* NSLayoutConstraint+LIFEAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+LIFEAdditions.h"; sourceTree = "<group>"; };
+		2FCE99000001F0 /* NSLayoutConstraint+LIFEAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+LIFEAdditions.m"; sourceTree = "<group>"; };
+		2FCE9900000200 /* NSMutableDictionary+LIFEAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+LIFEAdditions.h"; sourceTree = "<group>"; };
+		2FCE9900000210 /* NSMutableDictionary+LIFEAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+LIFEAdditions.m"; sourceTree = "<group>"; };
+		2FCE9900000220 /* NSString+LIFEAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+LIFEAdditions.h"; sourceTree = "<group>"; };
+		2FCE9900000230 /* NSString+LIFEAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+LIFEAdditions.m"; sourceTree = "<group>"; };
+		2FCE9900000240 /* UIApplication+LIFEAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIApplication+LIFEAdditions.h"; sourceTree = "<group>"; };
+		2FCE9900000250 /* UIApplication+LIFEAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+LIFEAdditions.m"; sourceTree = "<group>"; };
+		2FCE9900000260 /* UIBezierPath+LIFEAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+LIFEAdditions.h"; sourceTree = "<group>"; };
+		2FCE9900000270 /* UIBezierPath+LIFEAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+LIFEAdditions.m"; sourceTree = "<group>"; };
+		2FCE9900000280 /* UIColor+LIFEAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+LIFEAdditions.h"; sourceTree = "<group>"; };
+		2FCE9900000290 /* UIColor+LIFEAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LIFEAdditions.m"; sourceTree = "<group>"; };
+		2FCE99000002A0 /* UIControl+LIFEAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIControl+LIFEAdditions.h"; sourceTree = "<group>"; };
+		2FCE99000002B0 /* UIControl+LIFEAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIControl+LIFEAdditions.m"; sourceTree = "<group>"; };
+		2FCE99000002C0 /* UIDevice+LIFEAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDevice+LIFEAdditions.h"; sourceTree = "<group>"; };
+		2FCE99000002D0 /* UIDevice+LIFEAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+LIFEAdditions.m"; sourceTree = "<group>"; };
+		2FCE99000002E0 /* UIImage+LIFEAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+LIFEAdditions.h"; sourceTree = "<group>"; };
+		2FCE99000002F0 /* UIImage+LIFEAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LIFEAdditions.m"; sourceTree = "<group>"; };
+		2FCE9900000300 /* UITableView+LIFEAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+LIFEAdditions.h"; sourceTree = "<group>"; };
+		2FCE9900000310 /* UITableView+LIFEAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+LIFEAdditions.m"; sourceTree = "<group>"; };
+		2FCE9900000320 /* UITextView+LIFEAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextView+LIFEAdditions.h"; sourceTree = "<group>"; };
+		2FCE9900000330 /* UITextView+LIFEAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextView+LIFEAdditions.m"; sourceTree = "<group>"; };
+		2FCE9900000340 /* UIView+LIFEAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+LIFEAdditions.h"; sourceTree = "<group>"; };
+		2FCE9900000350 /* UIView+LIFEAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+LIFEAdditions.m"; sourceTree = "<group>"; };
+		2FCE9900000360 /* UIViewController+LIFEAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LIFEAdditions.h"; sourceTree = "<group>"; };
+		2FCE9900000370 /* UIViewController+LIFEAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LIFEAdditions.m"; sourceTree = "<group>"; };
+		2FCE9900000380 /* UIWindow+LIFEAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIWindow+LIFEAdditions.h"; sourceTree = "<group>"; };
+		2FCE9900000390 /* UIWindow+LIFEAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+LIFEAdditions.m"; sourceTree = "<group>"; };
+		2FCE99000003A0 /* Buglife+LocalizedStrings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Buglife+LocalizedStrings.h"; path = "MLSBugReporter/Buglife/Source/Buglife+LocalizedStrings.h"; sourceTree = "<group>"; };
+		2FCE99000003B0 /* Buglife+LocalizedStrings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Buglife+LocalizedStrings.m"; path = "MLSBugReporter/Buglife/Source/Buglife+LocalizedStrings.m"; sourceTree = "<group>"; };
+		2FCE99000003C0 /* Buglife.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Buglife.h; path = MLSBugReporter/Buglife/Source/Buglife.h; sourceTree = "<group>"; };
+		2FCE99000003D0 /* Buglife.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Buglife.m; path = MLSBugReporter/Buglife/Source/Buglife.m; sourceTree = "<group>"; };
+		2FCE9900000400 /* LIFEAlertAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEAlertAction.h; sourceTree = "<group>"; };
+		2FCE9900000410 /* LIFEAlertAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEAlertAction.m; sourceTree = "<group>"; };
+		2FCE9900000420 /* LIFEAlertActionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEAlertActionView.h; sourceTree = "<group>"; };
+		2FCE9900000430 /* LIFEAlertActionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEAlertActionView.m; sourceTree = "<group>"; };
+		2FCE9900000440 /* LIFEAlertAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEAlertAnimator.h; sourceTree = "<group>"; };
+		2FCE9900000450 /* LIFEAlertAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEAlertAnimator.m; sourceTree = "<group>"; };
+		2FCE9900000460 /* LIFEAlertController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEAlertController.h; sourceTree = "<group>"; };
+		2FCE9900000470 /* LIFEAlertController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEAlertController.m; sourceTree = "<group>"; };
+		2FCE9900000480 /* LIFEAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEAlertView.h; sourceTree = "<group>"; };
+		2FCE9900000490 /* LIFEAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEAlertView.m; sourceTree = "<group>"; };
+		2FCE99000004B0 /* LIFEImageEditorSegmentedControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEImageEditorSegmentedControl.h; sourceTree = "<group>"; };
+		2FCE99000004C0 /* LIFEImageEditorSegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEImageEditorSegmentedControl.m; sourceTree = "<group>"; };
+		2FCE99000004D0 /* LIFEImageEditorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEImageEditorView.h; sourceTree = "<group>"; };
+		2FCE99000004E0 /* LIFEImageEditorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEImageEditorView.m; sourceTree = "<group>"; };
+		2FCE99000004F0 /* LIFEImageEditorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEImageEditorViewController.h; sourceTree = "<group>"; };
+		2FCE9900000500 /* LIFEImageEditorViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEImageEditorViewController.m; sourceTree = "<group>"; };
+		2FCE9900000510 /* LIFEToolButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEToolButton.h; sourceTree = "<group>"; };
+		2FCE9900000520 /* LIFEToolButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEToolButton.m; sourceTree = "<group>"; };
+		2FCE9900000530 /* LIFEAVPlayerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEAVPlayerViewController.h; sourceTree = "<group>"; };
+		2FCE9900000540 /* LIFEAVPlayerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEAVPlayerViewController.m; sourceTree = "<group>"; };
+		2FCE9900000550 /* LIFEComponentPickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEComponentPickerViewController.h; sourceTree = "<group>"; };
+		2FCE9900000560 /* LIFEComponentPickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEComponentPickerViewController.m; sourceTree = "<group>"; };
+		2FCE9900000570 /* LIFELogViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFELogViewController.h; sourceTree = "<group>"; };
+		2FCE9900000580 /* LIFELogViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFELogViewController.m; sourceTree = "<group>"; };
+		2FCE9900000590 /* LIFENavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFENavigationController.h; sourceTree = "<group>"; };
+		2FCE99000005A0 /* LIFENavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFENavigationController.m; sourceTree = "<group>"; };
+		2FCE99000005B0 /* LIFEPickerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEPickerViewController.h; sourceTree = "<group>"; };
+		2FCE99000005C0 /* LIFEPickerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEPickerViewController.m; sourceTree = "<group>"; };
+		2FCE99000005D0 /* LIFEReportTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEReportTableViewController.h; sourceTree = "<group>"; };
+		2FCE99000005E0 /* LIFEReportTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEReportTableViewController.m; sourceTree = "<group>"; };
+		2FCE99000005F0 /* LIFEReportViewControllerDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEReportViewControllerDelegate.h; sourceTree = "<group>"; };
+		2FCE9900000600 /* LIFEScreenshotAnnotatorViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEScreenshotAnnotatorViewController.h; sourceTree = "<group>"; };
+		2FCE9900000610 /* LIFEScreenshotAnnotatorViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEScreenshotAnnotatorViewController.m; sourceTree = "<group>"; };
+		2FCE9900000620 /* LIFEStepsToReproTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEStepsToReproTableViewController.h; sourceTree = "<group>"; };
+		2FCE9900000630 /* LIFEStepsToReproTableViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEStepsToReproTableViewController.m; sourceTree = "<group>"; };
+		2FCE9900000640 /* LIFETextInputViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFETextInputViewController.h; sourceTree = "<group>"; };
+		2FCE9900000650 /* LIFETextInputViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFETextInputViewController.m; sourceTree = "<group>"; };
+		2FCE9900000660 /* LIFEAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LIFEAppearance.h; path = MLSBugReporter/Buglife/Source/LIFEAppearance.h; sourceTree = "<group>"; };
+		2FCE9900000670 /* LIFEAwesomeLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LIFEAwesomeLogger.h; path = MLSBugReporter/Buglife/Source/LIFEAwesomeLogger.h; sourceTree = "<group>"; };
+		2FCE9900000680 /* LIFEAwesomeLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LIFEAwesomeLogger.m; path = MLSBugReporter/Buglife/Source/LIFEAwesomeLogger.m; sourceTree = "<group>"; };
+		2FCE9900000690 /* LIFEInputField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LIFEInputField.h; path = MLSBugReporter/Buglife/Source/LIFEInputField.h; sourceTree = "<group>"; };
+		2FCE99000006A0 /* LIFEInputField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LIFEInputField.m; path = MLSBugReporter/Buglife/Source/LIFEInputField.m; sourceTree = "<group>"; };
+		2FCE99000006B0 /* LIFEPickerInputField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LIFEPickerInputField.h; path = MLSBugReporter/Buglife/Source/LIFEPickerInputField.h; sourceTree = "<group>"; };
+		2FCE99000006C0 /* LIFEPickerInputField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LIFEPickerInputField.m; path = MLSBugReporter/Buglife/Source/LIFEPickerInputField.m; sourceTree = "<group>"; };
+		2FCE99000006D0 /* LIFETextInputField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LIFETextInputField.h; path = MLSBugReporter/Buglife/Source/LIFETextInputField.h; sourceTree = "<group>"; };
+		2FCE99000006E0 /* LIFETextInputField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LIFETextInputField.m; path = MLSBugReporter/Buglife/Source/LIFETextInputField.m; sourceTree = "<group>"; };
+		2FCE9900000700 /* LIFEAnnotatedImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEAnnotatedImage.h; sourceTree = "<group>"; };
+		2FCE9900000710 /* LIFEAnnotatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEAnnotatedImage.m; sourceTree = "<group>"; };
+		2FCE9900000720 /* LIFEAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEAnnotation.h; sourceTree = "<group>"; };
+		2FCE9900000730 /* LIFEAnnotation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEAnnotation.m; sourceTree = "<group>"; };
+		2FCE9900000740 /* LIFEAppInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEAppInfo.h; sourceTree = "<group>"; };
+		2FCE9900000750 /* LIFEAppInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEAppInfo.m; sourceTree = "<group>"; };
+		2FCE9900000760 /* LIFEAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEAttribute.h; sourceTree = "<group>"; };
+		2FCE9900000770 /* LIFEAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEAttribute.m; sourceTree = "<group>"; };
+		2FCE9900000780 /* LIFEDeviceBatteryState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEDeviceBatteryState.h; sourceTree = "<group>"; };
+		2FCE9900000790 /* LIFEDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEDeviceInfo.h; sourceTree = "<group>"; };
+		2FCE99000007A0 /* LIFEDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEDeviceInfo.m; sourceTree = "<group>"; };
+		2FCE99000007B0 /* LIFEImageFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEImageFormat.h; sourceTree = "<group>"; };
+		2FCE99000007C0 /* LIFEImageFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEImageFormat.m; sourceTree = "<group>"; };
+		2FCE99000007D0 /* LIFEReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEReport.h; sourceTree = "<group>"; };
+		2FCE99000007E0 /* LIFEReport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEReport.m; sourceTree = "<group>"; };
+		2FCE99000007F0 /* LIFEReportAttachmentImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEReportAttachmentImpl.h; sourceTree = "<group>"; };
+		2FCE9900000800 /* LIFEReportAttachmentImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEReportAttachmentImpl.m; sourceTree = "<group>"; };
+		2FCE9900000810 /* LIFEReportOwner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEReportOwner.h; sourceTree = "<group>"; };
+		2FCE9900000820 /* LIFEReportOwner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEReportOwner.m; sourceTree = "<group>"; };
+		2FCE9900000830 /* LIFEReproStep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEReproStep.h; sourceTree = "<group>"; };
+		2FCE9900000840 /* LIFEReproStep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEReproStep.m; sourceTree = "<group>"; };
+		2FCE9900000850 /* LIFEScreenshotContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEScreenshotContext.h; sourceTree = "<group>"; };
+		2FCE9900000860 /* LIFEScreenshotContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEScreenshotContext.m; sourceTree = "<group>"; };
+		2FCE9900000870 /* LIFEUserFacingAttachment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEUserFacingAttachment.h; sourceTree = "<group>"; };
+		2FCE9900000880 /* LIFEVideoAttachment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEVideoAttachment.h; sourceTree = "<group>"; };
+		2FCE9900000890 /* LIFEVideoAttachment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEVideoAttachment.m; sourceTree = "<group>"; };
+		2FCE99000008B0 /* Buglife+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Buglife+Protected.h"; sourceTree = "<group>"; };
+		2FCE99000008C0 /* LIFEAwesomeLogger+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LIFEAwesomeLogger+Protected.h"; sourceTree = "<group>"; };
+		2FCE99000008D0 /* LIFEInputField+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LIFEInputField+Protected.h"; sourceTree = "<group>"; };
+		2FCE99000008E0 /* LIFEPickerInputField+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LIFEPickerInputField+Protected.h"; sourceTree = "<group>"; };
+		2FCE9900000900 /* LIFEAppInfoProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEAppInfoProvider.h; sourceTree = "<group>"; };
+		2FCE9900000910 /* LIFEAppInfoProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEAppInfoProvider.m; sourceTree = "<group>"; };
+		2FCE9900000920 /* LIFEAttachmentManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEAttachmentManager.h; sourceTree = "<group>"; };
+		2FCE9900000930 /* LIFEAttachmentManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEAttachmentManager.m; sourceTree = "<group>"; };
+		2FCE9900000940 /* LIFEAVFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEAVFoundation.h; sourceTree = "<group>"; };
+		2FCE9900000950 /* LIFEAVFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEAVFoundation.m; sourceTree = "<group>"; };
+		2FCE9900000960 /* LIFEDataProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEDataProvider.h; sourceTree = "<group>"; };
+		2FCE9900000970 /* LIFEDataProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEDataProvider.m; sourceTree = "<group>"; };
+		2FCE9900000980 /* LIFEDependencyLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEDependencyLoader.h; sourceTree = "<group>"; };
+		2FCE9900000990 /* LIFEDependencyLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEDependencyLoader.m; sourceTree = "<group>"; };
+		2FCE99000009A0 /* LIFEDeviceInfoProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEDeviceInfoProvider.h; sourceTree = "<group>"; };
+		2FCE99000009B0 /* LIFEDeviceInfoProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEDeviceInfoProvider.m; sourceTree = "<group>"; };
+		2FCE99000009C0 /* LIFEImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEImagePickerController.h; sourceTree = "<group>"; };
+		2FCE99000009D0 /* LIFEImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEImagePickerController.m; sourceTree = "<group>"; };
+		2FCE99000009E0 /* LIFEImageProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEImageProcessor.h; sourceTree = "<group>"; };
+		2FCE99000009F0 /* LIFEImageProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEImageProcessor.m; sourceTree = "<group>"; };
+		2FCE9900000A00 /* LIFELogFacility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFELogFacility.h; sourceTree = "<group>"; };
+		2FCE9900000A10 /* LIFELogFacility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFELogFacility.m; sourceTree = "<group>"; };
+		2FCE9900000A20 /* LIFENetworkManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFENetworkManager.h; sourceTree = "<group>"; };
+		2FCE9900000A30 /* LIFENetworkManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFENetworkManager.m; sourceTree = "<group>"; };
+		2FCE9900000A40 /* LIFEReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEReachability.h; sourceTree = "<group>"; };
+		2FCE9900000A50 /* LIFEReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEReachability.m; sourceTree = "<group>"; };
+		2FCE9900000A60 /* LIFERecordingShrinker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFERecordingShrinker.h; sourceTree = "<group>"; };
+		2FCE9900000A70 /* LIFERecordingShrinker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFERecordingShrinker.m; sourceTree = "<group>"; };
+		2FCE9900000A80 /* LIFEReportBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEReportBuilder.h; sourceTree = "<group>"; };
+		2FCE9900000A90 /* LIFEReportBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEReportBuilder.m; sourceTree = "<group>"; };
+		2FCE9900000AA0 /* LIFESwizzler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFESwizzler.h; sourceTree = "<group>"; };
+		2FCE9900000AB0 /* LIFESwizzler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFESwizzler.m; sourceTree = "<group>"; };
+		2FCE9900000AC0 /* LIFETelephonyNetworkInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFETelephonyNetworkInfo.h; sourceTree = "<group>"; };
+		2FCE9900000AD0 /* LIFETelephonyNetworkInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFETelephonyNetworkInfo.m; sourceTree = "<group>"; };
+		2FCE9900000AE0 /* LIFEUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEUserDefaults.h; sourceTree = "<group>"; };
+		2FCE9900000AF0 /* LIFEUserDefaults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEUserDefaults.m; sourceTree = "<group>"; };
+		2FCE9900000B10 /* LIFEASLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEASLLogger.h; sourceTree = "<group>"; };
+		2FCE9900000B20 /* LIFEASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEASLLogger.m; sourceTree = "<group>"; };
+		2FCE9900000B30 /* LIFEContextAwareLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEContextAwareLogFormatter.h; sourceTree = "<group>"; };
+		2FCE9900000B40 /* LIFEContextAwareLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEContextAwareLogFormatter.m; sourceTree = "<group>"; };
+		2FCE9900000B50 /* LIFEFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEFileLogger.h; sourceTree = "<group>"; };
+		2FCE9900000B60 /* LIFEFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEFileLogger.m; sourceTree = "<group>"; };
+		2FCE9900000B70 /* LIFEJSONLogFileFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEJSONLogFileFormatter.h; sourceTree = "<group>"; };
+		2FCE9900000B80 /* LIFEJSONLogFileFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEJSONLogFileFormatter.m; sourceTree = "<group>"; };
+		2FCE9900000B90 /* LIFELog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFELog.h; sourceTree = "<group>"; };
+		2FCE9900000BA0 /* LIFELog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFELog.m; sourceTree = "<group>"; };
+		2FCE9900000BB0 /* LIFELogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFELogger.h; sourceTree = "<group>"; };
+		2FCE9900000BC0 /* LIFELogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFELogger.m; sourceTree = "<group>"; };
+		2FCE9900000BD0 /* LIFELogMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFELogMacros.h; sourceTree = "<group>"; };
+		2FCE9900000BE0 /* LIFENotificationLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFENotificationLogger.h; sourceTree = "<group>"; };
+		2FCE9900000BF0 /* LIFENotificationLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFENotificationLogger.m; sourceTree = "<group>"; };
+		2FCE9900000C00 /* LIFETTYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFETTYLogger.h; sourceTree = "<group>"; };
+		2FCE9900000C10 /* LIFETTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFETTYLogger.m; sourceTree = "<group>"; };
+		2FCE9900000C40 /* LIFEAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEAnnotationView.h; sourceTree = "<group>"; };
+		2FCE9900000C50 /* LIFEAnnotationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEAnnotationView.m; sourceTree = "<group>"; };
+		2FCE9900000C60 /* LIFEArrowAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEArrowAnnotationView.h; sourceTree = "<group>"; };
+		2FCE9900000C70 /* LIFEArrowAnnotationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEArrowAnnotationView.m; sourceTree = "<group>"; };
+		2FCE9900000C80 /* LIFEBlurAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEBlurAnnotationView.h; sourceTree = "<group>"; };
+		2FCE9900000C90 /* LIFEBlurAnnotationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEBlurAnnotationView.m; sourceTree = "<group>"; };
+		2FCE9900000CA0 /* LIFEFreeformAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEFreeformAnnotationView.h; sourceTree = "<group>"; };
+		2FCE9900000CB0 /* LIFEFreeformAnnotationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEFreeformAnnotationView.m; sourceTree = "<group>"; };
+		2FCE9900000CC0 /* LIFELoupeAnnotationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFELoupeAnnotationView.h; sourceTree = "<group>"; };
+		2FCE9900000CD0 /* LIFELoupeAnnotationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFELoupeAnnotationView.m; sourceTree = "<group>"; };
+		2FCE9900000CF0 /* LIFEContainerAlertToImageEditorAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEContainerAlertToImageEditorAnimator.h; sourceTree = "<group>"; };
+		2FCE9900000D00 /* LIFEContainerAlertToImageEditorAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEContainerAlertToImageEditorAnimator.m; sourceTree = "<group>"; };
+		2FCE9900000D10 /* LIFEContainerModalDismissAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEContainerModalDismissAnimator.h; sourceTree = "<group>"; };
+		2FCE9900000D20 /* LIFEContainerModalDismissAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEContainerModalDismissAnimator.m; sourceTree = "<group>"; };
+		2FCE9900000D30 /* LIFEContainerModalPresentAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEContainerModalPresentAnimator.h; sourceTree = "<group>"; };
+		2FCE9900000D40 /* LIFEContainerModalPresentAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEContainerModalPresentAnimator.m; sourceTree = "<group>"; };
+		2FCE9900000D50 /* LIFEContainerTransitionContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEContainerTransitionContext.h; sourceTree = "<group>"; };
+		2FCE9900000D60 /* LIFEContainerTransitionContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEContainerTransitionContext.m; sourceTree = "<group>"; };
+		2FCE9900000D70 /* LIFEContainerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEContainerViewController.h; sourceTree = "<group>"; };
+		2FCE9900000D80 /* LIFEContainerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEContainerViewController.m; sourceTree = "<group>"; };
+		2FCE9900000D90 /* LIFEContainerWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEContainerWindow.h; sourceTree = "<group>"; };
+		2FCE9900000DA0 /* LIFEContainerWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEContainerWindow.m; sourceTree = "<group>"; };
+		2FCE9900000DB0 /* LIFEWindowBlindsAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEWindowBlindsAnimator.h; sourceTree = "<group>"; };
+		2FCE9900000DC0 /* LIFEWindowBlindsAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEWindowBlindsAnimator.m; sourceTree = "<group>"; };
+		2FCE9900000DE0 /* LIFEContinuousForceTouchGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEContinuousForceTouchGestureRecognizer.h; sourceTree = "<group>"; };
+		2FCE9900000DF0 /* LIFEContinuousForceTouchGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEContinuousForceTouchGestureRecognizer.m; sourceTree = "<group>"; };
+		2FCE9900000E00 /* LIFEFreeformGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEFreeformGestureRecognizer.h; sourceTree = "<group>"; };
+		2FCE9900000E10 /* LIFEFreeformGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEFreeformGestureRecognizer.m; sourceTree = "<group>"; };
+		2FCE9900000E20 /* LIFEPanGestureRecognizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEPanGestureRecognizer.h; sourceTree = "<group>"; };
+		2FCE9900000E30 /* LIFEPanGestureRecognizer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEPanGestureRecognizer.m; sourceTree = "<group>"; };
+		2FCE9900000E50 /* LIFEJelloLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEJelloLayer.h; sourceTree = "<group>"; };
+		2FCE9900000E60 /* LIFEJelloLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEJelloLayer.m; sourceTree = "<group>"; };
+		2FCE9900000E70 /* LIFEJelloView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEJelloView.h; sourceTree = "<group>"; };
+		2FCE9900000E80 /* LIFEJelloView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEJelloView.m; sourceTree = "<group>"; };
+		2FCE9900000E90 /* LIFEAnnotatedImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEAnnotatedImageView.h; sourceTree = "<group>"; };
+		2FCE9900000EA0 /* LIFEAnnotatedImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEAnnotatedImageView.m; sourceTree = "<group>"; };
+		2FCE9900000EB0 /* LIFEAppearanceImpl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEAppearanceImpl.h; sourceTree = "<group>"; };
+		2FCE9900000EC0 /* LIFEAppearanceImpl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEAppearanceImpl.m; sourceTree = "<group>"; };
+		2FCE9900000ED0 /* LIFEAttachmentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEAttachmentView.h; sourceTree = "<group>"; };
+		2FCE9900000EE0 /* LIFEAttachmentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEAttachmentView.m; sourceTree = "<group>"; };
+		2FCE9900000EF0 /* LIFEBugButtonWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEBugButtonWindow.h; sourceTree = "<group>"; };
+		2FCE9900000F00 /* LIFEBugButtonWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEBugButtonWindow.m; sourceTree = "<group>"; };
+		2FCE9900000F10 /* LIFEComponentPickerCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEComponentPickerCell.h; sourceTree = "<group>"; };
+		2FCE9900000F20 /* LIFEComponentPickerCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEComponentPickerCell.m; sourceTree = "<group>"; };
+		2FCE9900000F30 /* LIFEFloatingButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEFloatingButton.h; sourceTree = "<group>"; };
+		2FCE9900000F40 /* LIFEFloatingButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEFloatingButton.m; sourceTree = "<group>"; };
+		2FCE9900000F50 /* LIFELocalizedStringProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFELocalizedStringProvider.h; sourceTree = "<group>"; };
+		2FCE9900000F60 /* LIFELocalizedStringProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFELocalizedStringProvider.m; sourceTree = "<group>"; };
+		2FCE9900000F70 /* LIFEMenuPopoverView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEMenuPopoverView.h; sourceTree = "<group>"; };
+		2FCE9900000F80 /* LIFEMenuPopoverView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEMenuPopoverView.m; sourceTree = "<group>"; };
+		2FCE9900000F90 /* LIFEOverlayWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEOverlayWindow.h; sourceTree = "<group>"; };
+		2FCE9900000FA0 /* LIFEOverlayWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEOverlayWindow.m; sourceTree = "<group>"; };
+		2FCE9900000FB0 /* LIFEPoweredByBuglifeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEPoweredByBuglifeView.h; sourceTree = "<group>"; };
+		2FCE9900000FC0 /* LIFEPoweredByBuglifeView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEPoweredByBuglifeView.m; sourceTree = "<group>"; };
+		2FCE9900000FD0 /* LIFEReportView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEReportView.h; sourceTree = "<group>"; };
+		2FCE9900000FE0 /* LIFEReportView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEReportView.m; sourceTree = "<group>"; };
+		2FCE9900000FF0 /* LIFEReportWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEReportWindow.h; sourceTree = "<group>"; };
+		2FCE9900001000 /* LIFEReportWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEReportWindow.m; sourceTree = "<group>"; };
+		2FCE9900001010 /* LIFEScreenshotAnnotatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEScreenshotAnnotatorView.h; sourceTree = "<group>"; };
+		2FCE9900001020 /* LIFEScreenshotAnnotatorView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEScreenshotAnnotatorView.m; sourceTree = "<group>"; };
+		2FCE9900001030 /* LIFEStepsToReproduceCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEStepsToReproduceCell.h; sourceTree = "<group>"; };
+		2FCE9900001040 /* LIFEStepsToReproduceCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEStepsToReproduceCell.m; sourceTree = "<group>"; };
+		2FCE9900001050 /* LIFETextFieldCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFETextFieldCell.h; sourceTree = "<group>"; };
+		2FCE9900001060 /* LIFETextFieldCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFETextFieldCell.m; sourceTree = "<group>"; };
+		2FCE9900001070 /* LIFETitleCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFETitleCell.h; sourceTree = "<group>"; };
+		2FCE9900001080 /* LIFETitleCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFETitleCell.m; sourceTree = "<group>"; };
+		2FCE9900001090 /* LIFEWhatHappenedTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEWhatHappenedTextView.h; sourceTree = "<group>"; };
+		2FCE99000010A0 /* LIFEWhatHappenedTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEWhatHappenedTextView.m; sourceTree = "<group>"; };
+		2FCE99000010C0 /* LIFEToastController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEToastController.h; sourceTree = "<group>"; };
+		2FCE99000010D0 /* LIFEToastController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEToastController.m; sourceTree = "<group>"; };
+		2FCE99000010E0 /* LIFEToastControllerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEToastControllerView.h; sourceTree = "<group>"; };
+		2FCE99000010F0 /* LIFEToastControllerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEToastControllerView.m; sourceTree = "<group>"; };
+		2FCE9900001100 /* LIFEToastView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LIFEToastView.h; sourceTree = "<group>"; };
+		2FCE9900001110 /* LIFEToastView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LIFEToastView.m; sourceTree = "<group>"; };
+		2FCE9900001130 /* MLSBugReporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSBugReporter.h; path = MLSBugReporter/MLSBugReporter.h; sourceTree = "<group>"; };
+		2FCE9900001140 /* MLSBugReporterManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLSBugReporterManager.h; path = MLSBugReporter/MLSBugReporterManager.h; sourceTree = "<group>"; };
+		2FCE9900001150 /* MLSBugReporterManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLSBugReporterManager.m; path = MLSBugReporter/MLSBugReporterManager.m; sourceTree = "<group>"; };
+		2FCE9900001190 /* MLSBugReportNetworkModelManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSBugReportNetworkModelManager.h; sourceTree = "<group>"; };
+		2FCE99000011A0 /* MLSBugReportNetworkModelManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSBugReportNetworkModelManager.m; sourceTree = "<group>"; };
+		2FCE99000011C0 /* MLSBugReporterBaseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSBugReporterBaseModel.h; sourceTree = "<group>"; };
+		2FCE99000011D0 /* MLSBugReporterBaseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSBugReporterBaseModel.m; sourceTree = "<group>"; };
+		2FCE99000011E0 /* MLSBugRepotRootModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSBugRepotRootModel.h; sourceTree = "<group>"; };
+		2FCE99000011F0 /* MLSBugRepotRootModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSBugRepotRootModel.m; sourceTree = "<group>"; };
+		2FCE9900001200 /* MLSZenTaoBugModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSZenTaoBugModel.h; sourceTree = "<group>"; };
+		2FCE9900001210 /* MLSZenTaoBugModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSZenTaoBugModel.m; sourceTree = "<group>"; };
+		2FCE9900001220 /* MLSZentaoConfigModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSZentaoConfigModel.h; sourceTree = "<group>"; };
+		2FCE9900001230 /* MLSZentaoConfigModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSZentaoConfigModel.m; sourceTree = "<group>"; };
+		2FCE9900001240 /* MLSZenTaoFieldListModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSZenTaoFieldListModel.h; sourceTree = "<group>"; };
+		2FCE9900001250 /* MLSZenTaoFieldListModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSZenTaoFieldListModel.m; sourceTree = "<group>"; };
+		2FCE9900001260 /* MLSZenTaoUserModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSZenTaoUserModel.h; sourceTree = "<group>"; };
+		2FCE9900001270 /* MLSZenTaoUserModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSZenTaoUserModel.m; sourceTree = "<group>"; };
+		2FCE9900001290 /* MLSBugReportCreateBugReq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSBugReportCreateBugReq.h; sourceTree = "<group>"; };
+		2FCE99000012A0 /* MLSBugReportCreateBugReq.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSBugReportCreateBugReq.m; sourceTree = "<group>"; };
+		2FCE99000012B0 /* MLSBugReportReq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSBugReportReq.h; sourceTree = "<group>"; };
+		2FCE99000012C0 /* MLSBugReportReq.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSBugReportReq.m; sourceTree = "<group>"; };
+		2FCE99000012D0 /* MLSZenTaoConfigReq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSZenTaoConfigReq.h; sourceTree = "<group>"; };
+		2FCE99000012E0 /* MLSZenTaoConfigReq.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSZenTaoConfigReq.m; sourceTree = "<group>"; };
+		2FCE99000012F0 /* MLSZenTaoGetAllBuildsReq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSZenTaoGetAllBuildsReq.h; sourceTree = "<group>"; };
+		2FCE9900001300 /* MLSZenTaoGetAllBuildsReq.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSZenTaoGetAllBuildsReq.m; sourceTree = "<group>"; };
+		2FCE9900001310 /* MLSZenTaoGetAllUsersReq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSZenTaoGetAllUsersReq.h; sourceTree = "<group>"; };
+		2FCE9900001320 /* MLSZenTaoGetAllUsersReq.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSZenTaoGetAllUsersReq.m; sourceTree = "<group>"; };
+		2FCE9900001330 /* MLSZenTaoLoginReq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSZenTaoLoginReq.h; sourceTree = "<group>"; };
+		2FCE9900001340 /* MLSZenTaoLoginReq.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSZenTaoLoginReq.m; sourceTree = "<group>"; };
+		2FCE9900001350 /* MLSZentaoPingReq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSZentaoPingReq.h; sourceTree = "<group>"; };
+		2FCE9900001360 /* MLSZentaoPingReq.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSZentaoPingReq.m; sourceTree = "<group>"; };
+		2FCE9900001370 /* MLSZenTaoUploadFileReq.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSZenTaoUploadFileReq.h; sourceTree = "<group>"; };
+		2FCE9900001380 /* MLSZenTaoUploadFileReq.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSZenTaoUploadFileReq.m; sourceTree = "<group>"; };
+		2FCE99000013B0 /* MLSBuglifeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSBuglifeManager.h; sourceTree = "<group>"; };
+		2FCE99000013C0 /* MLSBuglifeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSBuglifeManager.m; sourceTree = "<group>"; };
+		2FCE99000013D0 /* MLSBugReporterManager+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MLSBugReporterManager+Private.h"; sourceTree = "<group>"; };
+		2FCE99000013E0 /* MLSBugReporterManager+Private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MLSBugReporterManager+Private.m"; sourceTree = "<group>"; };
+		2FCE99000013F0 /* MLSDeviceInfoTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSDeviceInfoTool.h; sourceTree = "<group>"; };
+		2FCE9900001400 /* MLSDeviceInfoTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSDeviceInfoTool.m; sourceTree = "<group>"; };
+		2FCE9900001410 /* MLSZenTaoBugFiled.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSZenTaoBugFiled.h; sourceTree = "<group>"; };
+		2FCE9900001420 /* MLSZenTaoBugFiled.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSZenTaoBugFiled.m; sourceTree = "<group>"; };
+		2FCE9900001430 /* MLSZentaoDataProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSZentaoDataProvider.h; sourceTree = "<group>"; };
+		2FCE9900001440 /* MLSZentaoDataProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSZentaoDataProvider.m; sourceTree = "<group>"; };
+		2FCE9900001450 /* UIDevice+MLSBugReporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDevice+MLSBugReporter.h"; sourceTree = "<group>"; };
+		2FCE9900001460 /* UIDevice+MLSBugReporter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+MLSBugReporter.m"; sourceTree = "<group>"; };
+		2FCE9900001480 /* MLSBugConsoleTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSBugConsoleTracker.h; sourceTree = "<group>"; };
+		2FCE9900001490 /* MLSBugConsoleTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSBugConsoleTracker.m; sourceTree = "<group>"; };
+		2FCE99000014C0 /* KSCrashReportFilterAppleFmt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSCrashReportFilterAppleFmt.h; sourceTree = "<group>"; };
+		2FCE99000014D0 /* KSCrashReportFilterAppleFmt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KSCrashReportFilterAppleFmt.m; sourceTree = "<group>"; };
+		2FCE99000014E0 /* KSReachabilityKSCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KSReachabilityKSCrash.h; sourceTree = "<group>"; };
+		2FCE99000014F0 /* KSReachabilityKSCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KSReachabilityKSCrash.m; sourceTree = "<group>"; };
+		2FCE9900001500 /* MLSCrashTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSCrashTracker.h; sourceTree = "<group>"; };
+		2FCE9900001510 /* MLSCrashTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSCrashTracker.m; sourceTree = "<group>"; };
+		2FCE9900001530 /* MLSBugLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSBugLogger.h; sourceTree = "<group>"; };
+		2FCE9900001540 /* MLSBugLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSBugLogger.m; sourceTree = "<group>"; };
+		2FCE9900001560 /* MLSNetworkTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSNetworkTracker.h; sourceTree = "<group>"; };
+		2FCE9900001570 /* MLSNetworkTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSNetworkTracker.m; sourceTree = "<group>"; };
+		2FCE9900001590 /* MLSBugReporterOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSBugReporterOptions.h; sourceTree = "<group>"; };
+		2FCE99000015A0 /* MLSBugReporterOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSBugReporterOptions.m; sourceTree = "<group>"; };
+		2FCE99000015C0 /* MLSBugReporterLoginViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSBugReporterLoginViewController.h; sourceTree = "<group>"; };
+		2FCE99000015D0 /* MLSBugReporterLoginViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSBugReporterLoginViewController.m; sourceTree = "<group>"; };
+		2FCE99000015F0 /* MLSUserStepTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSUserStepTracker.h; sourceTree = "<group>"; };
+		2FCE9900001600 /* MLSUserStepTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSUserStepTracker.m; sourceTree = "<group>"; };
+		2FCE9900001630 /* MLSFLEXNetworkRecorder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSFLEXNetworkRecorder.h; sourceTree = "<group>"; };
+		2FCE9900001640 /* MLSFLEXNetworkRecorder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSFLEXNetworkRecorder.m; sourceTree = "<group>"; };
+		2FCE9900001650 /* MLSFLEXNetworkTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSFLEXNetworkTransaction.h; sourceTree = "<group>"; };
+		2FCE9900001660 /* MLSFLEXNetworkTransaction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSFLEXNetworkTransaction.m; sourceTree = "<group>"; };
+		2FCE9900001680 /* MLSFLEXNetworkObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSFLEXNetworkObserver.h; sourceTree = "<group>"; };
+		2FCE9900001690 /* MLSFLEXNetworkObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSFLEXNetworkObserver.m; sourceTree = "<group>"; };
+		2FCE99000016B0 /* MLSFLEXUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSFLEXUtility.h; sourceTree = "<group>"; };
+		2FCE99000016C0 /* MLSFLEXUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSFLEXUtility.m; sourceTree = "<group>"; };
+		2FCE99000016E0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		2FCE99000016F0 /* MLSBugReporter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MLSBugReporter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2FCE9900001700 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		2FCE99000017B0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2FCE9900002BB0 /* MLSBugReporter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MLSBugReporter.xcconfig; sourceTree = "<group>"; };
+		2FCE9900002BC0 /* MLSBugReporter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MLSBugReporter.modulemap; sourceTree = "<group>"; };
+		2FCE9900002BD0 /* MLSBugReporter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MLSBugReporter-umbrella.h"; sourceTree = "<group>"; };
+		2FCE9900002BF0 /* MLSBugReporter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MLSBugReporter-Info.plist"; sourceTree = "<group>"; };
+		2FCE9900002C00 /* MLSBugReporter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MLSBugReporter-prefix.pch"; sourceTree = "<group>"; };
+		2FCE9900002C10 /* MLSBugReporter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MLSBugReporter-dummy.m"; sourceTree = "<group>"; };
+		2FCE9900002C30 /* MLSUICore */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MLSUICore; path = MLSUICore.xcodeproj; sourceTree = "<group>"; };
+		2FCE9900002C60 /* QMUIKit */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QMUIKit; path = QMUIKit.xcodeproj; sourceTree = "<group>"; };
+		2FCE9900002C90 /* MLSNetwork */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MLSNetwork; path = MLSNetwork.xcodeproj; sourceTree = "<group>"; };
+		2FCE9900002CC0 /* MLSModel */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MLSModel; path = MLSModel.xcodeproj; sourceTree = "<group>"; };
+		2FCE9900002CF0 /* hpple */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = hpple; path = hpple.xcodeproj; sourceTree = "<group>"; };
+		2FCE9900002D20 /* matrix-minlison */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "matrix-minlison"; path = "matrix-minlison.xcodeproj"; sourceTree = "<group>"; };
+		2FCE9900002D50 /* SSZipArchive */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SSZipArchive; path = SSZipArchive.xcodeproj; sourceTree = "<group>"; };
+		2FCE9900002D80 /* CocoaLumberjack */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaLumberjack; path = CocoaLumberjack.xcodeproj; sourceTree = "<group>"; };
+		8ECDC0B66700895F65093CC739AC76AA /* MLSBugReporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MLSBugReporter.framework; path = MLSBugReporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FCE9900001780 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FCE99000017C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FCE9900000010 = {
+			isa = PBXGroup;
+			children = (
+				2FCE99000000A0 /* Dependencies */,
+				2FCE9900000060 /* Frameworks */,
+				2FCE99000000B0 /* MLSBugReporter */,
+				2FCE9900000020 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2FCE9900000020 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8ECDC0B66700895F65093CC739AC76AA /* MLSBugReporter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FCE9900000060 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE99000017A0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FCE99000000A0 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900002D80 /* CocoaLumberjack */,
+				2FCE9900002CF0 /* hpple */,
+				2FCE9900002D20 /* matrix-minlison */,
+				2FCE9900002CC0 /* MLSModel */,
+				2FCE9900002C90 /* MLSNetwork */,
+				2FCE9900002C30 /* MLSUICore */,
+				2FCE9900002C60 /* QMUIKit */,
+				2FCE9900002D50 /* SSZipArchive */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		2FCE99000000B0 /* MLSBugReporter */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE99000000C0 /* Aspects */,
+				2FCE99000000F0 /* Buglife */,
+				2FCE9900001120 /* Core */,
+				2FCE9900001610 /* NetworkTrack */,
+				2FCE99000016D0 /* Pod */,
+				2FCE9900002BA0 /* Support Files */,
+			);
+			name = MLSBugReporter;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		2FCE99000000C0 /* Aspects */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE99000000D0 /* MLSBugReportAspects.h */,
+				2FCE99000000E0 /* MLSBugReportAspects.m */,
+			);
+			name = Aspects;
+			sourceTree = "<group>";
+		};
+		2FCE99000000F0 /* Buglife */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE99000003C0 /* Buglife.h */,
+				2FCE99000003D0 /* Buglife.m */,
+				2FCE99000003A0 /* Buglife+LocalizedStrings.h */,
+				2FCE99000003B0 /* Buglife+LocalizedStrings.m */,
+				2FCE9900000660 /* LIFEAppearance.h */,
+				2FCE9900000670 /* LIFEAwesomeLogger.h */,
+				2FCE9900000680 /* LIFEAwesomeLogger.m */,
+				2FCE9900000690 /* LIFEInputField.h */,
+				2FCE99000006A0 /* LIFEInputField.m */,
+				2FCE99000006B0 /* LIFEPickerInputField.h */,
+				2FCE99000006C0 /* LIFEPickerInputField.m */,
+				2FCE99000006D0 /* LIFETextInputField.h */,
+				2FCE99000006E0 /* LIFETextInputField.m */,
+				2FCE9900000100 /* Additions */,
+				2FCE99000003E0 /* Controllers */,
+				2FCE99000006F0 /* Models */,
+				2FCE99000008A0 /* Protected */,
+				2FCE99000008F0 /* Services */,
+				2FCE9900000C20 /* Views */,
+			);
+			name = Buglife;
+			sourceTree = "<group>";
+		};
+		2FCE9900000100 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900000110 /* Buglife+UIStuff.h */,
+				2FCE9900000120 /* Buglife+UIStuff.m */,
+				2FCE9900000130 /* LIFECategories.h */,
+				2FCE9900000140 /* LIFECategories.m */,
+				2FCE9900000150 /* LIFECompatibilityUtils.h */,
+				2FCE9900000160 /* LIFECompatibilityUtils.m */,
+				2FCE9900000170 /* LIFEGeometry.h */,
+				2FCE9900000180 /* LIFEGeometry.m */,
+				2FCE9900000190 /* LIFEMacros.h */,
+				2FCE99000001A0 /* NSArray+LIFEAdditions.h */,
+				2FCE99000001B0 /* NSArray+LIFEAdditions.m */,
+				2FCE99000001C0 /* NSError+LIFEAdditions.h */,
+				2FCE99000001D0 /* NSError+LIFEAdditions.m */,
+				2FCE99000001E0 /* NSLayoutConstraint+LIFEAdditions.h */,
+				2FCE99000001F0 /* NSLayoutConstraint+LIFEAdditions.m */,
+				2FCE9900000200 /* NSMutableDictionary+LIFEAdditions.h */,
+				2FCE9900000210 /* NSMutableDictionary+LIFEAdditions.m */,
+				2FCE9900000220 /* NSString+LIFEAdditions.h */,
+				2FCE9900000230 /* NSString+LIFEAdditions.m */,
+				2FCE9900000240 /* UIApplication+LIFEAdditions.h */,
+				2FCE9900000250 /* UIApplication+LIFEAdditions.m */,
+				2FCE9900000260 /* UIBezierPath+LIFEAdditions.h */,
+				2FCE9900000270 /* UIBezierPath+LIFEAdditions.m */,
+				2FCE9900000280 /* UIColor+LIFEAdditions.h */,
+				2FCE9900000290 /* UIColor+LIFEAdditions.m */,
+				2FCE99000002A0 /* UIControl+LIFEAdditions.h */,
+				2FCE99000002B0 /* UIControl+LIFEAdditions.m */,
+				2FCE99000002C0 /* UIDevice+LIFEAdditions.h */,
+				2FCE99000002D0 /* UIDevice+LIFEAdditions.m */,
+				2FCE99000002E0 /* UIImage+LIFEAdditions.h */,
+				2FCE99000002F0 /* UIImage+LIFEAdditions.m */,
+				2FCE9900000300 /* UITableView+LIFEAdditions.h */,
+				2FCE9900000310 /* UITableView+LIFEAdditions.m */,
+				2FCE9900000320 /* UITextView+LIFEAdditions.h */,
+				2FCE9900000330 /* UITextView+LIFEAdditions.m */,
+				2FCE9900000340 /* UIView+LIFEAdditions.h */,
+				2FCE9900000350 /* UIView+LIFEAdditions.m */,
+				2FCE9900000360 /* UIViewController+LIFEAdditions.h */,
+				2FCE9900000370 /* UIViewController+LIFEAdditions.m */,
+				2FCE9900000380 /* UIWindow+LIFEAdditions.h */,
+				2FCE9900000390 /* UIWindow+LIFEAdditions.m */,
+			);
+			name = Additions;
+			path = MLSBugReporter/Buglife/Source/Additions;
+			sourceTree = "<group>";
+		};
+		2FCE99000003E0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900000530 /* LIFEAVPlayerViewController.h */,
+				2FCE9900000540 /* LIFEAVPlayerViewController.m */,
+				2FCE9900000550 /* LIFEComponentPickerViewController.h */,
+				2FCE9900000560 /* LIFEComponentPickerViewController.m */,
+				2FCE9900000570 /* LIFELogViewController.h */,
+				2FCE9900000580 /* LIFELogViewController.m */,
+				2FCE9900000590 /* LIFENavigationController.h */,
+				2FCE99000005A0 /* LIFENavigationController.m */,
+				2FCE99000005B0 /* LIFEPickerViewController.h */,
+				2FCE99000005C0 /* LIFEPickerViewController.m */,
+				2FCE99000005D0 /* LIFEReportTableViewController.h */,
+				2FCE99000005E0 /* LIFEReportTableViewController.m */,
+				2FCE99000005F0 /* LIFEReportViewControllerDelegate.h */,
+				2FCE9900000600 /* LIFEScreenshotAnnotatorViewController.h */,
+				2FCE9900000610 /* LIFEScreenshotAnnotatorViewController.m */,
+				2FCE9900000620 /* LIFEStepsToReproTableViewController.h */,
+				2FCE9900000630 /* LIFEStepsToReproTableViewController.m */,
+				2FCE9900000640 /* LIFETextInputViewController.h */,
+				2FCE9900000650 /* LIFETextInputViewController.m */,
+				2FCE99000003F0 /* Alert View */,
+				2FCE99000004A0 /* Image Editor */,
+			);
+			name = Controllers;
+			path = MLSBugReporter/Buglife/Source/Controllers;
+			sourceTree = "<group>";
+		};
+		2FCE99000003F0 /* Alert View */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900000400 /* LIFEAlertAction.h */,
+				2FCE9900000410 /* LIFEAlertAction.m */,
+				2FCE9900000420 /* LIFEAlertActionView.h */,
+				2FCE9900000430 /* LIFEAlertActionView.m */,
+				2FCE9900000440 /* LIFEAlertAnimator.h */,
+				2FCE9900000450 /* LIFEAlertAnimator.m */,
+				2FCE9900000460 /* LIFEAlertController.h */,
+				2FCE9900000470 /* LIFEAlertController.m */,
+				2FCE9900000480 /* LIFEAlertView.h */,
+				2FCE9900000490 /* LIFEAlertView.m */,
+			);
+			name = "Alert View";
+			path = "Alert View";
+			sourceTree = "<group>";
+		};
+		2FCE99000004A0 /* Image Editor */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE99000004B0 /* LIFEImageEditorSegmentedControl.h */,
+				2FCE99000004C0 /* LIFEImageEditorSegmentedControl.m */,
+				2FCE99000004D0 /* LIFEImageEditorView.h */,
+				2FCE99000004E0 /* LIFEImageEditorView.m */,
+				2FCE99000004F0 /* LIFEImageEditorViewController.h */,
+				2FCE9900000500 /* LIFEImageEditorViewController.m */,
+				2FCE9900000510 /* LIFEToolButton.h */,
+				2FCE9900000520 /* LIFEToolButton.m */,
+			);
+			name = "Image Editor";
+			path = "Image Editor";
+			sourceTree = "<group>";
+		};
+		2FCE99000006F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900000700 /* LIFEAnnotatedImage.h */,
+				2FCE9900000710 /* LIFEAnnotatedImage.m */,
+				2FCE9900000720 /* LIFEAnnotation.h */,
+				2FCE9900000730 /* LIFEAnnotation.m */,
+				2FCE9900000740 /* LIFEAppInfo.h */,
+				2FCE9900000750 /* LIFEAppInfo.m */,
+				2FCE9900000760 /* LIFEAttribute.h */,
+				2FCE9900000770 /* LIFEAttribute.m */,
+				2FCE9900000780 /* LIFEDeviceBatteryState.h */,
+				2FCE9900000790 /* LIFEDeviceInfo.h */,
+				2FCE99000007A0 /* LIFEDeviceInfo.m */,
+				2FCE99000007B0 /* LIFEImageFormat.h */,
+				2FCE99000007C0 /* LIFEImageFormat.m */,
+				2FCE99000007D0 /* LIFEReport.h */,
+				2FCE99000007E0 /* LIFEReport.m */,
+				2FCE99000007F0 /* LIFEReportAttachmentImpl.h */,
+				2FCE9900000800 /* LIFEReportAttachmentImpl.m */,
+				2FCE9900000810 /* LIFEReportOwner.h */,
+				2FCE9900000820 /* LIFEReportOwner.m */,
+				2FCE9900000830 /* LIFEReproStep.h */,
+				2FCE9900000840 /* LIFEReproStep.m */,
+				2FCE9900000850 /* LIFEScreenshotContext.h */,
+				2FCE9900000860 /* LIFEScreenshotContext.m */,
+				2FCE9900000870 /* LIFEUserFacingAttachment.h */,
+				2FCE9900000880 /* LIFEVideoAttachment.h */,
+				2FCE9900000890 /* LIFEVideoAttachment.m */,
+			);
+			name = Models;
+			path = MLSBugReporter/Buglife/Source/Models;
+			sourceTree = "<group>";
+		};
+		2FCE99000008A0 /* Protected */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE99000008B0 /* Buglife+Protected.h */,
+				2FCE99000008C0 /* LIFEAwesomeLogger+Protected.h */,
+				2FCE99000008D0 /* LIFEInputField+Protected.h */,
+				2FCE99000008E0 /* LIFEPickerInputField+Protected.h */,
+			);
+			name = Protected;
+			path = MLSBugReporter/Buglife/Source/Protected;
+			sourceTree = "<group>";
+		};
+		2FCE99000008F0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900000900 /* LIFEAppInfoProvider.h */,
+				2FCE9900000910 /* LIFEAppInfoProvider.m */,
+				2FCE9900000920 /* LIFEAttachmentManager.h */,
+				2FCE9900000930 /* LIFEAttachmentManager.m */,
+				2FCE9900000940 /* LIFEAVFoundation.h */,
+				2FCE9900000950 /* LIFEAVFoundation.m */,
+				2FCE9900000960 /* LIFEDataProvider.h */,
+				2FCE9900000970 /* LIFEDataProvider.m */,
+				2FCE9900000980 /* LIFEDependencyLoader.h */,
+				2FCE9900000990 /* LIFEDependencyLoader.m */,
+				2FCE99000009A0 /* LIFEDeviceInfoProvider.h */,
+				2FCE99000009B0 /* LIFEDeviceInfoProvider.m */,
+				2FCE99000009C0 /* LIFEImagePickerController.h */,
+				2FCE99000009D0 /* LIFEImagePickerController.m */,
+				2FCE99000009E0 /* LIFEImageProcessor.h */,
+				2FCE99000009F0 /* LIFEImageProcessor.m */,
+				2FCE9900000A00 /* LIFELogFacility.h */,
+				2FCE9900000A10 /* LIFELogFacility.m */,
+				2FCE9900000A20 /* LIFENetworkManager.h */,
+				2FCE9900000A30 /* LIFENetworkManager.m */,
+				2FCE9900000A40 /* LIFEReachability.h */,
+				2FCE9900000A50 /* LIFEReachability.m */,
+				2FCE9900000A60 /* LIFERecordingShrinker.h */,
+				2FCE9900000A70 /* LIFERecordingShrinker.m */,
+				2FCE9900000A80 /* LIFEReportBuilder.h */,
+				2FCE9900000A90 /* LIFEReportBuilder.m */,
+				2FCE9900000AA0 /* LIFESwizzler.h */,
+				2FCE9900000AB0 /* LIFESwizzler.m */,
+				2FCE9900000AC0 /* LIFETelephonyNetworkInfo.h */,
+				2FCE9900000AD0 /* LIFETelephonyNetworkInfo.m */,
+				2FCE9900000AE0 /* LIFEUserDefaults.h */,
+				2FCE9900000AF0 /* LIFEUserDefaults.m */,
+				2FCE9900000B00 /* Logging */,
+			);
+			name = Services;
+			path = MLSBugReporter/Buglife/Source/Services;
+			sourceTree = "<group>";
+		};
+		2FCE9900000B00 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900000B10 /* LIFEASLLogger.h */,
+				2FCE9900000B20 /* LIFEASLLogger.m */,
+				2FCE9900000B30 /* LIFEContextAwareLogFormatter.h */,
+				2FCE9900000B40 /* LIFEContextAwareLogFormatter.m */,
+				2FCE9900000B50 /* LIFEFileLogger.h */,
+				2FCE9900000B60 /* LIFEFileLogger.m */,
+				2FCE9900000B70 /* LIFEJSONLogFileFormatter.h */,
+				2FCE9900000B80 /* LIFEJSONLogFileFormatter.m */,
+				2FCE9900000B90 /* LIFELog.h */,
+				2FCE9900000BA0 /* LIFELog.m */,
+				2FCE9900000BB0 /* LIFELogger.h */,
+				2FCE9900000BC0 /* LIFELogger.m */,
+				2FCE9900000BD0 /* LIFELogMacros.h */,
+				2FCE9900000BE0 /* LIFENotificationLogger.h */,
+				2FCE9900000BF0 /* LIFENotificationLogger.m */,
+				2FCE9900000C00 /* LIFETTYLogger.h */,
+				2FCE9900000C10 /* LIFETTYLogger.m */,
+			);
+			name = Logging;
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		2FCE9900000C20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900000E90 /* LIFEAnnotatedImageView.h */,
+				2FCE9900000EA0 /* LIFEAnnotatedImageView.m */,
+				2FCE9900000EB0 /* LIFEAppearanceImpl.h */,
+				2FCE9900000EC0 /* LIFEAppearanceImpl.m */,
+				2FCE9900000ED0 /* LIFEAttachmentView.h */,
+				2FCE9900000EE0 /* LIFEAttachmentView.m */,
+				2FCE9900000EF0 /* LIFEBugButtonWindow.h */,
+				2FCE9900000F00 /* LIFEBugButtonWindow.m */,
+				2FCE9900000F10 /* LIFEComponentPickerCell.h */,
+				2FCE9900000F20 /* LIFEComponentPickerCell.m */,
+				2FCE9900000F30 /* LIFEFloatingButton.h */,
+				2FCE9900000F40 /* LIFEFloatingButton.m */,
+				2FCE9900000F50 /* LIFELocalizedStringProvider.h */,
+				2FCE9900000F60 /* LIFELocalizedStringProvider.m */,
+				2FCE9900000F70 /* LIFEMenuPopoverView.h */,
+				2FCE9900000F80 /* LIFEMenuPopoverView.m */,
+				2FCE9900000F90 /* LIFEOverlayWindow.h */,
+				2FCE9900000FA0 /* LIFEOverlayWindow.m */,
+				2FCE9900000FB0 /* LIFEPoweredByBuglifeView.h */,
+				2FCE9900000FC0 /* LIFEPoweredByBuglifeView.m */,
+				2FCE9900000FD0 /* LIFEReportView.h */,
+				2FCE9900000FE0 /* LIFEReportView.m */,
+				2FCE9900000FF0 /* LIFEReportWindow.h */,
+				2FCE9900001000 /* LIFEReportWindow.m */,
+				2FCE9900001010 /* LIFEScreenshotAnnotatorView.h */,
+				2FCE9900001020 /* LIFEScreenshotAnnotatorView.m */,
+				2FCE9900001030 /* LIFEStepsToReproduceCell.h */,
+				2FCE9900001040 /* LIFEStepsToReproduceCell.m */,
+				2FCE9900001050 /* LIFETextFieldCell.h */,
+				2FCE9900001060 /* LIFETextFieldCell.m */,
+				2FCE9900001070 /* LIFETitleCell.h */,
+				2FCE9900001080 /* LIFETitleCell.m */,
+				2FCE9900001090 /* LIFEWhatHappenedTextView.h */,
+				2FCE99000010A0 /* LIFEWhatHappenedTextView.m */,
+				2FCE9900000C30 /* AnnotationViews */,
+				2FCE9900000CE0 /* Container Window */,
+				2FCE9900000DD0 /* GestureRecognizers */,
+				2FCE9900000E40 /* Jello View */,
+				2FCE99000010B0 /* Toast */,
+			);
+			name = Views;
+			path = MLSBugReporter/Buglife/Source/Views;
+			sourceTree = "<group>";
+		};
+		2FCE9900000C30 /* AnnotationViews */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900000C40 /* LIFEAnnotationView.h */,
+				2FCE9900000C50 /* LIFEAnnotationView.m */,
+				2FCE9900000C60 /* LIFEArrowAnnotationView.h */,
+				2FCE9900000C70 /* LIFEArrowAnnotationView.m */,
+				2FCE9900000C80 /* LIFEBlurAnnotationView.h */,
+				2FCE9900000C90 /* LIFEBlurAnnotationView.m */,
+				2FCE9900000CA0 /* LIFEFreeformAnnotationView.h */,
+				2FCE9900000CB0 /* LIFEFreeformAnnotationView.m */,
+				2FCE9900000CC0 /* LIFELoupeAnnotationView.h */,
+				2FCE9900000CD0 /* LIFELoupeAnnotationView.m */,
+			);
+			name = AnnotationViews;
+			path = AnnotationViews;
+			sourceTree = "<group>";
+		};
+		2FCE9900000CE0 /* Container Window */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900000CF0 /* LIFEContainerAlertToImageEditorAnimator.h */,
+				2FCE9900000D00 /* LIFEContainerAlertToImageEditorAnimator.m */,
+				2FCE9900000D10 /* LIFEContainerModalDismissAnimator.h */,
+				2FCE9900000D20 /* LIFEContainerModalDismissAnimator.m */,
+				2FCE9900000D30 /* LIFEContainerModalPresentAnimator.h */,
+				2FCE9900000D40 /* LIFEContainerModalPresentAnimator.m */,
+				2FCE9900000D50 /* LIFEContainerTransitionContext.h */,
+				2FCE9900000D60 /* LIFEContainerTransitionContext.m */,
+				2FCE9900000D70 /* LIFEContainerViewController.h */,
+				2FCE9900000D80 /* LIFEContainerViewController.m */,
+				2FCE9900000D90 /* LIFEContainerWindow.h */,
+				2FCE9900000DA0 /* LIFEContainerWindow.m */,
+				2FCE9900000DB0 /* LIFEWindowBlindsAnimator.h */,
+				2FCE9900000DC0 /* LIFEWindowBlindsAnimator.m */,
+			);
+			name = "Container Window";
+			path = "Container Window";
+			sourceTree = "<group>";
+		};
+		2FCE9900000DD0 /* GestureRecognizers */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900000DE0 /* LIFEContinuousForceTouchGestureRecognizer.h */,
+				2FCE9900000DF0 /* LIFEContinuousForceTouchGestureRecognizer.m */,
+				2FCE9900000E00 /* LIFEFreeformGestureRecognizer.h */,
+				2FCE9900000E10 /* LIFEFreeformGestureRecognizer.m */,
+				2FCE9900000E20 /* LIFEPanGestureRecognizer.h */,
+				2FCE9900000E30 /* LIFEPanGestureRecognizer.m */,
+			);
+			name = GestureRecognizers;
+			path = GestureRecognizers;
+			sourceTree = "<group>";
+		};
+		2FCE9900000E40 /* Jello View */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900000E50 /* LIFEJelloLayer.h */,
+				2FCE9900000E60 /* LIFEJelloLayer.m */,
+				2FCE9900000E70 /* LIFEJelloView.h */,
+				2FCE9900000E80 /* LIFEJelloView.m */,
+			);
+			name = "Jello View";
+			path = "Jello View";
+			sourceTree = "<group>";
+		};
+		2FCE99000010B0 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE99000010C0 /* LIFEToastController.h */,
+				2FCE99000010D0 /* LIFEToastController.m */,
+				2FCE99000010E0 /* LIFEToastControllerView.h */,
+				2FCE99000010F0 /* LIFEToastControllerView.m */,
+				2FCE9900001100 /* LIFEToastView.h */,
+				2FCE9900001110 /* LIFEToastView.m */,
+			);
+			name = Toast;
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		2FCE9900001120 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900001130 /* MLSBugReporter.h */,
+				2FCE9900001140 /* MLSBugReporterManager.h */,
+				2FCE9900001150 /* MLSBugReporterManager.m */,
+				2FCE9900001160 /* Classes */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		2FCE9900001160 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900001170 /* Api */,
+				2FCE9900001390 /* BuglifeExt */,
+				2FCE9900001470 /* ConsoleLog */,
+				2FCE99000014A0 /* Crash */,
+				2FCE9900001520 /* Logger */,
+				2FCE9900001550 /* Network */,
+				2FCE9900001580 /* Options */,
+				2FCE99000015B0 /* UI */,
+				2FCE99000015E0 /* UserSteps */,
+			);
+			name = Classes;
+			path = MLSBugReporter/Classes;
+			sourceTree = "<group>";
+		};
+		2FCE9900001170 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900001180 /* Manager */,
+				2FCE99000011B0 /* Model */,
+				2FCE9900001280 /* Network */,
+			);
+			name = Api;
+			path = Api;
+			sourceTree = "<group>";
+		};
+		2FCE9900001180 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900001190 /* MLSBugReportNetworkModelManager.h */,
+				2FCE99000011A0 /* MLSBugReportNetworkModelManager.m */,
+			);
+			name = Manager;
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2FCE99000011B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE99000011C0 /* MLSBugReporterBaseModel.h */,
+				2FCE99000011D0 /* MLSBugReporterBaseModel.m */,
+				2FCE99000011E0 /* MLSBugRepotRootModel.h */,
+				2FCE99000011F0 /* MLSBugRepotRootModel.m */,
+				2FCE9900001200 /* MLSZenTaoBugModel.h */,
+				2FCE9900001210 /* MLSZenTaoBugModel.m */,
+				2FCE9900001220 /* MLSZentaoConfigModel.h */,
+				2FCE9900001230 /* MLSZentaoConfigModel.m */,
+				2FCE9900001240 /* MLSZenTaoFieldListModel.h */,
+				2FCE9900001250 /* MLSZenTaoFieldListModel.m */,
+				2FCE9900001260 /* MLSZenTaoUserModel.h */,
+				2FCE9900001270 /* MLSZenTaoUserModel.m */,
+			);
+			name = Model;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2FCE9900001280 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900001290 /* MLSBugReportCreateBugReq.h */,
+				2FCE99000012A0 /* MLSBugReportCreateBugReq.m */,
+				2FCE99000012B0 /* MLSBugReportReq.h */,
+				2FCE99000012C0 /* MLSBugReportReq.m */,
+				2FCE99000012D0 /* MLSZenTaoConfigReq.h */,
+				2FCE99000012E0 /* MLSZenTaoConfigReq.m */,
+				2FCE99000012F0 /* MLSZenTaoGetAllBuildsReq.h */,
+				2FCE9900001300 /* MLSZenTaoGetAllBuildsReq.m */,
+				2FCE9900001310 /* MLSZenTaoGetAllUsersReq.h */,
+				2FCE9900001320 /* MLSZenTaoGetAllUsersReq.m */,
+				2FCE9900001330 /* MLSZenTaoLoginReq.h */,
+				2FCE9900001340 /* MLSZenTaoLoginReq.m */,
+				2FCE9900001350 /* MLSZentaoPingReq.h */,
+				2FCE9900001360 /* MLSZentaoPingReq.m */,
+				2FCE9900001370 /* MLSZenTaoUploadFileReq.h */,
+				2FCE9900001380 /* MLSZenTaoUploadFileReq.m */,
+			);
+			name = Network;
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2FCE9900001390 /* BuglifeExt */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE99000013D0 /* MLSBugReporterManager+Private.h */,
+				2FCE99000013E0 /* MLSBugReporterManager+Private.m */,
+				2FCE99000013F0 /* MLSDeviceInfoTool.h */,
+				2FCE9900001400 /* MLSDeviceInfoTool.m */,
+				2FCE9900001410 /* MLSZenTaoBugFiled.h */,
+				2FCE9900001420 /* MLSZenTaoBugFiled.m */,
+				2FCE9900001430 /* MLSZentaoDataProvider.h */,
+				2FCE9900001440 /* MLSZentaoDataProvider.m */,
+				2FCE9900001450 /* UIDevice+MLSBugReporter.h */,
+				2FCE9900001460 /* UIDevice+MLSBugReporter.m */,
+				2FCE99000013A0 /* Manager */,
+			);
+			name = BuglifeExt;
+			path = BuglifeExt;
+			sourceTree = "<group>";
+		};
+		2FCE99000013A0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE99000013B0 /* MLSBuglifeManager.h */,
+				2FCE99000013C0 /* MLSBuglifeManager.m */,
+			);
+			name = Manager;
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2FCE9900001470 /* ConsoleLog */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900001480 /* MLSBugConsoleTracker.h */,
+				2FCE9900001490 /* MLSBugConsoleTracker.m */,
+			);
+			name = ConsoleLog;
+			path = ConsoleLog;
+			sourceTree = "<group>";
+		};
+		2FCE99000014A0 /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900001500 /* MLSCrashTracker.h */,
+				2FCE9900001510 /* MLSCrashTracker.m */,
+				2FCE99000014B0 /* KSCrash */,
+			);
+			name = Crash;
+			path = Crash;
+			sourceTree = "<group>";
+		};
+		2FCE99000014B0 /* KSCrash */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE99000014C0 /* KSCrashReportFilterAppleFmt.h */,
+				2FCE99000014D0 /* KSCrashReportFilterAppleFmt.m */,
+				2FCE99000014E0 /* KSReachabilityKSCrash.h */,
+				2FCE99000014F0 /* KSReachabilityKSCrash.m */,
+			);
+			name = KSCrash;
+			path = KSCrash;
+			sourceTree = "<group>";
+		};
+		2FCE9900001520 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900001530 /* MLSBugLogger.h */,
+				2FCE9900001540 /* MLSBugLogger.m */,
+			);
+			name = Logger;
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		2FCE9900001550 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900001560 /* MLSNetworkTracker.h */,
+				2FCE9900001570 /* MLSNetworkTracker.m */,
+			);
+			name = Network;
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2FCE9900001580 /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900001590 /* MLSBugReporterOptions.h */,
+				2FCE99000015A0 /* MLSBugReporterOptions.m */,
+			);
+			name = Options;
+			path = Options;
+			sourceTree = "<group>";
+		};
+		2FCE99000015B0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE99000015C0 /* MLSBugReporterLoginViewController.h */,
+				2FCE99000015D0 /* MLSBugReporterLoginViewController.m */,
+			);
+			name = UI;
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2FCE99000015E0 /* UserSteps */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE99000015F0 /* MLSUserStepTracker.h */,
+				2FCE9900001600 /* MLSUserStepTracker.m */,
+			);
+			name = UserSteps;
+			path = UserSteps;
+			sourceTree = "<group>";
+		};
+		2FCE9900001610 /* NetworkTrack */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900001620 /* Tracker */,
+				2FCE99000016A0 /* Utility */,
+			);
+			name = NetworkTrack;
+			sourceTree = "<group>";
+		};
+		2FCE9900001620 /* Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900001630 /* MLSFLEXNetworkRecorder.h */,
+				2FCE9900001640 /* MLSFLEXNetworkRecorder.m */,
+				2FCE9900001650 /* MLSFLEXNetworkTransaction.h */,
+				2FCE9900001660 /* MLSFLEXNetworkTransaction.m */,
+				2FCE9900001670 /* PonyDebugger */,
+			);
+			name = Tracker;
+			path = MLSBugReporter/NetworkTrack/Tracker;
+			sourceTree = "<group>";
+		};
+		2FCE9900001670 /* PonyDebugger */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900001680 /* MLSFLEXNetworkObserver.h */,
+				2FCE9900001690 /* MLSFLEXNetworkObserver.m */,
+			);
+			name = PonyDebugger;
+			path = PonyDebugger;
+			sourceTree = "<group>";
+		};
+		2FCE99000016A0 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE99000016B0 /* MLSFLEXUtility.h */,
+				2FCE99000016C0 /* MLSFLEXUtility.m */,
+			);
+			name = Utility;
+			path = MLSBugReporter/NetworkTrack/Utility;
+			sourceTree = "<group>";
+		};
+		2FCE99000016D0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE99000016E0 /* LICENSE */,
+				2FCE99000016F0 /* MLSBugReporter.podspec */,
+				2FCE9900001700 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		2FCE99000017A0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE99000017B0 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		2FCE9900002BA0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FCE9900002BC0 /* MLSBugReporter.modulemap */,
+				2FCE9900002BB0 /* MLSBugReporter.xcconfig */,
+				2FCE9900002C10 /* MLSBugReporter-dummy.m */,
+				2FCE9900002BF0 /* MLSBugReporter-Info.plist */,
+				2FCE9900002C00 /* MLSBugReporter-prefix.pch */,
+				2FCE9900002BD0 /* MLSBugReporter-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "MLSBugReporterDemo/Pods/Target Support Files/MLSBugReporter";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2FCE9900001760 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FCE9900002090 /* Buglife+LocalizedStrings.h in Headers */,
+				2FCE9900002310 /* Buglife+Protected.h in Headers */,
+				2FCE9900001F40 /* Buglife+UIStuff.h in Headers */,
+				2FCE99000020A0 /* Buglife.h in Headers */,
+				2FCE9900002AA0 /* KSCrashReportFilterAppleFmt.h in Headers */,
+				2FCE9900002AB0 /* KSReachabilityKSCrash.h in Headers */,
+				2FCE99000020B0 /* LIFEAlertAction.h in Headers */,
+				2FCE99000020C0 /* LIFEAlertActionView.h in Headers */,
+				2FCE99000020D0 /* LIFEAlertAnimator.h in Headers */,
+				2FCE99000020E0 /* LIFEAlertController.h in Headers */,
+				2FCE99000020F0 /* LIFEAlertView.h in Headers */,
+				2FCE9900002230 /* LIFEAnnotatedImage.h in Headers */,
+				2FCE99000025F0 /* LIFEAnnotatedImageView.h in Headers */,
+				2FCE9900002240 /* LIFEAnnotation.h in Headers */,
+				2FCE99000024E0 /* LIFEAnnotationView.h in Headers */,
+				2FCE99000021E0 /* LIFEAppearance.h in Headers */,
+				2FCE9900002600 /* LIFEAppearanceImpl.h in Headers */,
+				2FCE9900002250 /* LIFEAppInfo.h in Headers */,
+				2FCE9900002350 /* LIFEAppInfoProvider.h in Headers */,
+				2FCE99000024F0 /* LIFEArrowAnnotationView.h in Headers */,
+				2FCE9900002450 /* LIFEASLLogger.h in Headers */,
+				2FCE9900002360 /* LIFEAttachmentManager.h in Headers */,
+				2FCE9900002610 /* LIFEAttachmentView.h in Headers */,
+				2FCE9900002260 /* LIFEAttribute.h in Headers */,
+				2FCE9900002370 /* LIFEAVFoundation.h in Headers */,
+				2FCE9900002140 /* LIFEAVPlayerViewController.h in Headers */,
+				2FCE9900002320 /* LIFEAwesomeLogger+Protected.h in Headers */,
+				2FCE99000021F0 /* LIFEAwesomeLogger.h in Headers */,
+				2FCE9900002500 /* LIFEBlurAnnotationView.h in Headers */,
+				2FCE9900002620 /* LIFEBugButtonWindow.h in Headers */,
+				2FCE9900001F50 /* LIFECategories.h in Headers */,
+				2FCE9900001F60 /* LIFECompatibilityUtils.h in Headers */,
+				2FCE9900002630 /* LIFEComponentPickerCell.h in Headers */,
+				2FCE9900002150 /* LIFEComponentPickerViewController.h in Headers */,
+				2FCE9900002530 /* LIFEContainerAlertToImageEditorAnimator.h in Headers */,
+				2FCE9900002540 /* LIFEContainerModalDismissAnimator.h in Headers */,
+				2FCE9900002550 /* LIFEContainerModalPresentAnimator.h in Headers */,
+				2FCE9900002560 /* LIFEContainerTransitionContext.h in Headers */,
+				2FCE9900002570 /* LIFEContainerViewController.h in Headers */,
+				2FCE9900002580 /* LIFEContainerWindow.h in Headers */,
+				2FCE9900002460 /* LIFEContextAwareLogFormatter.h in Headers */,
+				2FCE99000025A0 /* LIFEContinuousForceTouchGestureRecognizer.h in Headers */,
+				2FCE9900002380 /* LIFEDataProvider.h in Headers */,
+				2FCE9900002390 /* LIFEDependencyLoader.h in Headers */,
+				2FCE9900002270 /* LIFEDeviceBatteryState.h in Headers */,
+				2FCE9900002280 /* LIFEDeviceInfo.h in Headers */,
+				2FCE99000023A0 /* LIFEDeviceInfoProvider.h in Headers */,
+				2FCE9900002470 /* LIFEFileLogger.h in Headers */,
+				2FCE9900002640 /* LIFEFloatingButton.h in Headers */,
+				2FCE9900002510 /* LIFEFreeformAnnotationView.h in Headers */,
+				2FCE99000025B0 /* LIFEFreeformGestureRecognizer.h in Headers */,
+				2FCE9900001F70 /* LIFEGeometry.h in Headers */,
+				2FCE9900002100 /* LIFEImageEditorSegmentedControl.h in Headers */,
+				2FCE9900002110 /* LIFEImageEditorView.h in Headers */,
+				2FCE9900002120 /* LIFEImageEditorViewController.h in Headers */,
+				2FCE9900002290 /* LIFEImageFormat.h in Headers */,
+				2FCE99000023B0 /* LIFEImagePickerController.h in Headers */,
+				2FCE99000023C0 /* LIFEImageProcessor.h in Headers */,
+				2FCE9900002330 /* LIFEInputField+Protected.h in Headers */,
+				2FCE9900002200 /* LIFEInputField.h in Headers */,
+				2FCE99000025D0 /* LIFEJelloLayer.h in Headers */,
+				2FCE99000025E0 /* LIFEJelloView.h in Headers */,
+				2FCE9900002480 /* LIFEJSONLogFileFormatter.h in Headers */,
+				2FCE9900002650 /* LIFELocalizedStringProvider.h in Headers */,
+				2FCE9900002490 /* LIFELog.h in Headers */,
+				2FCE99000023D0 /* LIFELogFacility.h in Headers */,
+				2FCE99000024A0 /* LIFELogger.h in Headers */,
+				2FCE99000024B0 /* LIFELogMacros.h in Headers */,
+				2FCE9900002160 /* LIFELogViewController.h in Headers */,
+				2FCE9900002520 /* LIFELoupeAnnotationView.h in Headers */,
+				2FCE9900001F80 /* LIFEMacros.h in Headers */,
+				2FCE9900002660 /* LIFEMenuPopoverView.h in Headers */,
+				2FCE9900002170 /* LIFENavigationController.h in Headers */,
+				2FCE99000023E0 /* LIFENetworkManager.h in Headers */,
+				2FCE99000024C0 /* LIFENotificationLogger.h in Headers */,
+				2FCE9900002670 /* LIFEOverlayWindow.h in Headers */,
+				2FCE99000025C0 /* LIFEPanGestureRecognizer.h in Headers */,
+				2FCE9900002340 /* LIFEPickerInputField+Protected.h in Headers */,
+				2FCE9900002210 /* LIFEPickerInputField.h in Headers */,
+				2FCE9900002180 /* LIFEPickerViewController.h in Headers */,
+				2FCE9900002680 /* LIFEPoweredByBuglifeView.h in Headers */,
+				2FCE99000023F0 /* LIFEReachability.h in Headers */,
+				2FCE9900002400 /* LIFERecordingShrinker.h in Headers */,
+				2FCE99000022A0 /* LIFEReport.h in Headers */,
+				2FCE99000022B0 /* LIFEReportAttachmentImpl.h in Headers */,
+				2FCE9900002410 /* LIFEReportBuilder.h in Headers */,
+				2FCE99000022C0 /* LIFEReportOwner.h in Headers */,
+				2FCE9900002190 /* LIFEReportTableViewController.h in Headers */,
+				2FCE9900002690 /* LIFEReportView.h in Headers */,
+				2FCE99000021A0 /* LIFEReportViewControllerDelegate.h in Headers */,
+				2FCE99000026A0 /* LIFEReportWindow.h in Headers */,
+				2FCE99000022D0 /* LIFEReproStep.h in Headers */,
+				2FCE99000026B0 /* LIFEScreenshotAnnotatorView.h in Headers */,
+				2FCE99000021B0 /* LIFEScreenshotAnnotatorViewController.h in Headers */,
+				2FCE99000022E0 /* LIFEScreenshotContext.h in Headers */,
+				2FCE99000026C0 /* LIFEStepsToReproduceCell.h in Headers */,
+				2FCE99000021C0 /* LIFEStepsToReproTableViewController.h in Headers */,
+				2FCE9900002420 /* LIFESwizzler.h in Headers */,
+				2FCE9900002430 /* LIFETelephonyNetworkInfo.h in Headers */,
+				2FCE99000026D0 /* LIFETextFieldCell.h in Headers */,
+				2FCE9900002220 /* LIFETextInputField.h in Headers */,
+				2FCE99000021D0 /* LIFETextInputViewController.h in Headers */,
+				2FCE99000026E0 /* LIFETitleCell.h in Headers */,
+				2FCE9900002700 /* LIFEToastController.h in Headers */,
+				2FCE9900002710 /* LIFEToastControllerView.h in Headers */,
+				2FCE9900002720 /* LIFEToastView.h in Headers */,
+				2FCE9900002130 /* LIFEToolButton.h in Headers */,
+				2FCE99000024D0 /* LIFETTYLogger.h in Headers */,
+				2FCE9900002440 /* LIFEUserDefaults.h in Headers */,
+				2FCE99000022F0 /* LIFEUserFacingAttachment.h in Headers */,
+				2FCE9900002300 /* LIFEVideoAttachment.h in Headers */,
+				2FCE99000026F0 /* LIFEWhatHappenedTextView.h in Headers */,
+				2FCE9900002590 /* LIFEWindowBlindsAnimator.h in Headers */,
+				2FCE9900002A90 /* MLSBugConsoleTracker.h in Headers */,
+				2FCE9900002A30 /* MLSBuglifeManager.h in Headers */,
+				2FCE9900002AD0 /* MLSBugLogger.h in Headers */,
+				2FCE99000017E0 /* MLSBugReportAspects.h in Headers */,
+				2FCE99000029B0 /* MLSBugReportCreateBugReq.h in Headers */,
+				2FCE9900002BE0 /* MLSBugReporter-umbrella.h in Headers */,
+				2FCE9900002920 /* MLSBugReporter.h in Headers */,
+				2FCE9900002950 /* MLSBugReporterBaseModel.h in Headers */,
+				2FCE9900002B00 /* MLSBugReporterLoginViewController.h in Headers */,
+				2FCE9900002A40 /* MLSBugReporterManager+Private.h in Headers */,
+				2FCE9900002930 /* MLSBugReporterManager.h in Headers */,
+				2FCE9900002AF0 /* MLSBugReporterOptions.h in Headers */,
+				2FCE9900002940 /* MLSBugReportNetworkModelManager.h in Headers */,
+				2FCE99000029C0 /* MLSBugReportReq.h in Headers */,
+				2FCE9900002960 /* MLSBugRepotRootModel.h in Headers */,
+				2FCE9900002AC0 /* MLSCrashTracker.h in Headers */,
+				2FCE9900002A50 /* MLSDeviceInfoTool.h in Headers */,
+				2FCE9900002B80 /* MLSFLEXNetworkObserver.h in Headers */,
+				2FCE9900002B60 /* MLSFLEXNetworkRecorder.h in Headers */,
+				2FCE9900002B70 /* MLSFLEXNetworkTransaction.h in Headers */,
+				2FCE9900002B90 /* MLSFLEXUtility.h in Headers */,
+				2FCE9900002AE0 /* MLSNetworkTracker.h in Headers */,
+				2FCE9900002B10 /* MLSUserStepTracker.h in Headers */,
+				2FCE9900002A60 /* MLSZenTaoBugFiled.h in Headers */,
+				2FCE9900002970 /* MLSZenTaoBugModel.h in Headers */,
+				2FCE9900002980 /* MLSZentaoConfigModel.h in Headers */,
+				2FCE99000029D0 /* MLSZenTaoConfigReq.h in Headers */,
+				2FCE9900002A70 /* MLSZentaoDataProvider.h in Headers */,
+				2FCE9900002990 /* MLSZenTaoFieldListModel.h in Headers */,
+				2FCE99000029E0 /* MLSZenTaoGetAllBuildsReq.h in Headers */,
+				2FCE99000029F0 /* MLSZenTaoGetAllUsersReq.h in Headers */,
+				2FCE9900002A00 /* MLSZenTaoLoginReq.h in Headers */,
+				2FCE9900002A10 /* MLSZentaoPingReq.h in Headers */,
+				2FCE9900002A20 /* MLSZenTaoUploadFileReq.h in Headers */,
+				2FCE99000029A0 /* MLSZenTaoUserModel.h in Headers */,
+				2FCE9900001F90 /* NSArray+LIFEAdditions.h in Headers */,
+				2FCE9900001FA0 /* NSError+LIFEAdditions.h in Headers */,
+				2FCE9900001FB0 /* NSLayoutConstraint+LIFEAdditions.h in Headers */,
+				2FCE9900001FC0 /* NSMutableDictionary+LIFEAdditions.h in Headers */,
+				2FCE9900001FD0 /* NSString+LIFEAdditions.h in Headers */,
+				2FCE9900001FE0 /* UIApplication+LIFEAdditions.h in Headers */,
+				2FCE9900001FF0 /* UIBezierPath+LIFEAdditions.h in Headers */,
+				2FCE9900002000 /* UIColor+LIFEAdditions.h in Headers */,
+				2FCE9900002010 /* UIControl+LIFEAdditions.h in Headers */,
+				2FCE9900002020 /* UIDevice+LIFEAdditions.h in Headers */,
+				2FCE9900002A80 /* UIDevice+MLSBugReporter.h in Headers */,
+				2FCE9900002030 /* UIImage+LIFEAdditions.h in Headers */,
+				2FCE9900002040 /* UITableView+LIFEAdditions.h in Headers */,
+				2FCE9900002050 /* UITextView+LIFEAdditions.h in Headers */,
+				2FCE9900002060 /* UIView+LIFEAdditions.h in Headers */,
+				2FCE9900002070 /* UIViewController+LIFEAdditions.h in Headers */,
+				2FCE9900002080 /* UIWindow+LIFEAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1A7C3C3F408C235F1C8A042DE109F0AD /* MLSBugReporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FCE9900001720 /* Build configuration list for PBXNativeTarget "MLSBugReporter" */;
+			buildPhases = (
+				2FCE9900001760 /* Headers */,
+				2FCE9900001770 /* Sources */,
+				2FCE9900001780 /* Frameworks */,
+				2FCE9900001790 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FCE9900002DA0 /* PBXTargetDependency */,
+				2FCE9900002CE0 /* PBXTargetDependency */,
+				2FCE9900002CB0 /* PBXTargetDependency */,
+				2FCE9900002C50 /* PBXTargetDependency */,
+				2FCE9900002C80 /* PBXTargetDependency */,
+				2FCE9900002D70 /* PBXTargetDependency */,
+				2FCE9900002D10 /* PBXTargetDependency */,
+				2FCE9900002D40 /* PBXTargetDependency */,
+			);
+			name = MLSBugReporter;
+			productName = MLSBugReporter;
+			productReference = 8ECDC0B66700895F65093CC739AC76AA /* MLSBugReporter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FCE9900000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 2FCE9900000030 /* Build configuration list for PBXProject "MLSBugReporter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2FCE9900000010;
+			productRefGroup = 2FCE9900000020 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProjectRef = 2FCE9900002C30 /* MLSUICore */;
+				},
+				{
+					ProjectRef = 2FCE9900002C60 /* QMUIKit */;
+				},
+				{
+					ProjectRef = 2FCE9900002C90 /* MLSNetwork */;
+				},
+				{
+					ProjectRef = 2FCE9900002CC0 /* MLSModel */;
+				},
+				{
+					ProjectRef = 2FCE9900002CF0 /* hpple */;
+				},
+				{
+					ProjectRef = 2FCE9900002D20 /* matrix-minlison */;
+				},
+				{
+					ProjectRef = 2FCE9900002D50 /* SSZipArchive */;
+				},
+				{
+					ProjectRef = 2FCE9900002D80 /* CocoaLumberjack */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1A7C3C3F408C235F1C8A042DE109F0AD /* MLSBugReporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FCE9900001790 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FCE9900001770 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FCE9900001930 /* Buglife+LocalizedStrings.m in Sources */,
+				2FCE99000017F0 /* Buglife+UIStuff.m in Sources */,
+				2FCE9900001940 /* Buglife.m in Sources */,
+				2FCE99000028A0 /* KSCrashReportFilterAppleFmt.m in Sources */,
+				2FCE99000028B0 /* KSReachabilityKSCrash.m in Sources */,
+				2FCE9900001950 /* LIFEAlertAction.m in Sources */,
+				2FCE9900001960 /* LIFEAlertActionView.m in Sources */,
+				2FCE9900001970 /* LIFEAlertAnimator.m in Sources */,
+				2FCE9900001980 /* LIFEAlertController.m in Sources */,
+				2FCE9900001990 /* LIFEAlertView.m in Sources */,
+				2FCE9900001AB0 /* LIFEAnnotatedImage.m in Sources */,
+				2FCE9900001E00 /* LIFEAnnotatedImageView.m in Sources */,
+				2FCE9900001AC0 /* LIFEAnnotation.m in Sources */,
+				2FCE9900001CF0 /* LIFEAnnotationView.m in Sources */,
+				2FCE9900001E10 /* LIFEAppearanceImpl.m in Sources */,
+				2FCE9900001AD0 /* LIFEAppInfo.m in Sources */,
+				2FCE9900001B70 /* LIFEAppInfoProvider.m in Sources */,
+				2FCE9900001D00 /* LIFEArrowAnnotationView.m in Sources */,
+				2FCE9900001C70 /* LIFEASLLogger.m in Sources */,
+				2FCE9900001B80 /* LIFEAttachmentManager.m in Sources */,
+				2FCE9900001E20 /* LIFEAttachmentView.m in Sources */,
+				2FCE9900001AE0 /* LIFEAttribute.m in Sources */,
+				2FCE9900001B90 /* LIFEAVFoundation.m in Sources */,
+				2FCE99000019E0 /* LIFEAVPlayerViewController.m in Sources */,
+				2FCE9900001A70 /* LIFEAwesomeLogger.m in Sources */,
+				2FCE9900001D10 /* LIFEBlurAnnotationView.m in Sources */,
+				2FCE9900001E30 /* LIFEBugButtonWindow.m in Sources */,
+				2FCE9900001800 /* LIFECategories.m in Sources */,
+				2FCE9900001810 /* LIFECompatibilityUtils.m in Sources */,
+				2FCE9900001E40 /* LIFEComponentPickerCell.m in Sources */,
+				2FCE99000019F0 /* LIFEComponentPickerViewController.m in Sources */,
+				2FCE9900001D40 /* LIFEContainerAlertToImageEditorAnimator.m in Sources */,
+				2FCE9900001D50 /* LIFEContainerModalDismissAnimator.m in Sources */,
+				2FCE9900001D60 /* LIFEContainerModalPresentAnimator.m in Sources */,
+				2FCE9900001D70 /* LIFEContainerTransitionContext.m in Sources */,
+				2FCE9900001D80 /* LIFEContainerViewController.m in Sources */,
+				2FCE9900001D90 /* LIFEContainerWindow.m in Sources */,
+				2FCE9900001C80 /* LIFEContextAwareLogFormatter.m in Sources */,
+				2FCE9900001DB0 /* LIFEContinuousForceTouchGestureRecognizer.m in Sources */,
+				2FCE9900001BA0 /* LIFEDataProvider.m in Sources */,
+				2FCE9900001BB0 /* LIFEDependencyLoader.m in Sources */,
+				2FCE9900001AF0 /* LIFEDeviceInfo.m in Sources */,
+				2FCE9900001BC0 /* LIFEDeviceInfoProvider.m in Sources */,
+				2FCE9900001C90 /* LIFEFileLogger.m in Sources */,
+				2FCE9900001E50 /* LIFEFloatingButton.m in Sources */,
+				2FCE9900001D20 /* LIFEFreeformAnnotationView.m in Sources */,
+				2FCE9900001DC0 /* LIFEFreeformGestureRecognizer.m in Sources */,
+				2FCE9900001820 /* LIFEGeometry.m in Sources */,
+				2FCE99000019A0 /* LIFEImageEditorSegmentedControl.m in Sources */,
+				2FCE99000019B0 /* LIFEImageEditorView.m in Sources */,
+				2FCE99000019C0 /* LIFEImageEditorViewController.m in Sources */,
+				2FCE9900001B00 /* LIFEImageFormat.m in Sources */,
+				2FCE9900001BD0 /* LIFEImagePickerController.m in Sources */,
+				2FCE9900001BE0 /* LIFEImageProcessor.m in Sources */,
+				2FCE9900001A80 /* LIFEInputField.m in Sources */,
+				2FCE9900001DE0 /* LIFEJelloLayer.m in Sources */,
+				2FCE9900001DF0 /* LIFEJelloView.m in Sources */,
+				2FCE9900001CA0 /* LIFEJSONLogFileFormatter.m in Sources */,
+				2FCE9900001E60 /* LIFELocalizedStringProvider.m in Sources */,
+				2FCE9900001CB0 /* LIFELog.m in Sources */,
+				2FCE9900001BF0 /* LIFELogFacility.m in Sources */,
+				2FCE9900001CC0 /* LIFELogger.m in Sources */,
+				2FCE9900001A00 /* LIFELogViewController.m in Sources */,
+				2FCE9900001D30 /* LIFELoupeAnnotationView.m in Sources */,
+				2FCE9900001E70 /* LIFEMenuPopoverView.m in Sources */,
+				2FCE9900001A10 /* LIFENavigationController.m in Sources */,
+				2FCE9900001C00 /* LIFENetworkManager.m in Sources */,
+				2FCE9900001CD0 /* LIFENotificationLogger.m in Sources */,
+				2FCE9900001E80 /* LIFEOverlayWindow.m in Sources */,
+				2FCE9900001DD0 /* LIFEPanGestureRecognizer.m in Sources */,
+				2FCE9900001A90 /* LIFEPickerInputField.m in Sources */,
+				2FCE9900001A20 /* LIFEPickerViewController.m in Sources */,
+				2FCE9900001E90 /* LIFEPoweredByBuglifeView.m in Sources */,
+				2FCE9900001C10 /* LIFEReachability.m in Sources */,
+				2FCE9900001C20 /* LIFERecordingShrinker.m in Sources */,
+				2FCE9900001B10 /* LIFEReport.m in Sources */,
+				2FCE9900001B20 /* LIFEReportAttachmentImpl.m in Sources */,
+				2FCE9900001C30 /* LIFEReportBuilder.m in Sources */,
+				2FCE9900001B30 /* LIFEReportOwner.m in Sources */,
+				2FCE9900001A30 /* LIFEReportTableViewController.m in Sources */,
+				2FCE9900001EA0 /* LIFEReportView.m in Sources */,
+				2FCE9900001EB0 /* LIFEReportWindow.m in Sources */,
+				2FCE9900001B40 /* LIFEReproStep.m in Sources */,
+				2FCE9900001EC0 /* LIFEScreenshotAnnotatorView.m in Sources */,
+				2FCE9900001A40 /* LIFEScreenshotAnnotatorViewController.m in Sources */,
+				2FCE9900001B50 /* LIFEScreenshotContext.m in Sources */,
+				2FCE9900001ED0 /* LIFEStepsToReproduceCell.m in Sources */,
+				2FCE9900001A50 /* LIFEStepsToReproTableViewController.m in Sources */,
+				2FCE9900001C40 /* LIFESwizzler.m in Sources */,
+				2FCE9900001C50 /* LIFETelephonyNetworkInfo.m in Sources */,
+				2FCE9900001EE0 /* LIFETextFieldCell.m in Sources */,
+				2FCE9900001AA0 /* LIFETextInputField.m in Sources */,
+				2FCE9900001A60 /* LIFETextInputViewController.m in Sources */,
+				2FCE9900001EF0 /* LIFETitleCell.m in Sources */,
+				2FCE9900001F10 /* LIFEToastController.m in Sources */,
+				2FCE9900001F20 /* LIFEToastControllerView.m in Sources */,
+				2FCE9900001F30 /* LIFEToastView.m in Sources */,
+				2FCE99000019D0 /* LIFEToolButton.m in Sources */,
+				2FCE9900001CE0 /* LIFETTYLogger.m in Sources */,
+				2FCE9900001C60 /* LIFEUserDefaults.m in Sources */,
+				2FCE9900001B60 /* LIFEVideoAttachment.m in Sources */,
+				2FCE9900001F00 /* LIFEWhatHappenedTextView.m in Sources */,
+				2FCE9900001DA0 /* LIFEWindowBlindsAnimator.m in Sources */,
+				2FCE9900002890 /* MLSBugConsoleTracker.m in Sources */,
+				2FCE9900002830 /* MLSBuglifeManager.m in Sources */,
+				2FCE99000028D0 /* MLSBugLogger.m in Sources */,
+				2FCE99000017D0 /* MLSBugReportAspects.m in Sources */,
+				2FCE99000027B0 /* MLSBugReportCreateBugReq.m in Sources */,
+				2FCE9900002C20 /* MLSBugReporter-dummy.m in Sources */,
+				2FCE9900002750 /* MLSBugReporterBaseModel.m in Sources */,
+				2FCE9900002900 /* MLSBugReporterLoginViewController.m in Sources */,
+				2FCE9900002840 /* MLSBugReporterManager+Private.m in Sources */,
+				2FCE9900002730 /* MLSBugReporterManager.m in Sources */,
+				2FCE99000028F0 /* MLSBugReporterOptions.m in Sources */,
+				2FCE9900002740 /* MLSBugReportNetworkModelManager.m in Sources */,
+				2FCE99000027C0 /* MLSBugReportReq.m in Sources */,
+				2FCE9900002760 /* MLSBugRepotRootModel.m in Sources */,
+				2FCE99000028C0 /* MLSCrashTracker.m in Sources */,
+				2FCE9900002850 /* MLSDeviceInfoTool.m in Sources */,
+				2FCE9900002B40 /* MLSFLEXNetworkObserver.m in Sources */,
+				2FCE9900002B20 /* MLSFLEXNetworkRecorder.m in Sources */,
+				2FCE9900002B30 /* MLSFLEXNetworkTransaction.m in Sources */,
+				2FCE9900002B50 /* MLSFLEXUtility.m in Sources */,
+				2FCE99000028E0 /* MLSNetworkTracker.m in Sources */,
+				2FCE9900002910 /* MLSUserStepTracker.m in Sources */,
+				2FCE9900002860 /* MLSZenTaoBugFiled.m in Sources */,
+				2FCE9900002770 /* MLSZenTaoBugModel.m in Sources */,
+				2FCE9900002780 /* MLSZentaoConfigModel.m in Sources */,
+				2FCE99000027D0 /* MLSZenTaoConfigReq.m in Sources */,
+				2FCE9900002870 /* MLSZentaoDataProvider.m in Sources */,
+				2FCE9900002790 /* MLSZenTaoFieldListModel.m in Sources */,
+				2FCE99000027E0 /* MLSZenTaoGetAllBuildsReq.m in Sources */,
+				2FCE99000027F0 /* MLSZenTaoGetAllUsersReq.m in Sources */,
+				2FCE9900002800 /* MLSZenTaoLoginReq.m in Sources */,
+				2FCE9900002810 /* MLSZentaoPingReq.m in Sources */,
+				2FCE9900002820 /* MLSZenTaoUploadFileReq.m in Sources */,
+				2FCE99000027A0 /* MLSZenTaoUserModel.m in Sources */,
+				2FCE9900001830 /* NSArray+LIFEAdditions.m in Sources */,
+				2FCE9900001840 /* NSError+LIFEAdditions.m in Sources */,
+				2FCE9900001850 /* NSLayoutConstraint+LIFEAdditions.m in Sources */,
+				2FCE9900001860 /* NSMutableDictionary+LIFEAdditions.m in Sources */,
+				2FCE9900001870 /* NSString+LIFEAdditions.m in Sources */,
+				2FCE9900001880 /* UIApplication+LIFEAdditions.m in Sources */,
+				2FCE9900001890 /* UIBezierPath+LIFEAdditions.m in Sources */,
+				2FCE99000018A0 /* UIColor+LIFEAdditions.m in Sources */,
+				2FCE99000018B0 /* UIControl+LIFEAdditions.m in Sources */,
+				2FCE99000018C0 /* UIDevice+LIFEAdditions.m in Sources */,
+				2FCE9900002880 /* UIDevice+MLSBugReporter.m in Sources */,
+				2FCE99000018D0 /* UIImage+LIFEAdditions.m in Sources */,
+				2FCE99000018E0 /* UITableView+LIFEAdditions.m in Sources */,
+				2FCE99000018F0 /* UITextView+LIFEAdditions.m in Sources */,
+				2FCE9900001900 /* UIView+LIFEAdditions.m in Sources */,
+				2FCE9900001910 /* UIViewController+LIFEAdditions.m in Sources */,
+				2FCE9900001920 /* UIWindow+LIFEAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FCE9900002C50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MLSUICore;
+			targetProxy = 2FCE9900002C40 /* PBXContainerItemProxy */;
+		};
+		2FCE9900002C80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QMUIKit;
+			targetProxy = 2FCE9900002C70 /* PBXContainerItemProxy */;
+		};
+		2FCE9900002CB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MLSNetwork;
+			targetProxy = 2FCE9900002CA0 /* PBXContainerItemProxy */;
+		};
+		2FCE9900002CE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MLSModel;
+			targetProxy = 2FCE9900002CD0 /* PBXContainerItemProxy */;
+		};
+		2FCE9900002D10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = hpple;
+			targetProxy = 2FCE9900002D00 /* PBXContainerItemProxy */;
+		};
+		2FCE9900002D40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "matrix-minlison";
+			targetProxy = 2FCE9900002D30 /* PBXContainerItemProxy */;
+		};
+		2FCE9900002D70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSZipArchive;
+			targetProxy = 2FCE9900002D60 /* PBXContainerItemProxy */;
+		};
+		2FCE9900002DA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			targetProxy = 2FCE9900002D90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2FCE9900000040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2FCE9900000050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		2FCE9900001730 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FCE9900002BB0 /* MLSBugReporter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MLSBugReporter/MLSBugReporter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MLSBugReporter/MLSBugReporter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/MLSBugReporter/MLSBugReporter.modulemap";
+				PRODUCT_MODULE_NAME = MLSBugReporter;
+				PRODUCT_NAME = MLSBugReporter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2FCE9900001740 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FCE9900002BB0 /* MLSBugReporter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MLSBugReporter/MLSBugReporter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MLSBugReporter/MLSBugReporter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/MLSBugReporter/MLSBugReporter.modulemap";
+				PRODUCT_MODULE_NAME = MLSBugReporter;
+				PRODUCT_NAME = MLSBugReporter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FCE9900000030 /* Build configuration list for PBXProject "MLSBugReporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FCE9900000040 /* Debug */,
+				2FCE9900000050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FCE9900001720 /* Build configuration list for PBXNativeTarget "MLSBugReporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FCE9900001740 /* Debug */,
+				2FCE9900001730 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FCE9900000000 /* Project object */;
+}

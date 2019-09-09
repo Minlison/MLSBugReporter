@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB1F2700000380 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1F2700000370 /* Foundation.framework */; };
+		AB1F2700000390 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1F27000000D0 /* SSZipArchive.m */; };
+		AB1F27000003A0 /* mz_compat.c in Sources */ = {isa = PBXBuildFile; fileRef = AB1F2700000110 /* mz_compat.c */; };
+		AB1F27000003B0 /* mz_crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = AB1F2700000130 /* mz_crypt.c */; };
+		AB1F27000003C0 /* mz_crypt_apple.c in Sources */ = {isa = PBXBuildFile; fileRef = AB1F2700000150 /* mz_crypt_apple.c */; };
+		AB1F27000003D0 /* mz_os.c in Sources */ = {isa = PBXBuildFile; fileRef = AB1F2700000160 /* mz_os.c */; };
+		AB1F27000003E0 /* mz_os_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = AB1F2700000180 /* mz_os_posix.c */; };
+		AB1F27000003F0 /* mz_strm.c in Sources */ = {isa = PBXBuildFile; fileRef = AB1F2700000190 /* mz_strm.c */; };
+		AB1F2700000400 /* mz_strm_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = AB1F27000001B0 /* mz_strm_buf.c */; };
+		AB1F2700000410 /* mz_strm_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = AB1F27000001D0 /* mz_strm_mem.c */; };
+		AB1F2700000420 /* mz_strm_os_posix.c in Sources */ = {isa = PBXBuildFile; fileRef = AB1F2700000200 /* mz_strm_os_posix.c */; };
+		AB1F2700000430 /* mz_strm_pkcrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = AB1F2700000210 /* mz_strm_pkcrypt.c */; };
+		AB1F2700000440 /* mz_strm_split.c in Sources */ = {isa = PBXBuildFile; fileRef = AB1F2700000230 /* mz_strm_split.c */; };
+		AB1F2700000450 /* mz_strm_wzaes.c in Sources */ = {isa = PBXBuildFile; fileRef = AB1F2700000250 /* mz_strm_wzaes.c */; };
+		AB1F2700000460 /* mz_strm_zlib.c in Sources */ = {isa = PBXBuildFile; fileRef = AB1F2700000270 /* mz_strm_zlib.c */; };
+		AB1F2700000470 /* mz_zip.c in Sources */ = {isa = PBXBuildFile; fileRef = AB1F2700000290 /* mz_zip.c */; };
+		AB1F2700000480 /* mz_zip_rw.c in Sources */ = {isa = PBXBuildFile; fileRef = AB1F27000002B0 /* mz_zip_rw.c */; };
+		AB1F2700000490 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1F27000000C0 /* SSZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB1F27000004A0 /* SSZipCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1F27000000E0 /* SSZipCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB1F27000004B0 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1F27000000F0 /* ZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB1F27000004C0 /* mz.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1F2700000100 /* mz.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB1F27000004D0 /* mz_compat.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1F2700000120 /* mz_compat.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB1F27000004E0 /* mz_crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1F2700000140 /* mz_crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB1F27000004F0 /* mz_os.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1F2700000170 /* mz_os.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB1F2700000500 /* mz_strm.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1F27000001A0 /* mz_strm.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB1F2700000510 /* mz_strm_buf.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1F27000001C0 /* mz_strm_buf.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB1F2700000520 /* mz_strm_mem.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1F27000001E0 /* mz_strm_mem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB1F2700000530 /* mz_strm_os.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1F27000001F0 /* mz_strm_os.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB1F2700000540 /* mz_strm_pkcrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1F2700000220 /* mz_strm_pkcrypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB1F2700000550 /* mz_strm_split.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1F2700000240 /* mz_strm_split.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB1F2700000560 /* mz_strm_wzaes.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1F2700000260 /* mz_strm_wzaes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB1F2700000570 /* mz_strm_zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1F2700000280 /* mz_strm_zlib.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB1F2700000580 /* mz_zip.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1F27000002A0 /* mz_zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB1F2700000590 /* mz_zip_rw.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1F27000002C0 /* mz_zip_rw.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AB1F27000005E0 /* SSZipArchive-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB1F27000005D0 /* SSZipArchive-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB1F2700000620 /* SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1F2700000610 /* SSZipArchive-dummy.m */; };
+		AB1F2700000640 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1F2700000630 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		378ABBBCD25322CF7154ED2B6D63FA19 /* SSZipArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SSZipArchive.framework; path = SSZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB1F27000000C0 /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
+		AB1F27000000D0 /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
+		AB1F27000000E0 /* SSZipCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipCommon.h; path = SSZipArchive/SSZipCommon.h; sourceTree = "<group>"; };
+		AB1F27000000F0 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = SSZipArchive/ZipArchive.h; sourceTree = "<group>"; };
+		AB1F2700000100 /* mz.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz.h; path = SSZipArchive/minizip/mz.h; sourceTree = "<group>"; };
+		AB1F2700000110 /* mz_compat.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_compat.c; path = SSZipArchive/minizip/mz_compat.c; sourceTree = "<group>"; };
+		AB1F2700000120 /* mz_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_compat.h; path = SSZipArchive/minizip/mz_compat.h; sourceTree = "<group>"; };
+		AB1F2700000130 /* mz_crypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_crypt.c; path = SSZipArchive/minizip/mz_crypt.c; sourceTree = "<group>"; };
+		AB1F2700000140 /* mz_crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_crypt.h; path = SSZipArchive/minizip/mz_crypt.h; sourceTree = "<group>"; };
+		AB1F2700000150 /* mz_crypt_apple.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_crypt_apple.c; path = SSZipArchive/minizip/mz_crypt_apple.c; sourceTree = "<group>"; };
+		AB1F2700000160 /* mz_os.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_os.c; path = SSZipArchive/minizip/mz_os.c; sourceTree = "<group>"; };
+		AB1F2700000170 /* mz_os.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_os.h; path = SSZipArchive/minizip/mz_os.h; sourceTree = "<group>"; };
+		AB1F2700000180 /* mz_os_posix.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_os_posix.c; path = SSZipArchive/minizip/mz_os_posix.c; sourceTree = "<group>"; };
+		AB1F2700000190 /* mz_strm.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm.c; path = SSZipArchive/minizip/mz_strm.c; sourceTree = "<group>"; };
+		AB1F27000001A0 /* mz_strm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm.h; path = SSZipArchive/minizip/mz_strm.h; sourceTree = "<group>"; };
+		AB1F27000001B0 /* mz_strm_buf.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_buf.c; path = SSZipArchive/minizip/mz_strm_buf.c; sourceTree = "<group>"; };
+		AB1F27000001C0 /* mz_strm_buf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_buf.h; path = SSZipArchive/minizip/mz_strm_buf.h; sourceTree = "<group>"; };
+		AB1F27000001D0 /* mz_strm_mem.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_mem.c; path = SSZipArchive/minizip/mz_strm_mem.c; sourceTree = "<group>"; };
+		AB1F27000001E0 /* mz_strm_mem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_mem.h; path = SSZipArchive/minizip/mz_strm_mem.h; sourceTree = "<group>"; };
+		AB1F27000001F0 /* mz_strm_os.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_os.h; path = SSZipArchive/minizip/mz_strm_os.h; sourceTree = "<group>"; };
+		AB1F2700000200 /* mz_strm_os_posix.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_os_posix.c; path = SSZipArchive/minizip/mz_strm_os_posix.c; sourceTree = "<group>"; };
+		AB1F2700000210 /* mz_strm_pkcrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_pkcrypt.c; path = SSZipArchive/minizip/mz_strm_pkcrypt.c; sourceTree = "<group>"; };
+		AB1F2700000220 /* mz_strm_pkcrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_pkcrypt.h; path = SSZipArchive/minizip/mz_strm_pkcrypt.h; sourceTree = "<group>"; };
+		AB1F2700000230 /* mz_strm_split.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_split.c; path = SSZipArchive/minizip/mz_strm_split.c; sourceTree = "<group>"; };
+		AB1F2700000240 /* mz_strm_split.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_split.h; path = SSZipArchive/minizip/mz_strm_split.h; sourceTree = "<group>"; };
+		AB1F2700000250 /* mz_strm_wzaes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_wzaes.c; path = SSZipArchive/minizip/mz_strm_wzaes.c; sourceTree = "<group>"; };
+		AB1F2700000260 /* mz_strm_wzaes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_wzaes.h; path = SSZipArchive/minizip/mz_strm_wzaes.h; sourceTree = "<group>"; };
+		AB1F2700000270 /* mz_strm_zlib.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_strm_zlib.c; path = SSZipArchive/minizip/mz_strm_zlib.c; sourceTree = "<group>"; };
+		AB1F2700000280 /* mz_strm_zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_strm_zlib.h; path = SSZipArchive/minizip/mz_strm_zlib.h; sourceTree = "<group>"; };
+		AB1F2700000290 /* mz_zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_zip.c; path = SSZipArchive/minizip/mz_zip.c; sourceTree = "<group>"; };
+		AB1F27000002A0 /* mz_zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_zip.h; path = SSZipArchive/minizip/mz_zip.h; sourceTree = "<group>"; };
+		AB1F27000002B0 /* mz_zip_rw.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mz_zip_rw.c; path = SSZipArchive/minizip/mz_zip_rw.c; sourceTree = "<group>"; };
+		AB1F27000002C0 /* mz_zip_rw.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mz_zip_rw.h; path = SSZipArchive/minizip/mz_zip_rw.h; sourceTree = "<group>"; };
+		AB1F2700000370 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AB1F27000005B0 /* SSZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.xcconfig; sourceTree = "<group>"; };
+		AB1F27000005C0 /* SSZipArchive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SSZipArchive.modulemap; sourceTree = "<group>"; };
+		AB1F27000005D0 /* SSZipArchive-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-umbrella.h"; sourceTree = "<group>"; };
+		AB1F27000005F0 /* SSZipArchive-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SSZipArchive-Info.plist"; sourceTree = "<group>"; };
+		AB1F2700000600 /* SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		AB1F2700000610 /* SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSZipArchive-dummy.m"; sourceTree = "<group>"; };
+		AB1F2700000630 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB1F2700000340 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1F2700000380 /* Foundation.framework in Frameworks */,
+				AB1F2700000640 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB1F2700000010 = {
+			isa = PBXGroup;
+			children = (
+				AB1F2700000060 /* Frameworks */,
+				AB1F2700000020 /* Products */,
+				AB1F27000000B0 /* SSZipArchive */,
+			);
+			sourceTree = "<group>";
+		};
+		AB1F2700000020 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				378ABBBCD25322CF7154ED2B6D63FA19 /* SSZipArchive.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB1F2700000060 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB1F2700000360 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB1F27000000B0 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				AB1F2700000100 /* mz.h */,
+				AB1F2700000110 /* mz_compat.c */,
+				AB1F2700000120 /* mz_compat.h */,
+				AB1F2700000130 /* mz_crypt.c */,
+				AB1F2700000140 /* mz_crypt.h */,
+				AB1F2700000150 /* mz_crypt_apple.c */,
+				AB1F2700000160 /* mz_os.c */,
+				AB1F2700000170 /* mz_os.h */,
+				AB1F2700000180 /* mz_os_posix.c */,
+				AB1F2700000190 /* mz_strm.c */,
+				AB1F27000001A0 /* mz_strm.h */,
+				AB1F27000001B0 /* mz_strm_buf.c */,
+				AB1F27000001C0 /* mz_strm_buf.h */,
+				AB1F27000001D0 /* mz_strm_mem.c */,
+				AB1F27000001E0 /* mz_strm_mem.h */,
+				AB1F27000001F0 /* mz_strm_os.h */,
+				AB1F2700000200 /* mz_strm_os_posix.c */,
+				AB1F2700000210 /* mz_strm_pkcrypt.c */,
+				AB1F2700000220 /* mz_strm_pkcrypt.h */,
+				AB1F2700000230 /* mz_strm_split.c */,
+				AB1F2700000240 /* mz_strm_split.h */,
+				AB1F2700000250 /* mz_strm_wzaes.c */,
+				AB1F2700000260 /* mz_strm_wzaes.h */,
+				AB1F2700000270 /* mz_strm_zlib.c */,
+				AB1F2700000280 /* mz_strm_zlib.h */,
+				AB1F2700000290 /* mz_zip.c */,
+				AB1F27000002A0 /* mz_zip.h */,
+				AB1F27000002B0 /* mz_zip_rw.c */,
+				AB1F27000002C0 /* mz_zip_rw.h */,
+				AB1F27000000C0 /* SSZipArchive.h */,
+				AB1F27000000D0 /* SSZipArchive.m */,
+				AB1F27000000E0 /* SSZipCommon.h */,
+				AB1F27000000F0 /* ZipArchive.h */,
+				AB1F27000005A0 /* Support Files */,
+			);
+			name = SSZipArchive;
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		AB1F2700000360 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AB1F2700000370 /* Foundation.framework */,
+				AB1F2700000630 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AB1F27000005A0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB1F27000005C0 /* SSZipArchive.modulemap */,
+				AB1F27000005B0 /* SSZipArchive.xcconfig */,
+				AB1F2700000610 /* SSZipArchive-dummy.m */,
+				AB1F27000005F0 /* SSZipArchive-Info.plist */,
+				AB1F2700000600 /* SSZipArchive-prefix.pch */,
+				AB1F27000005D0 /* SSZipArchive-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SSZipArchive";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AB1F2700000320 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1F27000004C0 /* mz.h in Headers */,
+				AB1F27000004D0 /* mz_compat.h in Headers */,
+				AB1F27000004E0 /* mz_crypt.h in Headers */,
+				AB1F27000004F0 /* mz_os.h in Headers */,
+				AB1F2700000500 /* mz_strm.h in Headers */,
+				AB1F2700000510 /* mz_strm_buf.h in Headers */,
+				AB1F2700000520 /* mz_strm_mem.h in Headers */,
+				AB1F2700000530 /* mz_strm_os.h in Headers */,
+				AB1F2700000540 /* mz_strm_pkcrypt.h in Headers */,
+				AB1F2700000550 /* mz_strm_split.h in Headers */,
+				AB1F2700000560 /* mz_strm_wzaes.h in Headers */,
+				AB1F2700000570 /* mz_strm_zlib.h in Headers */,
+				AB1F2700000580 /* mz_zip.h in Headers */,
+				AB1F2700000590 /* mz_zip_rw.h in Headers */,
+				AB1F27000005E0 /* SSZipArchive-umbrella.h in Headers */,
+				AB1F2700000490 /* SSZipArchive.h in Headers */,
+				AB1F27000004A0 /* SSZipCommon.h in Headers */,
+				AB1F27000004B0 /* ZipArchive.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		90CF86BC7D493DAE1C2622CE3BC678BB /* SSZipArchive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB1F27000002E0 /* Build configuration list for PBXNativeTarget "SSZipArchive" */;
+			buildPhases = (
+				AB1F2700000320 /* Headers */,
+				AB1F2700000330 /* Sources */,
+				AB1F2700000340 /* Frameworks */,
+				AB1F2700000350 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSZipArchive;
+			productName = SSZipArchive;
+			productReference = 378ABBBCD25322CF7154ED2B6D63FA19 /* SSZipArchive.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB1F2700000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = AB1F2700000030 /* Build configuration list for PBXProject "SSZipArchive" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AB1F2700000010;
+			productRefGroup = AB1F2700000020 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90CF86BC7D493DAE1C2622CE3BC678BB /* SSZipArchive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB1F2700000350 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB1F2700000330 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB1F27000003A0 /* mz_compat.c in Sources */,
+				AB1F27000003B0 /* mz_crypt.c in Sources */,
+				AB1F27000003C0 /* mz_crypt_apple.c in Sources */,
+				AB1F27000003D0 /* mz_os.c in Sources */,
+				AB1F27000003E0 /* mz_os_posix.c in Sources */,
+				AB1F27000003F0 /* mz_strm.c in Sources */,
+				AB1F2700000400 /* mz_strm_buf.c in Sources */,
+				AB1F2700000410 /* mz_strm_mem.c in Sources */,
+				AB1F2700000420 /* mz_strm_os_posix.c in Sources */,
+				AB1F2700000430 /* mz_strm_pkcrypt.c in Sources */,
+				AB1F2700000440 /* mz_strm_split.c in Sources */,
+				AB1F2700000450 /* mz_strm_wzaes.c in Sources */,
+				AB1F2700000460 /* mz_strm_zlib.c in Sources */,
+				AB1F2700000470 /* mz_zip.c in Sources */,
+				AB1F2700000480 /* mz_zip_rw.c in Sources */,
+				AB1F2700000620 /* SSZipArchive-dummy.m in Sources */,
+				AB1F2700000390 /* SSZipArchive.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AB1F2700000040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AB1F2700000050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AB1F27000002F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB1F27000005B0 /* SSZipArchive.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSZipArchive/SSZipArchive-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SSZipArchive/SSZipArchive.modulemap";
+				PRODUCT_MODULE_NAME = SSZipArchive;
+				PRODUCT_NAME = SSZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AB1F2700000300 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB1F27000005B0 /* SSZipArchive.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSZipArchive/SSZipArchive-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SSZipArchive/SSZipArchive.modulemap";
+				PRODUCT_MODULE_NAME = SSZipArchive;
+				PRODUCT_NAME = SSZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB1F2700000030 /* Build configuration list for PBXProject "SSZipArchive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB1F2700000040 /* Debug */,
+				AB1F2700000050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB1F27000002E0 /* Build configuration list for PBXNativeTarget "SSZipArchive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB1F2700000300 /* Debug */,
+				AB1F27000002F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB1F2700000000 /* Project object */;
+}

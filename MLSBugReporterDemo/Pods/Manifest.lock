@@ -1,0 +1,198 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - CocoaLumberjack (3.5.3):
+    - CocoaLumberjack/Core (= 3.5.3)
+  - CocoaLumberjack/Core (3.5.3)
+  - hpple (0.2.0)
+  - Masonry (1.1.0)
+  - matrix-minlison (0.5.2):
+    - matrix-minlison/matrixARC (= 0.5.2)
+    - matrix-minlison/matrixNonARC1 (= 0.5.2)
+    - matrix-minlison/matrixNonARC2 (= 0.5.2)
+  - matrix-minlison/matrixARC (0.5.2):
+    - matrix-minlison/matrixNonARC1
+  - matrix-minlison/matrixNonARC1 (0.5.2)
+  - matrix-minlison/matrixNonARC2 (0.5.2):
+    - matrix-minlison/matrixARC
+  - MLSBugReporter (1.0.0):
+    - MLSBugReporter/Core (= 1.0.0)
+  - MLSBugReporter/Aspects (1.0.0)
+  - MLSBugReporter/Buglife (1.0.0)
+  - MLSBugReporter/Core (1.0.0):
+    - hpple (>= 0.2.0)
+    - matrix-minlison (>= 0.5.2)
+    - MLSBugReporter/Aspects
+    - MLSBugReporter/Buglife
+    - MLSBugReporter/NetworkTrack
+    - MLSBugReporter/SystemLog
+    - MLSModel (>= 1.0.0)
+    - MLSNetwork (>= 1.0.0)
+    - MLSUICore/Core
+    - MLSUICore/MLSPopup
+    - QMUIKit/QMUIComponents/QMUIDialogViewController
+    - QMUIKit/QMUIComponents/QMUIModalPresentationViewController
+    - QMUIKit/QMUIComponents/QMUIOrderedDictionary
+    - QMUIKit/QMUIComponents/QMUIPopupContainerView
+    - SSZipArchive (>= 2.1.5)
+  - MLSBugReporter/NetworkTrack (1.0.0):
+    - CocoaLumberjack (>= 3.5.2)
+  - MLSBugReporter/SystemLog (1.0.0):
+    - CocoaLumberjack (>= 3.5.2)
+  - MLSModel (1.0.0):
+    - MLSModel/Core (= 1.0.0)
+  - MLSModel/Core (1.0.0):
+    - MLSModel/MLSYYModelModify
+  - MLSModel/MLSYYModelModify (1.0.0)
+  - MLSNetwork (1.0.0):
+    - MLSNetwork/Core (= 1.0.0)
+  - MLSNetwork/Core (1.0.0):
+    - AFNetworking (~> 3.2.1)
+  - MLSUICore/Core (1.0.0):
+    - Masonry (>= 1.1.0)
+    - MLSUICore/MLSCategories
+    - MLSUICore/MLSProtocols
+    - MLSUICore/MLSTips
+    - MLSUICore/MLSUnits
+    - MLSUICore/PublicHeader
+    - QMUIKit/QMUIComponents/QMUITableViewCell (>= 3.2.0)
+    - QMUIKit/QMUIMainFrame (>= 3.2.0)
+  - MLSUICore/MLSCategories (1.0.0):
+    - MLSUICore/PublicHeader
+    - QMUIKit/QMUIComponents/QMUIButton
+    - QMUIKit/QMUICore
+  - MLSUICore/MLSPopup (1.0.0):
+    - MLSUICore/PublicHeader
+  - MLSUICore/MLSProtocols (1.0.0):
+    - MLSUICore/PublicHeader
+  - MLSUICore/MLSTips (1.0.0):
+    - Masonry (>= 1.1.0)
+    - MLSUICore/MLSUnits
+    - MLSUICore/PublicHeader
+    - QMUIKit/QMUIComponents/QMUITips (>= 3.2.0)
+  - MLSUICore/MLSUnits (1.0.0):
+    - MLSUICore/PublicHeader
+    - QMUIKit/QMUICore
+  - MLSUICore/PublicHeader (1.0.0)
+  - QMUIKit/QMUIComponents/QMUIButton (3.2.1):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIDialogViewController (3.2.1):
+    - QMUIKit/QMUIComponents/QMUIButton
+    - QMUIKit/QMUIComponents/QMUILabel
+    - QMUIKit/QMUIComponents/QMUIModalPresentationViewController
+    - QMUIKit/QMUIComponents/QMUINavigationTitleView
+    - QMUIKit/QMUIComponents/QMUITableView
+    - QMUIKit/QMUIComponents/QMUITableViewCell
+    - QMUIKit/QMUIComponents/QMUITextField
+    - QMUIKit/QMUICore
+    - QMUIKit/QMUIMainFrame
+  - QMUIKit/QMUIComponents/QMUIEmptyView (3.2.1):
+    - QMUIKit/QMUIComponents/QMUIButton
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIKeyboardManager (3.2.1):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUILabel (3.2.1):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIModalPresentationViewController (3.2.1):
+    - QMUIKit/QMUIComponents/QMUIKeyboardManager
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIMultipleDelegates (3.2.1):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUINavigationTitleView (3.2.1):
+    - QMUIKit/QMUIComponents/QMUIButton
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIOrderedDictionary (3.2.1):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIPopupContainerView (3.2.1):
+    - QMUIKit/QMUICore
+    - QMUIKit/QMUIMainFrame
+  - QMUIKit/QMUIComponents/QMUITableView (3.2.1):
+    - QMUIKit/QMUIComponents/QMUITableViewProtocols
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUITableViewCell (3.2.1):
+    - QMUIKit/QMUIComponents/QMUIButton
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUITableViewHeaderFooterView (3.2.1):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUITableViewProtocols (3.2.1):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUITextField (3.2.1):
+    - QMUIKit/QMUIComponents/QMUIMultipleDelegates
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUITips (3.2.1):
+    - QMUIKit/QMUIComponents/QMUIToastView
+    - QMUIKit/QMUICore
+    - QMUIKit/QMUIResources
+  - QMUIKit/QMUIComponents/QMUIToastView (3.2.1):
+    - QMUIKit/QMUIComponents/QMUIKeyboardManager
+    - QMUIKit/QMUIComponents/QMUIVisualEffectView
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUIComponents/QMUIVisualEffectView (3.2.1):
+    - QMUIKit/QMUICore
+  - QMUIKit/QMUICore (3.2.1):
+    - QMUIKit/QMUILog
+    - QMUIKit/QMUIWeakObjectContainer
+  - QMUIKit/QMUILog (3.2.1)
+  - QMUIKit/QMUIMainFrame (3.2.1):
+    - QMUIKit/QMUIComponents/QMUIEmptyView
+    - QMUIKit/QMUIComponents/QMUIKeyboardManager
+    - QMUIKit/QMUIComponents/QMUIMultipleDelegates
+    - QMUIKit/QMUIComponents/QMUINavigationTitleView
+    - QMUIKit/QMUIComponents/QMUITableView
+    - QMUIKit/QMUIComponents/QMUITableViewHeaderFooterView
+    - QMUIKit/QMUICore
+    - QMUIKit/QMUILog
+  - QMUIKit/QMUIResources (3.2.1)
+  - QMUIKit/QMUIWeakObjectContainer (3.2.1)
+  - SSZipArchive (2.2.2)
+
+DEPENDENCIES:
+  - MLSBugReporter (from `../`)
+
+SPEC REPOS:
+  https://cdn.cocoapods.org/:
+    - AFNetworking
+    - CocoaLumberjack
+    - hpple
+    - Masonry
+    - QMUIKit
+    - SSZipArchive
+  https://github.com/Minlison/Specs.git:
+    - matrix-minlison
+    - MLSModel
+    - MLSNetwork
+    - MLSUICore
+
+EXTERNAL SOURCES:
+  MLSBugReporter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
+  hpple: 3b765f96fc2cd56ad1a49aef6f7be5cb2aa64b57
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  matrix-minlison: e4181f569afe00e0aabc93e3191d26c02c98d20f
+  MLSBugReporter: cc1daa4ba902879dc9ea61834542a8ad88c13e0e
+  MLSModel: 4c1eb0be57c9a1c7f234983274aeda33de68ac7f
+  MLSNetwork: 2d883f9602a3092acc3442197b2e5ebbd3ecc2a4
+  MLSUICore: 20fb70f8b8661c6f2082fa31644d491dda415923
+  QMUIKit: a3af645843b9558eb7aaf407b320eaeb45ab6144
+  SSZipArchive: fa16b8cc4cdeceb698e5e5d9f67e9558532fbf23
+
+PODFILE CHECKSUM: 84b0c291ea46717b98fa020cc7ca339b0a97a2ac
+
+COCOAPODS: 1.7.5
