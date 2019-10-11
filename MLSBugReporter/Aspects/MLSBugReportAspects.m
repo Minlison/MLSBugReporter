@@ -127,8 +127,9 @@ static id MLS_bug_aspect_add(id self, SEL selector, MLSBugReportAspectOptions op
     NSCParameterAssert(block);
 
     __block MLSBugReportAspectIdentifier *identifier = nil;
+    __weak __typeof(self)weakSelf = self;
     MLS_bug_aspect_performLocked(^{
-        if (MLS_bug_aspect_isSelectorAllowedAndTrack(self, selector, options, error)) {
+        if (MLS_bug_aspect_isSelectorAllowedAndTrack(weakSelf, selector, options, error)) {
             MLSBugReportAspectsContainer *aspectContainer = MLS_bug_aspect_getContainerForObject(self, selector);
             identifier = [MLSBugReportAspectIdentifier identifierWithSelector:selector object:self options:options block:block error:error];
             if (identifier) {

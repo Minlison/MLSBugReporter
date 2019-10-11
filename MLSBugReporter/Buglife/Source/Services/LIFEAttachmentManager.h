@@ -27,7 +27,7 @@
 - (void)asyncCloseRequestsAndSettleAttachments;
 
 - (void)asyncFlushSettledAttachmentsToQueue:(nonnull dispatch_queue_t)queue completion:(nonnull void (^)(NSArray<LIFEReportAttachmentImpl *> * _Nullable settledAttachments))completion;
-- (void)asyncFlushCandidateAttachmentsToQueue:(dispatch_queue_t)queue completion:(void (^)(NSArray<LIFEReportAttachmentImpl *> *_Nullable settledAttachments))completion;
+- (void)asyncFlushCandidateAttachmentsToQueue:(dispatch_queue_t _Nonnull )queue completion:(void (^_Nullable)(NSArray<LIFEReportAttachmentImpl *> *_Nullable settledAttachments))completion;
 // The public equivalent of this interface specifies non-null parameters,
 // but we specify nullable here since we handle them internally, and Obj-C
 // callers can always pass in null anyway

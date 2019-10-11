@@ -57,5 +57,6 @@ Pod::Spec.new do |s|
 
   s.subspec 'Buglife' do |ss|
     ss.source_files   = 'MLSBugReporter/Buglife/**/*.{h,m,mm,c,cpp}'
+    ss.public_header_files = 'MLSBugReporter/Buglife/*.{h}'
   end
 end

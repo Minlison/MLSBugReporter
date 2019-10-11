@@ -17,6 +17,7 @@
 #include <sys/socket.h>
 #include <ifaddrs.h>
 #include <net/if.h>
+#import <SystemConfiguration/CaptiveNetwork.h>
 
 @implementation MLSDeviceInfoTool
 
@@ -73,7 +74,7 @@
     [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
     NSString *timeup = [dateFormatter stringFromDate:UIDevice.currentDevice.systemUptime];
     
-    [self appenTableHeader:string name:@"系统信息" columns:9];
+    [self appenTableHeader:string name:@"系统信息" columns:4];
     [self appendTr:string values:@[@"系统版本",
                                    @"设备名称",
                                    @"设备版本",
@@ -91,9 +92,16 @@
     
     NSString *jailBroken = UIDevice.currentDevice.isJailbroken ? @"是" : @"否";
     NSString *canMakePhoneCalls = UIDevice.currentDevice.canMakePhoneCalls ? @"是" : @"否";
+    NSString *wifiAddress = @"";
+    if (MLSBugReporterOptions.shareOptions.getWifiName) {
+        wifiAddress = [NSString stringWithFormat:@"WIFI名:%@<br> ipv4:%@<br> ipv6:%@", [self ssid], UIDevice.currentDevice.ipAddressWIFI, UIDevice.currentDevice.ipV6AddressWIFI?:@""];
+    } else {
+        wifiAddress = [NSString stringWithFormat:@"ipv4:%@<br> ipv6:%@",[self getLocalIPAddress:YES], UIDevice.currentDevice.ipAddressWIFI?:@""];
+    }
+    
     [self appendTr:string values:@[jailBroken,
                                    canMakePhoneCalls,
-                                   UIDevice.currentDevice.ipAddressWIFI?:@"",
+                                   wifiAddress,
                                    UIDevice.currentDevice.ipAddressCell?:@""]];
     
     [self appenTableStop:string];
@@ -293,7 +301,6 @@
         //筛选出IP地址格式
         if([self isValidatIP:address]) *stop = YES;
     } ];
-    //10.21.206.59
     return address ? address : @"0.0.0.0";
 }
 + (BOOL)isValidatIP:(NSString *)ipAddress {
@@ -313,7 +320,7 @@
         
         if (firstMatch) {
             NSRange resultRange = [firstMatch rangeAtIndex:0];
-            NSString *result=[ipAddress substringWithRange:resultRange];
+            NSString *result = [ipAddress substringWithRange:resultRange];
             return YES;
         }
     }
@@ -377,5 +384,19 @@
     }];
     dispatch_semaphore_wait(semaphore, dispatch_time(DISPATCH_TIME_NOW, (int64_t)(req.requestTimeoutInterval * NSEC_PER_SEC)));
     return publicIP?:@"未知";
+}
+
++ (NSString *)ssid {
+    NSString *ssid = @"无法获取,请开启 Wireless Accessory Configuration 权限, 并使用付费账户签名";
+    CFArrayRef myArray = CNCopySupportedInterfaces();
+    if (myArray != nil) {
+        CFDictionaryRef myDict = CNCopyCurrentNetworkInfo(CFArrayGetValueAtIndex(myArray, 0));
+        if (myDict != nil) {
+            NSDictionary *dict = (NSDictionary*)CFBridgingRelease(myDict);
+            ssid = [dict valueForKey:(NSString
+                                       *)kCNNetworkInfoKeySSID];
+        }
+    }
+    return ssid;
 }
 @end

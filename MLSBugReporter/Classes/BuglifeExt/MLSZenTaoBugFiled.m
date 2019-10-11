@@ -100,6 +100,16 @@ NSString *zenTaoBugFiledTypeString(MLSZenTaoBugFiledType type);
         return;
     }
     switch (self.fieldType) {
+            case MLSZenTaoBugFiledTypeBugTitle: {
+                NSString *value = bugModel.bugTitle;
+                if (value.length == 0) {
+                    break;
+                }
+                [Buglife.sharedBuglife setStringValue:value forAttribute:zenTaoBugFiledTypeString(self.fieldType)];
+                [self setTextFieldValue:value];
+                bugModel.productID = MLSBugReporterOptions.shareOptions.zentaoProductID.integerValue;
+            }
+                break;
         case MLSZenTaoBugFiledTypeProduct: {
             NSString *value = [bugModel.products objectForKey:MLSBugReporterOptions.shareOptions.zentaoProductID];
             [Buglife.sharedBuglife setStringValue:value forAttribute:zenTaoBugFiledTypeString(self.fieldType)];

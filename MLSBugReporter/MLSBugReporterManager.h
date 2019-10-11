@@ -56,6 +56,12 @@ typedef NS_ENUM(NSInteger, MLSCrashLogFormat) {
  */
 @property(nonatomic, assign) BOOL trackingCrashes;
 
+/// 是否手机WIFI 名称
+/// @param getWifiName 是否搜集Wifi名称
+/// 注意: 开启此选项需要配置 Wireless Accessory Configuration 权限
+/// 默认: NO
+@property(nonatomic, assign) BOOL getWifiName;
+
 /**
  * 是否跟踪用户操作步骤，默认 YES
  * 跟踪 UIControl 的点击事件， UIViewController 的跳转
@@ -144,8 +150,6 @@ typedef NS_ENUM(NSInteger, MLSCrashLogFormat) {
 + (void)startWithInvocationEvent:(MLSInvocationEvent)invocationEvent;
 + (void)startWithInvocationEvent:(MLSInvocationEvent)invocationEvent options:(MLSBugReporterOptions *)options;
 
-// 配置追踪urlfilter
-+ (void)setTrackingNetworkURLFilter:(NSString *)trackingNetworkURLFilter;
 
 // 自定义日志打印
 + (void)log:(NSString *)content;
@@ -155,6 +159,12 @@ typedef NS_ENUM(NSInteger, MLSCrashLogFormat) {
  * @param trackingCrashes - 默认 YES
  */
 + (void)setTrackingCrashes:(BOOL)trackingCrashes;
+
+/// 是否手机WIFI 名称
+/// @param getWifiName 是否搜集Wifi名称
+/// 注意: 开启此选项需要配置 Wireless Accessory Configuration 权限
+/// 默认: NO
++ (void)setGetWifiName:(BOOL)getWifiName;
 
 /**
  * 设置是否跟踪用户操作步骤

@@ -186,7 +186,7 @@ SPEC CHECKSUMS:
   hpple: 3b765f96fc2cd56ad1a49aef6f7be5cb2aa64b57
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   matrix-minlison: e4181f569afe00e0aabc93e3191d26c02c98d20f
-  MLSBugReporter: cc1daa4ba902879dc9ea61834542a8ad88c13e0e
+  MLSBugReporter: 513baee79ec8962bea484b5756b77cbf782de693
   MLSModel: 4c1eb0be57c9a1c7f234983274aeda33de68ac7f
   MLSNetwork: 2d883f9602a3092acc3442197b2e5ebbd3ecc2a4
   MLSUICore: 20fb70f8b8661c6f2082fa31644d491dda415923

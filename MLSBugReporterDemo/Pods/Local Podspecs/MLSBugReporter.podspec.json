@@ -111,7 +111,8 @@
     },
     {
       "name": "Buglife",
-      "source_files": "MLSBugReporter/Buglife/**/*.{h,m,mm,c,cpp}"
+      "source_files": "MLSBugReporter/Buglife/**/*.{h,m,mm,c,cpp}",
+      "public_header_files": "MLSBugReporter/Buglife/*.{h}"
     }
   ]
 }

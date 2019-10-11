@@ -95,7 +95,7 @@
 - (void)buglife:(nonnull Buglife *)buglife userCanceledReportWithAttributes:(nonnull NSDictionary<NSString *, NSString *> *)attributes {
     [MLSTipClass hideLoading];
     [MLSTipClass hideLoadingInView:nil];
-    // 用户取消上报，直接把本地清楚
+    // 用户取消上报，直接把本地清除
     [self reportCrashToMatrix:YES];
 }
 

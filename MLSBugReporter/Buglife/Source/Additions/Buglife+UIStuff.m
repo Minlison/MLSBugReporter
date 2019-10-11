@@ -47,6 +47,7 @@ typedef void (^LIFEAlertOrUIAlertActionHandler)(NSObject *action);
 
 - (void)_presentAlertControllerForInvocation:(LIFEInvocationOptions)invocation withScreenshot:(UIImage *)screenshot
 {
+    self.reporting = YES;
     [self _notifyBuglifeInvoked];
     [self.dataProvider logClientEventWithName:@"reporter_invoked"];
     

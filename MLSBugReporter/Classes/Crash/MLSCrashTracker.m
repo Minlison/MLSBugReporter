@@ -36,6 +36,7 @@ void MLS_bug_kscrash_crashCallback(const KSCrashReportWriter *writer)
 @property (nonatomic, strong) WCCrashBlockMonitorPlugin *m_cbPlugin;
 @property (nonatomic, strong) WCMemoryStatPlugin *m_msPlugin;
 @property (nonatomic, strong) KSReachableOperationKSCrash *reachableOperation;
+@property(nonatomic, assign, getter=isReporting) BOOL reporting;
 @end
 @implementation MLSCrashTracker
 
@@ -87,6 +88,9 @@ void MLS_bug_kscrash_crashCallback(const KSCrashReportWriter *writer)
     blockMonitorConfig.bMainThreadHandle = YES;
     blockMonitorConfig.bFilterSameStack = YES;
     blockMonitorConfig.triggerToBeFilteredCount = 10;
+    blockMonitorConfig.bGetCPUHighLog = NO;
+    blockMonitorConfig.bGetPowerConsumeStack = YES;
+    blockMonitorConfig.triggerToBeFilteredCount = 10;
     crashBlockConfig.blockMonitorConfiguration = blockMonitorConfig;
 
     WCCrashBlockMonitorPlugin *crashBlockPlugin = [[WCCrashBlockMonitorPlugin alloc] init];
@@ -123,49 +127,57 @@ void MLS_bug_kscrash_crashCallback(const KSCrashReportWriter *writer)
 }
 
 - (void)_onReportIssue:(MatrixIssue *)issue {
+    if (Buglife.sharedBuglife.isReporting || self.isReporting) {
+        return;
+    }
+    self.reporting = YES;
     NSString *currentTilte = nil;
     BOOL toAppleFormat = NO;
     if ([issue.issueTag isEqualToString:[WCCrashBlockMonitorPlugin getTag]]) {
         if (issue.reportType == EMCrashBlockReportType_Lag) {
             NSMutableString *lagTitle = [@"Lag" mutableCopy];
+            NSString *dumpTypeDes = @"";
             if (issue.customInfo != nil) {
-                NSString *dumpTypeDes = @"";
                 NSNumber *dumpType = [issue.customInfo objectForKey:@g_crash_block_monitor_custom_dump_type];
                 switch (dumpType.integerValue) {
                     case EDumpType_MainThreadBlock:
-                        dumpTypeDes = @"Foreground Main Thread Block";
+                        dumpTypeDes = @"前台主线程阻塞";
                         break;
                     case EDumpType_BackgroundMainThreadBlock:
-                        dumpTypeDes = @"Background Main Thread Block";
+                        dumpTypeDes = @"后台主线程阻塞";
                         break;
                     case EDumpType_CPUBlock:
-                        dumpTypeDes = @"CPU Too High";
+                        dumpTypeDes = @"CPU 占用率太高";
                         break;
 //                    case EDumpType_CPUIntervalHigh:
 //                        dumpTypeDes = @"CPU Interval High";
 //                        break;
                     case EDumpType_LaunchBlock:
-                        dumpTypeDes = @"Launching Main Thread Block";
+                        dumpTypeDes = @"启动时主线程阻塞";
                         break;
                     case EDumpType_BlockThreadTooMuch:
-                        dumpTypeDes = @"Block And Thread Too Much";
+                        dumpTypeDes = @"阻塞线程数过多";
                         break;
                     case EDumpType_BlockAndBeKilled:
-                        dumpTypeDes = @"Main Thread Block Before Be Killed";
+                        dumpTypeDes = @"主线程阻塞被杀死";
                         break;
+                        case EDumpType_PowerConsume:
+                        dumpTypeDes = @"电池耗电过高";
+                        break;
+
                     default:
                         dumpTypeDes = [NSString stringWithFormat:@"%d", [dumpType intValue]];
                         break;
                 }
                 [lagTitle appendFormat:@" [%@]", dumpTypeDes];
             }
-            currentTilte = [lagTitle copy];
+            currentTilte = dumpTypeDes;
         } else if (issue.reportType == EMCrashBlockReportType_Crash) {
-            currentTilte = @"Crash";
+            currentTilte = @"闪退";
         }
         toAppleFormat = YES;
     } else if ([issue.issueTag isEqualToString:[WCMemoryStatPlugin getTag]]) {
-        currentTilte = @"OOM Info";
+        currentTilte = @"OOM 内存泄漏";
         toAppleFormat = YES;
     }
     [self _reportIssueToZentao:issue title:currentTilte toAppleFormat:toAppleFormat];
@@ -185,6 +197,7 @@ void MLS_bug_kscrash_crashCallback(const KSCrashReportWriter *writer)
     
     if (data == nil) {
         [[Matrix sharedInstance] reportIssueComplete:issue success:YES];
+        self.reporting = NO;
         return;
     }
     NSMutableArray *waitFilterReports = [NSMutableArray arrayWithCapacity:4];
@@ -209,6 +222,7 @@ void MLS_bug_kscrash_crashCallback(const KSCrashReportWriter *writer)
     }];
     if (zentaoFilterReports.count == 0) {
         [[Matrix sharedInstance] reportIssueComplete:issue success:NO];
+        self.reporting = NO;
         return;
     }
     [self _reportIssueToZentao:issue title:title reports:zentaoFilterReports];
@@ -222,19 +236,23 @@ void MLS_bug_kscrash_crashCallback(const KSCrashReportWriter *writer)
                 [self sendToZenTaoWithIssue:issue title:title reports:reports];
             } else {
                 [[Matrix sharedInstance] reportIssueComplete:issue success:NO];
+                self.reporting = NO;
             }
         }];
         return;
     }
-    [MLSTipClass showLoading];
+    NSString *tipString = [NSString stringWithFormat:@"检测到%@问题，正在处理...",title];
+    [MLSTipClass showLoadingInView:nil withText:tipString];
     [MLSBugReporterLoginViewController getBugProductID:^(BOOL success, NSError *error) {
-        [MLSTipClass hideLoading];
+        
         if (!success) {
+            [MLSTipClass hideLoading];
             [MLSBugReporterLoginViewController showIfNeedAndLoginCompletion:^(BOOL success, NSError * _Nonnull error) {
                 if (success) {
                     [self sendToZenTaoWithIssue:issue title:title reports:reports];
                 } else {
                     [[Matrix sharedInstance] reportIssueComplete:issue success:NO];
+                    self.reporting = NO;
                 }
             }];
             [MLSTipClass showErrorWithText:error.localizedDescription inView:nil];
@@ -248,26 +266,29 @@ void MLS_bug_kscrash_crashCallback(const KSCrashReportWriter *writer)
 - (void)sendToZenTaoWithIssue:(MatrixIssue *)issue
                         title:(NSString *)title
                       reports:(NSArray *) reports {
-    
-    [MLSTipClass showLoadingInView:nil withText:@"检测到上次崩溃，正在更新..."];
     [MLSBugReporterLoginViewController getBugProductID:^(BOOL success, NSError * _Nonnull error) {
         [MLSTipClass hideLoadingInView:nil];
         if (success) {
             if (reports.count > 1) {
                 [reports enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                    [Buglife.sharedBuglife addAttachmentWithData:obj type:LIFEAttachmentTypeIdentifierCrashText filename:[NSString stringWithFormat:@"%@-report-%d.log.gz",title,idx] error:nil];
+                    [Buglife.sharedBuglife addAttachmentWithData:obj type:LIFEAttachmentTypeIdentifierCrashText filename:[NSString stringWithFormat:@"%@-report-%d.log.gz",title,(int)idx] error:nil];
                 }];
             } else {
                 [Buglife.sharedBuglife addAttachmentWithData:reports.firstObject type:LIFEAttachmentTypeIdentifierCrashText filename:[NSString stringWithFormat:@"%@-report.log.gz",title] error:nil];
             }
-            // 因为是崩溃，所以改变优先级为1
             MLSBugReporterManager.sharedInstance.matrixIssue = issue;
-            MLSBugReporterOptions.shareOptions.zentaoBugPriID = @"1";
-            MLSBugReporterOptions.shareOptions.zentaoSeverityID = @"1";
-            [Buglife.sharedBuglife _presentAlertControllerForInvocation:LIFEInvocationOptionsCrashReport withScreenshot:nil];
+            // 因为是崩溃，所以改变优先级为 1
+            if (issue.reportType == EMCrashBlockReportType_Crash) {
+                MLSBugReporterOptions.shareOptions.zentaoBugPriID = @"1";
+                MLSBugReporterOptions.shareOptions.zentaoSeverityID = @"1";
+            }
+            NSString *appName = [NSBundle.mainBundle.infoDictionary objectForKey:@"CFBundleName"];
+            MLSBugReporterOptions.shareOptions.bugModel.bugTitle = [NSString stringWithFormat:@"%@-%@-%@-%@-%@",MLSBugReporterOptions.shareOptions.zentaoProductName,appName,MLSBugReporterOptions.shareOptions.version,MLSBugReporterOptions.shareOptions.build,title];
+            [Buglife.sharedBuglife presentReporterWithInvocation:LIFEInvocationOptionsCrashReport];
         } else {
             [MLSTipClass showErrorWithText:error.localizedDescription inView:nil];
             [[Matrix sharedInstance] reportIssueComplete:issue success:NO];
+            self.reporting = NO;
         }
     }];
 }

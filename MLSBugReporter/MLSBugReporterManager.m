@@ -91,6 +91,10 @@
     trackingCrashes ? [MLSCrashTracker install] : [MLSCrashTracker unInstall];
 }
 
++ (void)setGetWifiName:(BOOL)getWifiName {
+    MLSBugReporterOptions.shareOptions.getWifiName = getWifiName;
+}
+
 + (void)setTrackingConsoleLog:(BOOL)trackingConsoleLog {
     MLSBugReporterOptions.shareOptions.trackingConsoleLog = trackingConsoleLog;
     trackingConsoleLog ? [MLSBugConsoleTracker install] : [MLSBugConsoleTracker unInstall];

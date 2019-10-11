@@ -23,6 +23,7 @@
     [MLSBugReporterManager setZenTaoIndexUrl:@"index.php"];
     [MLSBugReporterManager setZenTaoProductName:@"测试"];
     [MLSBugReporterManager setCombineAllLog:NO];
+    [MLSBugReporterManager setGetWifiName:YES];
     [MLSBugReporterManager setTrackingCrashes:YES];
     [MLSBugReporterManager setCrashlogFmt:(MLSCrashLogFormatAppleFmt)];
     [MLSBugReporterManager startWithInvocationEvent:(MLSInvocationEventShake |  MLSInvocationEventScreenshot | MLSInvocationEventFloatingButton)];

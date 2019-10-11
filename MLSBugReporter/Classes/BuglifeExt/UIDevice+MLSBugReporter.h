@@ -58,6 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// WIFI IP address of this device (can be nil). e.g. @"192.168.1.111"
 @property (nullable, nonatomic, readonly) NSString *ipAddressWIFI;
+@property (nullable, nonatomic, readonly) NSString *ipV6AddressWIFI;
 
 /// Cell IP address of this device (can be nil). e.g. @"10.2.2.222"
 @property (nullable, nonatomic, readonly) NSString *ipAddressCell;

@@ -106,6 +106,7 @@
  */
 - (BOOL) updateFlags;
 
+- (void)reset;
 @end
 
 

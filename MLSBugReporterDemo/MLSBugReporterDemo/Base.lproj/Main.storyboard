@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yZN-Ji-BlK">
-                                <rect key="frame" x="123.5" y="293" width="167" height="310"/>
+                                <rect key="frame" x="123.5" y="213" width="167" height="470"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYD-a3-4wP">
                                         <rect key="frame" x="0.0" y="0.0" width="167" height="30"/>
@@ -77,11 +75,57 @@
                                             <action selector="overflowCrash" destination="BYZ-38-t0r" eventType="touchUpInside" id="n9Y-i0-I9p"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X42-TS-5O4">
+                                        <rect key="frame" x="0.0" y="320" width="167" height="30"/>
+                                        <state key="normal" title="主线程Block"/>
+                                        <connections>
+                                            <action selector="generateMainThreadLagLog" destination="BYZ-38-t0r" eventType="touchUpInside" id="cWt-CU-JIb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KyH-2U-gfO">
+                                        <rect key="frame" x="0.0" y="360" width="167" height="30"/>
+                                        <state key="normal" title="主线程Block 被Kill"/>
+                                        <connections>
+                                            <action selector="generateMainThreadBlockToBeKilledLog" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Zs-Fd-Mpr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTA-oO-AnB">
+                                        <rect key="frame" x="0.0" y="400" width="167" height="30"/>
+                                        <state key="normal" title="Cpu过高"/>
+                                        <connections>
+                                            <action selector="costCPUALot" destination="BYZ-38-t0r" eventType="touchUpInside" id="jmb-qK-WfH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mc-N1-hfm">
+                                        <rect key="frame" x="0.0" y="440" width="167" height="30"/>
+                                        <state key="normal" title="OOM"/>
+                                        <connections>
+                                            <action selector="oom" destination="BYZ-38-t0r" eventType="touchUpInside" id="cdL-Od-0rE"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNN-by-x7H">
+                                <rect key="frame" x="161" y="163" width="92" height="30"/>
+                                <state key="normal" title="发送网络请求"/>
+                                <connections>
+                                    <action selector="sendNetworkRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vyu-8v-Yf7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNJ-B7-ceS">
+                                <rect key="frame" x="161" y="125" width="92" height="30"/>
+                                <state key="normal" title="打印终端日志"/>
+                                <connections>
+                                    <action selector="logConsole:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ppY-oQ-2RV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="yNN-by-x7H" firstAttribute="top" secondItem="eNJ-B7-ceS" secondAttribute="bottom" constant="8" id="N7o-0k-TfM"/>
+                            <constraint firstItem="yZN-Ji-BlK" firstAttribute="top" secondItem="yNN-by-x7H" secondAttribute="bottom" constant="20" id="QsQ-H3-ULf"/>
+                            <constraint firstItem="eNJ-B7-ceS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xzs-Xa-Yn5"/>
+                            <constraint firstItem="yNN-by-x7H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h1t-ex-fbY"/>
                             <constraint firstItem="yZN-Ji-BlK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hTd-ff-Ne0"/>
                             <constraint firstItem="yZN-Ji-BlK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xRd-mT-pwF"/>
                         </constraints>
@@ -90,6 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="123"/>
         </scene>
     </scenes>
 </document>

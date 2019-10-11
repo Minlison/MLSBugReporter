@@ -236,8 +236,12 @@ const LIFEInvocationOptions LIFEInvocationOptionsScreenRecordingFinished = 1 << 
     // dispatch_async to main queue in case this is called off the main thread.
     // This is also an attempt at a bug fix for @sjoerdjanssenen, who reported via DM
     // that -presentReporter was taking ~15 sec to actually show the bug reporter window.
+    [self presentReporterWithInvocation:LIFEInvocationOptionsNone];
+}
+
+- (void)presentReporterWithInvocation:(LIFEInvocationOptions)invocation {
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self _presentReporterFromInvocation:LIFEInvocationOptionsNone withScreenshot:nil animated:YES];
+        [self _presentReporterFromInvocation:invocation withScreenshot:nil animated:YES];
     });
 }
 
@@ -393,6 +397,7 @@ const LIFEInvocationOptions LIFEInvocationOptionsScreenRecordingFinished = 1 << 
 
 - (void)_presentReporterFromInvocation:(LIFEInvocationOptions)invocation withScreenshot:(UIImage *)screenshot animated:(BOOL)animated
 {
+    self.reporting = YES;
     if (![self _isStarted]) {
         LIFELogExtDebug(@"Buglife Error: Attempted to present Buglife reporter with no API key or email. To fix this, make sure to invoke [%@ %@] with a valid API key, or [%@ %@] with your email address in your app delegate's %@ method.", NSStringFromClass([self class]), NSStringFromSelector(@selector(startWithAPIKey:)), NSStringFromSelector(@selector(application:didFinishLaunchingWithOptions:)), NSStringFromClass([self class]), NSStringFromSelector(@selector(startWithEmail:)));
         return;
@@ -736,6 +741,7 @@ void life_dispatch_async_to_main_queue(dispatch_block_t block) {
 
 - (void)reporterDidCancel:(nullable LIFEReportWindow *)reporter
 {
+    self.reporting = NO;
     [self _dismissReporterAnimated:YES];
     [[NSNotificationCenter defaultCenter] postNotificationName:LIFENotificationUserCanceledReport object:self];
     if ([self.delegate respondsToSelector:@selector(buglife:userCanceledReportWithAttributes:)])
@@ -760,7 +766,7 @@ void life_dispatch_async_to_main_queue(dispatch_block_t block) {
                 if (completion) {
                     completion(submittedSuccessfully);
                 }
-                
+                self.reporting = NO;
                 if (submittedSuccessfully) {
                     [self _didCompleteReport:report];
                     

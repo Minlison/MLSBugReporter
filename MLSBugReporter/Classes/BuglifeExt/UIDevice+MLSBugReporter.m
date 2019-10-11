@@ -94,8 +94,7 @@
     return can;
 }
 #endif
-
-- (NSString *)ipAddressWithIfaName:(NSString *)name {
+- (NSString *)ipAddressWithIfaName:(NSString *)name ipv6:(BOOL)ipv6 {
     if (name.length == 0) return nil;
     NSString *address = nil;
     struct ifaddrs *addrs = NULL;
@@ -114,6 +113,9 @@
                     } break;
                         
                     case AF_INET6: { // IPv6
+                        if (!ipv6) {
+                            break;
+                        }
                         char str[INET6_ADDRSTRLEN] = {0};
                         inet_ntop(family, &(((struct sockaddr_in6 *)addr->ifa_addr)->sin6_addr), str, sizeof(str));
                         if (strlen(str) > 0) {
@@ -131,11 +133,16 @@
     freeifaddrs(addrs);
     return address;
 }
+- (NSString *)ipAddressWithIfaName:(NSString *)name {
+    return [self ipAddressWithIfaName:name ipv6:NO];
+}
 
 - (NSString *)ipAddressWIFI {
     return [self ipAddressWithIfaName:@"en0"];
 }
-
+- (NSString *)ipV6AddressWIFI {
+    return [self ipAddressWithIfaName:@"en0" ipv6:YES];
+}
 - (NSString *)ipAddressCell {
     return [self ipAddressWithIfaName:@"pdp_ip0"];
 }

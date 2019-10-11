@@ -141,6 +141,9 @@ extern NSString * __nonnull const LIFEAttributeKeyJiraProjectKey;
  */
 @property (nonatomic, assign) BOOL allowsAdditionalAttachments;
 
+/// 是否正在上报Bug
+@property(nonatomic, assign, getter=isReporting) BOOL reporting;
+
 /**
  *  Default shared initializer that returns the Buglife singleton.
  *
@@ -179,6 +182,9 @@ extern NSString * __nonnull const LIFEAttributeKeyJiraProjectKey;
  *  options, i.e. by placing a custom bug report button in their app settings.
  */
 - (void)presentReporter;
+
+/// 弹出视图
+- (void)presentReporterWithInvocation:(LIFEInvocationOptions)invocation;
 
 /**
  *  Specifies a user identifier that will be visible in the Buglife report viewer UI.
@@ -344,7 +350,7 @@ extern NSString * __nonnull const LIFEAttributeKeyJiraProjectKey;
  */
 - (void)buglife:(nonnull Buglife *)buglife userCanceledReportWithAttributes:(nonnull NSDictionary<NSString *, NSString *> *)attributes;
 
-- (void)buglife:(nonnull Buglife *)buglife shouldHandleInvocation:(LIFEInvocationOptions)invocation completion:(void (^)(BOOL shouldHandle))completion;
+- (void)buglife:(nonnull Buglife *)buglife shouldHandleInvocation:(LIFEInvocationOptions)invocation completion:(void (^_Nullable)(BOOL shouldHandle))completion;
 
 @end
 

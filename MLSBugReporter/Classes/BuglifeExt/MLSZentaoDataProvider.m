@@ -139,9 +139,7 @@
     [req startWithModelCompletionBlockWithSuccess:^(__kindof MLSBugReportCreateBugReq *request, MLSZenTaoBugModel *model) {
         
         if ([request.responseJSONObject objectForKey:@"locate"]) {
-            if (removeSuccessfulSubmissions) {
-                [self _removeSavedReport:report];
-            }
+            [self _removeSavedReport:report removeSuccessfulSubmissions:removeSuccessfulSubmissions];
             if (completion) {
                 completion(YES);
             }
@@ -236,16 +234,16 @@
         [MLSBugLogger removeLogFileForType:(MLSBugLogTypeDefault)];
     }
 }
-
-- (void)_removeSavedReport:(LIFEReport *)report {
-    
+- (void)_removeSavedReport:(LIFEReport *)report removeSuccessfulSubmissions:(BOOL)removeSuccessfulSubmissions {
     [self removeAllLogsFile];
     
     if (MLSBugReporterManager.sharedInstance.matrixIssue) {
         [[Matrix sharedInstance] reportIssueComplete:MLSBugReporterManager.sharedInstance.matrixIssue success:YES];
         MLSBugReporterManager.sharedInstance.matrixIssue = nil;
     }
-    [super _removeSavedReport:report];
+    if (removeSuccessfulSubmissions) {
+        [self _removeSavedReport:report];
+    }
 }
 
 - (void)uploadFileAttachmet:(LIFEReportAttachmentImpl *)imageAttachmet completion:(void (^)(NSString *fileUrl))completion {

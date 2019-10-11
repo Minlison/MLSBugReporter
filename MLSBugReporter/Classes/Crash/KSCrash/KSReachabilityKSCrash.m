@@ -53,7 +53,7 @@
 
 - (void) onReachabilityFlagsChanged:(SCNetworkReachabilityFlags) flags;
 
-static void onReachabilityChanged(SCNetworkReachabilityRef target,
+static void ks_onReachabilityChanged(SCNetworkReachabilityRef target,
                                   SCNetworkReachabilityFlags flags,
                                   void* info);
 
@@ -129,7 +129,7 @@ static void onReachabilityChanged(SCNetworkReachabilityRef target,
         };
 
         if(!SCNetworkReachabilitySetCallback(reachabilityRef,
-                                             onReachabilityChanged,
+                                             ks_onReachabilityChanged,
                                              &context))
         {
             goto failed;
@@ -172,16 +172,20 @@ failed:
     self.reachabilityRef = NULL;
     return nil;
 }
-
-- (void) dealloc
-{
+- (void)reset {
     if(_reachabilityRef != NULL)
     {
+        SCNetworkReachabilitySetCallback(_reachabilityRef, NULL, NULL);
         SCNetworkReachabilityUnscheduleFromRunLoop(_reachabilityRef,
                                                    CFRunLoopGetCurrent(),
                                                    kCFRunLoopDefaultMode);
         CFRelease(_reachabilityRef);
+        _reachabilityRef = NULL;
     }
+}
+- (void) dealloc
+{
+    [self reset];
 }
 
 - (NSString*) extractHostName:(NSString*) potentialURL
@@ -274,7 +278,7 @@ failed:
     return NO;
 }
 
-static void onReachabilityChanged(__unused SCNetworkReachabilityRef target,
+static void ks_onReachabilityChanged(__unused SCNetworkReachabilityRef target,
                                   SCNetworkReachabilityFlags flags,
                                   void* info)
 {
@@ -320,11 +324,15 @@ static void onReachabilityChanged(__unused SCNetworkReachabilityRef target,
         __weak __typeof(self)weakSelf = self;
         self.reachability.onReachabilityChanged = ^(KSReachabilityKSCrash* reachability)
         {
+            
             if(reachability.reachable)
             {
                 if(allowWWAN || !reachability.WWANOnly)
                 {
-                    block();
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        block();
+                    });
+                    [weakSelf.reachability reset];
                     weakSelf.reachability = nil;
                 }
             }

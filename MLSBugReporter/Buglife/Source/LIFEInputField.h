@@ -23,8 +23,8 @@
  * Facilitates appearance & behavior configuration of input fields in the bug reporter form.
  */
 @interface LIFEInputField : NSObject <NSCopying>
-@property (nonatomic, weak) LIFETextFieldCell * textFieldCell;
-@property (nonatomic, weak) LIFEWhatHappenedTableViewCell * textViewCell;
+@property (nonatomic, weak) LIFETextFieldCell * _Nullable textFieldCell;
+@property (nonatomic, weak) LIFEWhatHappenedTableViewCell * _Nullable textViewCell;
 /**
  * Default constructor
  * @param attributeName The attribute name. If the given attributeName is equal to
@@ -77,8 +77,8 @@
 // 是否可以响应
 - (BOOL)shouldBecomFirstResponsder;
 
-- (void)setTextFieldValue:(NSString *)textFieldValue;
+- (void)setTextFieldValue:(NSString *_Nullable)textFieldValue;
 
-- (void)setTextFieldAttributeValue:(NSAttributedString *)attributeTextFieldValue;
+- (void)setTextFieldAttributeValue:(NSAttributedString *_Nullable)attributeTextFieldValue;
 
 @end
