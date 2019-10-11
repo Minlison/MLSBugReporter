@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <Matrix/MatrixTester.h>
+#import <MLSNetwork/MLSNetwork.h>
 @interface TestContact : NSObject
 
 @property (nonatomic, copy) NSString *nickName;
@@ -40,7 +41,6 @@
 @end
 
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
@@ -93,8 +93,14 @@
     });
 }
 - (IBAction)sendNetworkRequest:(id)sender {
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com"]];
-    [[NSURLSession.sharedSession dataTaskWithRequest:request] resume];
+    MLSNetworkRequest *request = [MLSNetworkRequest requestWithParam:nil];
+    request.requestUrl = @"https://www.baidu.com";
+    request.requestMethod = MLSRequestMethodGET;
+    [request startWithCompletionBlockWithSuccess:^(__kindof MLSBaseRequest *request) {
+        
+    } failure:^(__kindof MLSBaseRequest *request) {
+        NSLog(@"%@",request.error);
+    }];
 }
 - (IBAction)logConsole:(id)sender {
     for (int i = 0; i < 10; i++) {

@@ -13,6 +13,7 @@
 #import "Buglife.h"
 #import "LIFEWhatHappenedTextView.h"
 #import "LIFETextFieldCell.h"
+#import "MLSBugReporterManager+Private.h"
 NSString *zenTaoBugFiledTypeString(MLSZenTaoBugFiledType type);
 
 @interface MLSZenTaoBugFiled () <LIFETextFieldCellDelegate, LIFEWhatHappenedTextViewDelegate>
@@ -102,7 +103,8 @@ NSString *zenTaoBugFiledTypeString(MLSZenTaoBugFiledType type);
     switch (self.fieldType) {
             case MLSZenTaoBugFiledTypeBugTitle: {
                 NSString *value = bugModel.bugTitle;
-                if (value.length == 0) {
+                // Crash 自动添加标题
+                if (value.length == 0 || Buglife.sharedBuglife.invocationOptions != LIFEInvocationOptionsCrashReport) {
                     break;
                 }
                 [Buglife.sharedBuglife setStringValue:value forAttribute:zenTaoBugFiledTypeString(self.fieldType)];
